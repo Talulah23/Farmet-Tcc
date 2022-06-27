@@ -1,4 +1,3 @@
-import { Center, Spinner } from '@chakra-ui/react';
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
@@ -42,7 +41,6 @@ function LoginPage() {
                 </form>
             </Container>
         :
-        <Center><Spinner/></Center>
     );
 }
 
