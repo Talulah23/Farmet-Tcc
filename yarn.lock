@@ -6689,6 +6689,11 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+fay@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/fay/-/fay-0.0.3.tgz#9843221f0874babb104039eb38fd1f6e60d0e7bc"
+  integrity sha512-zqVTc3tcaic7hrZ/LYDPK6YexXhf9PgWwM3mUWlQAa4S6RZJzGdSDQX6DJLu7T4P/klhrTjmbOVaU3YVIMTUsg==
+
 faye-websocket@0.11.4, faye-websocket@~0.11.1:
   version "0.11.4"
   resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.11.4.tgz#7f0d9275cfdd86a1c963dc8b65fcc451edcbb1da"

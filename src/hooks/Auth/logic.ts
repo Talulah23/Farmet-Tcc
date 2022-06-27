@@ -3,7 +3,14 @@ import { useIndexedDB } from 'react-indexed-db';
 import firebase, { auth } from '../../utils/firebase';
 import { ILoginPayload, IState, IUseLogicReturn } from './types';
 
+// import firebase from 'firebase/app';
+// import 'firebase/auth';
+// import 'firebase/database';
 
+// firebase.initializeApp(firebaseConfig);
+
+// const auth = firebase.auth();
+// const database = firebase.database();
 const initialState = {
   isUserDataPresent: false,
   user: null,
@@ -21,7 +28,7 @@ const emailAndPasswordSignIn = (email: string, password: string) => {
 }
 
 const onAuthStateChanged = (callback: (user: firebase.User | null) => void) => {
-  const unsubscribe = auth.onAuthStateChanged(user => {
+  const unsubscribe = auth.onAuthStateChanged((user) => {
     if (user !== null) {
       return callback(user);
     }

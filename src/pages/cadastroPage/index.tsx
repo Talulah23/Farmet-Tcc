@@ -1,5 +1,4 @@
-import { Center } from "@chakra-ui/react";
-import { Spinner } from "@chakra-ui/react";
+import { Center, Spinner } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
