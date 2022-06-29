@@ -48,8 +48,8 @@ function CadastroPage() {
                     </Container2>
                 </form>
             </Container>
-        :
-        // <Center><Spinner/></Center>
+        :        
+        <Container></Container>
     );
 }
 
