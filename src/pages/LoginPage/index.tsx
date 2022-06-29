@@ -1,4 +1,3 @@
-import { Center, Spinner } from '@chakra-ui/react';
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
@@ -21,7 +20,7 @@ function LoginPage() {
             });
         }
     }
-    
+    //
     return (
         isUserDataPresent ? 
             <Container>
@@ -41,8 +40,6 @@ function LoginPage() {
                     </Container2>
                 </form>
             </Container>
-        :
-        <Center><Spinner/></Center>
     );
 }
 
