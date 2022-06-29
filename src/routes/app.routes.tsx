@@ -1,5 +1,5 @@
 import CadastroPage from 'pages/cadastroPage';
-import LoginPage from 'pages/LoginPage';
+import LoginPage from 'pages/loginPage';
  import { FC } from 'react';
 import { PropsGroup } from './types';
 const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
