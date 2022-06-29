@@ -1,0 +1,22 @@
+{
+    "build": {
+      "production": {
+        "releaseChannel": "production",
+        "env": {
+          "DEBUG": false,
+          "EMULATOR_HOST": "",
+          "EMULATOR_FIRESTORE_PORT": "",
+          "EMULATOR_AUTH_PORT": ""
+        }
+      },
+      "preview": {
+        "releaseChannel": "staging",
+        "env": {
+            "DEBUG": false,
+            "EMULATOR_HOST": "",
+            "EMULATOR_FIRESTORE_PORT": "",
+            "EMULATOR_AUTH_PORT": ""
+        }
+      }
+    }
+  }

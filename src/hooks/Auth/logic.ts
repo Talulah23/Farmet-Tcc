@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useIndexedDB } from 'react-indexed-db';
-import firebase, { auth } from '../../utils/firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 import { ILoginPayload, IState, IUseLogicReturn } from './types';
+import { auth } from 'utils/firebase';
 
 
 const initialState = {
@@ -9,6 +12,7 @@ const initialState = {
   user: null,
   listener: null,
 };
+
 
 const googleSignIn = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
@@ -21,7 +25,7 @@ const emailAndPasswordSignIn = (email: string, password: string) => {
 }
 
 const onAuthStateChanged = (callback: (user: firebase.User | null) => void) => {
-  const unsubscribe = auth.onAuthStateChanged(user => {
+  const unsubscribe = auth.onAuthStateChanged((user: null) => {
     if (user !== null) {
       return callback(user);
     }
@@ -39,7 +43,7 @@ function useLogic(): IUseLogicReturn {
   const db = useIndexedDB('people');
 
   useEffect(() => {
-    db.getAll().then(people => {
+    db.getAll().then((people: any) => {
       console.log(people);
     });
   }, []);
