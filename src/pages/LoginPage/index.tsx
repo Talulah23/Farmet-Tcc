@@ -20,7 +20,7 @@ function LoginPage() {
             });
         }
     }
-    
+    //
     return (
         isUserDataPresent ? 
             <Container>
@@ -40,8 +40,6 @@ function LoginPage() {
                     </Container2>
                 </form>
             </Container>
-        :
-        <Container></Container>
     );
 }
 

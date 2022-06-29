@@ -1,8 +1,7 @@
-// import { Center, Spinner } from "@chakra-ui/react";
 import { useRef } from "react";
+import { Container, Button, Paragraph, TextInput, View } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
-import { Container, Button, Label, Input, Container2 } from "./styles";
 
 function CadastroPage() {
     
@@ -27,29 +26,27 @@ function CadastroPage() {
     return (
         isUserDataPresent ? 
             <Container>
-                <form onSubmit={handleOnSubmit} className="principal2">
-                    <Label  htmlFor="name"><b>Nome</b></Label>
+                <View onSubmit={handleOnSubmit} className="principal2">
+                    <Paragraph type="name">Nome</Paragraph>
                     <br />
-                    <Input ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
+                    <TextInput ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
                     <br/>
                     <br />
-                    <Label  htmlFor="email"><b>E-mail</b></Label>
+                    <Paragraph type="email">Email</Paragraph>
                     <br />
-                    <Input ref={emailRef} type="email" placeholder="Insira seu email" name="email" required/>
+                    <TextInput ref={emailRef} type="email" placeholder="Insira seu email" name="email" required/>
                     <br/>
                     <br />
-                    <Label htmlFor="psw"><b>Password</b></Label>
+                    <Paragraph type="psw"></Paragraph>
                     <br />
-                    <Input ref={passwordRef} type="password" placeholder="Insira a senha" name="psw" required/>
+                    <TextInput ref={passwordRef} type="password" placeholder="Insira a senha" name="psw" required/>
                     <br />
                     <br />
-                    <Container2>
+                    <Container>
                         <Button>Cadastre-se</Button>
-                    </Container2>
-                </form>
+                    </Container>
+                </View>
             </Container>
-        :        
-        <Container></Container>
     );
 }
 
