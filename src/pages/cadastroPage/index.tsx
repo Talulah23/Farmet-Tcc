@@ -27,26 +27,27 @@ function CadastroPage() {
         isUserDataPresent ? 
             <Container>
                 <View onSubmit={handleOnSubmit} className="principal2">
-                    <Paragraph type="name">Nome</Paragraph>
+                    <Paragraph nativeID="name">Nome</Paragraph>
                     <br />
                     <TextInput ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
                     <br/>
                     <br />
-                    <Paragraph type="email">Email</Paragraph>
+                    <Paragraph nativeID="email">Email</Paragraph>
                     <br />
                     <TextInput ref={emailRef} type="email" placeholder="Insira seu email" name="email" required/>
                     <br/>
                     <br />
-                    <Paragraph type="psw"></Paragraph>
+                    <Paragraph nativeID="password">Senha</Paragraph>
                     <br />
                     <TextInput ref={passwordRef} type="password" placeholder="Insira a senha" name="psw" required/>
-                    <br />
-                    <br />
+                    
                     <Container>
                         <Button>Cadastre-se</Button>
                     </Container>
                 </View>
             </Container>
+        :
+        <Container></Container>
     );
 }
 

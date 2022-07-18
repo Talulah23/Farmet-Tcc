@@ -1,14 +1,12 @@
-import styled, { css } from "styled-components";
+import styled from 'styled-components';
 import {
     Container as ContainerNative,
     Paragraph as ParagraphNative,
     Button as ButtonNative,
     View as ViewNative,
-} from './styleslogin.native';
+} from './styles.native';
 
 export const Container = ContainerNative;
-
-export const Container2 = ContainerNative;
 
 export const Paragraph = ParagraphNative;
 
