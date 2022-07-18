@@ -20,7 +20,7 @@ function LoginPage() {
             });
         }
     }
-    //
+    
     return (
         isUserDataPresent ? 
             <Container>

@@ -4,7 +4,7 @@ import {
     Paragraph as ParagraphNative,
     Button as ButtonNative,
     View as ViewNative,
-} from "./styleslogin.native";
+} from "./styledlogin.native";
 
 export const Container = ContainerNative;
 
