@@ -26,7 +26,7 @@ function CadastroPage() {
     return (
         isUserDataPresent ? 
             <Container>
-                <View onSubmit={handleOnSubmit} className="principal2">
+                <View>
                     <Paragraph type="name">Nome</Paragraph>
                     <br />
                     <TextInput ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
