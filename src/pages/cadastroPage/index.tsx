@@ -28,20 +28,14 @@ function CadastroPage() {
             <Container>
                 <View>
                     <Paragraph type="name">Nome</Paragraph>
-                    <br />
                     <TextInput ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
-                    <br/>
-                    <br />
+
                     <Paragraph type="email">Email</Paragraph>
-                    <br />
                     <TextInput ref={emailRef} type="email" placeholder="Insira seu email" name="email" required/>
-                    <br/>
-                    <br />
+
                     <Paragraph type="psw"></Paragraph>
-                    <br />
                     <TextInput ref={passwordRef} type="password" placeholder="Insira a senha" name="psw" required/>
-                    <br />
-                    <br />
+                    
                     <Container>
                         <Button>Cadastre-se</Button>
                     </Container>
