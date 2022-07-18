@@ -43,7 +43,8 @@ function LoginPage() {
             :
                 <Container>
                 </Container>
-            );
+ 
+ );
 }
 
 export default LoginPage;

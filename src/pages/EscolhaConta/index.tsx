@@ -1,7 +1,7 @@
 import { Container, Button, Text, Paragraph, View } from "./styles";
 
-
-return (
+function Escolha(){
+    return (
         <Container>
             <View>
             <Paragraph>Escolha o tipo de conta desejado:</Paragraph>
@@ -16,4 +16,5 @@ return (
             </Container>
         </Container>
 );
+}
 
