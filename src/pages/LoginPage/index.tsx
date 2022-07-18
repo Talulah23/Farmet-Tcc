@@ -35,11 +35,13 @@ function LoginPage() {
                     <Input ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
                     <br />
                     <br />
-                    <Container2>
-                        <Button>Login</Button>
-                    </Container2>
                 </form>
             </Container>
+            :
+            
+        <Container2>
+            <Button>Login</Button>
+        </Container2>
     );
 }
 
