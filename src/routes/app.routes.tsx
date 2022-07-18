@@ -1,11 +1,13 @@
 import { FC } from 'react';
-import { App } from '../pages';
+import Login from '../pages/loginPage';
+import Cadastro from 'pages/cadastroPage';
 import { PropsGroup } from './types';
 
 const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
     return (
         <Drawer.Group>
-            <Drawer.Screen name="App" component={App} />
+            <Drawer.Screen name="Login" component={Login} />
+            <Drawer.Screen name="Cadastro" component={Cadastro} />
         </Drawer.Group>
     );
 };

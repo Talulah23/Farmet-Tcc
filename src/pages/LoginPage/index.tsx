@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
-import { Container, Button, Label, Input, Container2 } from "./stlyle";
+import { Container, Container2, Button, Paragraph, TextInput, View } from "./stlyle";
 
 function LoginPage() {
     const emailRef = useRef<HTMLInputElement | null>(null);
@@ -24,23 +24,26 @@ function LoginPage() {
     return (
         isUserDataPresent ? 
             <Container>
-                <form onSubmit={handleOnSubmit} className="principal2">
-                    <Label  htmlFor="email"><b>Username</b></Label>
+                <View >
+                    <Paragraph nativeID="email"><b>Username</b></Paragraph>
                     <br />
-                    <Input ref={emailRef} type="email" placeholder="Enter email" name="email" required/>
+                    <TextInput ref={emailRef} type="email" placeholder="Enter email" name="email" required/>
                     <br/>
                     <br />
-                    <Label htmlFor="psw"><b>Password</b></Label>
+                    <Paragraph nativeID="Password"><b>Password</b></Paragraph>
                     <br />
-                    <Input ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
+                    <TextInput ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
                     <br />
                     <br />
                     <Container2>
                         <Button>Login</Button>
                     </Container2>
-                </form>
-            </Container>
-    );
+                </View>
+            </Container> 
+            :
+                <Container>
+                </Container>
+            );
 }
 
 export default LoginPage;
