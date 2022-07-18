@@ -9,7 +9,6 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.1",
     "@react-navigation/core": "^6.1.0",
     "@react-navigation/drawer": "^6.4.1",
     "@react-navigation/native": "6.0.6",
