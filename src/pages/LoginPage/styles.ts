@@ -5,7 +5,7 @@ import {
     Button as ButtonNative,
     View as ViewNative,
     TextInput as TextInputNative,
-} from "./styledlogin.native";
+} from "./styleslogin.native";
 
 export const Container = ContainerNative;
 

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
-import { Container, Container2, Button, Paragraph, TextInput, View } from "./style"
+import { Container, Container2, Button, Paragraph, TextInput, View } from "./styles"
 
 function LoginPage() {
     const emailRef = useRef<HTMLInputElement | null>(null);
@@ -43,8 +43,7 @@ function LoginPage() {
             :
                 <Container>
                 </Container>
- 
- );
+            );
 }
 
 export default LoginPage;
