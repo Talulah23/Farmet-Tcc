@@ -35,7 +35,8 @@
     "react-native-web": "0.17.7",
     "react-router-dom": "^6.3.0",
     "styled-components": "5.3.5",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "yup-locale-pt": "^0.0.9"
   },
   "devDependencies": {
     "@babel/core": "7.18.5",
