@@ -25,13 +25,13 @@ const emailAndPasswordSignIn = (email: string, password: string) => {
 }
 
 const onAuthStateChanged = (callback: (user: firebase.User | null) => void) => {
-  const unsubscribe = auth.onAuthStateChanged((user: null) => {
-    if (user !== null) {
-      return callback(user);
-    }
-    return callback(null);
-  });
-
+  // const unsubscribe = auth.onAuthStateChanged((user: null) => {
+  //   if (user !== null) {
+  //     return callback(user);
+  //   }
+  //   return callback(null);
+  // });
+  const unsubscribe = ()=>{}
   return () => {
     unsubscribe();
   };
