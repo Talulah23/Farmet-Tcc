@@ -25,9 +25,11 @@ function CadastroPage() {
     
     return (
         isUserDataPresent ? 
+            
+            // onSubmit={handleOnSubmit} className="principal2"
             <Container>
-                <View onSubmit={handleOnSubmit} className="principal2">
-                    <Paragraph nativeID="name">Nome</Paragraph>
+                <View>
+                    <Paragraph nativeID="name">Nome</Paragraph>,
                     <br />
                     <TextInput ref={nameRef} type="name" placeholder="Insira seu nome" name="name" required/>
                     <br/>
@@ -40,16 +42,15 @@ function CadastroPage() {
                     <Paragraph nativeID="password">Senha</Paragraph>
                     <br />
                     <TextInput ref={passwordRef} type="password" placeholder="Insira a senha" name="psw" required/>
-                    
                     <Container>
                         <Button>Cadastre-se</Button>
                     </Container>
-                </View>
-            </Container>
-        :
-        <Container></Container>
-
-        );
+                </View>   
+            </Container> 
+            :
+                <Container>
+                </Container>
+            );
 }
 
 export default CadastroPage;
