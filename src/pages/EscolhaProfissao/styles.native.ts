@@ -33,6 +33,6 @@ export const Paragraph = styled.Text`
 
 export const View = styled.View;
 
-export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
+export const Touch = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
 }));
