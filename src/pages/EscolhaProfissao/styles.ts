@@ -5,7 +5,7 @@ import {
     Paragraph as ParagraphNative,
     Button as ButtonNative,
     View as ViewNative,
-    TouchableOpacity as TouchableOpacityNaative,
+    Touch as TouchNative,
 } from './styles.native';
 
 export const Container = ContainerNative;
@@ -18,4 +18,4 @@ export const Button = ButtonNative;
 
 export const View = ViewNative;
 
-export const TouchableOpacity = TouchableOpacityNaative;
+export const Touch = TouchNative;

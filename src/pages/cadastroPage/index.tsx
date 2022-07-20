@@ -48,7 +48,8 @@ function CadastroPage() {
             </Container>
         :
         <Container></Container>
-    );
+
+        );
 }
 
 export default CadastroPage;
