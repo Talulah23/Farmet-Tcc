@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Login from '../pages/loginPage';
+import Login from '../pages/LoginPage';
 import Cadastro from 'pages/cadastroPage';
 import { PropsGroup } from './types';
 
