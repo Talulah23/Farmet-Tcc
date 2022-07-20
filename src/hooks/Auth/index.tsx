@@ -8,8 +8,8 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 const AuthProvider: React.FC<AuthProviderProps> = ({ children }: AuthProviderProps) => {
   const {
     authState: { user, isUserDataPresent },
-    signOut,
     signIn,
+    signOut
   } = useLogic();
   const contextValue = useMemo(
     () => ({

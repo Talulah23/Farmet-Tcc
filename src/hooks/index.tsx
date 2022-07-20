@@ -7,9 +7,10 @@ interface Props {
 
 const AppProvider: React.FC<Props> = ({ children }: Props) => {
   return (
-    <AuthProvider>
-      <CounterProvider>{children}</CounterProvider>
-    </AuthProvider>
+    // <AuthProvider>
+    //   <CounterProvider>{children}</CounterProvider>
+    // </AuthProvider>
+    <CounterProvider>{children}</CounterProvider>
   );
 };
 
