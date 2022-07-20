@@ -25,12 +25,12 @@ function LoginPage() {
         isUserDataPresent ? 
             <Container>
                 <View >
-                    <Paragraph nativeID="email"><b>Username</b></Paragraph>
+                    <Paragraph nativeID="email">Username</Paragraph>
                     <br />
                     <TextInput ref={emailRef} type="email" placeholder="Enter email" name="email" required/>
                     <br/>
                     <br />
-                    <Paragraph nativeID="Password"><b>Password</b></Paragraph>
+                    <Paragraph nativeID="Password">Password</Paragraph>
                     <br />
                     <TextInput ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
                     <br />
