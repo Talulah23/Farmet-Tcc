@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { AppRoutes } from './app.routes';
+import Approutes from './app.routes';
 
 const Drawer = createDrawerNavigator();
 
@@ -15,7 +15,7 @@ function Routes() {
     return (
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="Home" screenOptions={screenOptions}>
-                {AppRoutes({ Drawer })}
+                {Approutes({ Drawer })}
             </Drawer.Navigator>
         </NavigationContainer>
     );
