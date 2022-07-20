@@ -1,4 +1,4 @@
-import { Container, Button, Text, Paragraph, View, TouchableOpacity } from "./styles";
+import { Container, Button, Text, Paragraph, View, Touch } from "./styles";
 
 function Escolha(){
     return (
@@ -9,12 +9,12 @@ function Escolha(){
             <Container>
                 <Paragraph>Conta do Usuário</Paragraph>
                 <Text>.......</Text>
-                    <TouchableOpacity></TouchableOpacity>
+                    <Touch></Touch>
             </Container>
             <Container>
                 <Paragraph>Conta Profissional</Paragraph>
                 <Text>.......</Text>
-                    <TouchableOpacity></TouchableOpacity>
+                    <Touch></Touch>
             </Container>
         </Container>
 );
