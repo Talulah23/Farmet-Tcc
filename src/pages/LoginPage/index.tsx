@@ -20,7 +20,7 @@ function LoginPage() {
             });
         }
     }
-    //
+    
     return (
         isUserDataPresent ? 
             <Container>
@@ -43,8 +43,7 @@ function LoginPage() {
             :
                 <Container>
                 </Container>
- 
- );
+            );
 }
 
 export default LoginPage;
