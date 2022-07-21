@@ -35,18 +35,13 @@ I18n.translations = {
         email: 'Eメール',
         register: '登録',
     },
-}
-
-I18n.translations = {
-    'pt-BR': {
-        email: 'Email',
-        password: 'Senha',
-        login: 'Login',
-},
+    
     GER: {
         email: 'Email',
         password: 'Passwort',
         login: 'Anmeldung',
+        name: '',
+        register: 'Registrieren',
 },
 
     RUS: {
@@ -54,6 +49,8 @@ I18n.translations = {
         password: 'Пароль',
         login: 'Авторизоваться',
         name: 'Имя',
+
+        register: 'регистр',
 },
 
     UA: {
@@ -61,6 +58,8 @@ I18n.translations = {
         password: 'Пароль',
         login: 'Логін',
         name: 'Ім,я',
+
+        register: 'зареєструватися',
 },
 
 
