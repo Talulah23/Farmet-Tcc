@@ -7,13 +7,32 @@ import { setLocale } from 'yup';
 import { pt } from 'yup-locale-pt'
 
 
-I18nManager.translations = {
+i18n.translations = {
     'pt-BR': {
-        name: 'nome',
-        email: 'email',
-        password: 'senha',
-        submit: 'enviar',
+        username: 'nome usuario',
+        number: 'Numero',
+        address: 'endereço',
+        next: 'Proximo',
     },
+    'ko': {
+        username: '사용자 이름',
+        number: '숫자',
+        address: '주소',
+        next: '다음',
+    },
+    'it': {
+        username: 'nome utente',
+        number: 'numero',
+        address: 'indirizzo',
+        next: 'prossimo',
+    },
+    'el': {
+        username: 'όνομα χρήστη',
+        number: 'αριθμός',
+        address: 'διεύθυνση',
+        next: 'Επόμενο',
+    },
+
 }
 
-// const setLocale
+i18n.locale = Localization.locale;
