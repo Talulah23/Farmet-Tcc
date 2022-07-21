@@ -14,6 +14,10 @@ I18n.translations = {
         email: 'email',
         register: 'cadastre-se',
         login: 'fazer login',
+        username: 'nome usuario',
+        number: 'Numero',
+        address: 'endereço',
+        next: 'Proximo',
     },
 
     'fr': {
@@ -60,6 +64,27 @@ I18n.translations = {
         name: 'Ім,я',
     },
 
+    'ko': {
+        username: '사용자 이름',
+        number: '숫자',
+        address: '주소',
+        next: '다음',
+    },
+    'it': {
+        username: 'nome utente',
+        number: 'numero',
+        address: 'indirizzo',
+        next: 'prossimo',
+    },
+    'el': {
+        username: 'όνομα χρήστη',
+        number: 'αριθμός',
+        address: 'διεύθυνση',
+        next: 'Επόμενο',
+    },
+
+
 }
 I18n.locale = Localization.locale;
 // const setLocale
+
