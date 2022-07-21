@@ -10,26 +10,30 @@ import { pt } from 'yup-locale-pt'
 I18nManager.translations = {
     'pt-BR': {
         name: 'nome',
+        password: 'senha',
         email: 'email',
-        submit: 'enviar',
+        register: 'enviar',
     },
 
     'fr': {
         name: 'nom',
-        email: 'email',
-        submit: 'enviar',
+        password: 'le mot de passe',
+        email: 'e-mail',
+        register: 'nous faire parvenir',
     },
 
     'en-us': {
-        name: 'nom',
+        name: 'name',
+        password: 'password',
         email: 'email',
-        submit: 'enviar',
+        register: 'register',
     },
     
     'ja': {
-        name: 'nom',
-        email: 'email',
-        submit: 'enviar',
+        name: '名前',
+        password: 'パスワード',
+        email: 'Eメール',
+        register: '登録',
     }
 
 // const setLocale
