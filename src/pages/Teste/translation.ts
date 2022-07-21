@@ -6,6 +6,8 @@ import I18n from 'i18n-js';
 import { setLocale } from 'yup';
 import { pt } from 'yup-locale-pt'
 
+import * as ja from "yup-locale-ja";
+
 
 I18n.translations = {
     'pt-BR': {
@@ -43,28 +45,6 @@ I18n.translations = {
         register: '登録',
         login: 'ログインする',
     },
-    
-
-
-    'ko': {
-        username: '사용자 이름',
-        number: '숫자',
-        address: '주소',
-        next: '다음',
-    },
-    'it': {
-        username: 'Nome utente',
-        number: 'Numero',
-        address: 'Indirizzo',
-        next: 'Prossimo',
-    },
-    'el': {
-        username: 'όνομα χρήστη',
-        number: 'αριθμός',
-        address: 'διεύθυνση',
-        next: 'Επόμενο',
-    },
-
 
 }
 I18n.locale = Localization.locale;
