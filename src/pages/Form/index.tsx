@@ -7,8 +7,9 @@ import { string } from 'yup/lib/locale';
 Yup.setLocale(pt);
 
 function Form(){
-    const useSchame = Yup.object(){
-    };
+    const useSchame = Yup.object({
+        name: string()
+    });
 
 
 
