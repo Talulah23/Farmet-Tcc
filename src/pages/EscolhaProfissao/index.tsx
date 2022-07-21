@@ -1,6 +1,6 @@
 import { Container, Button, Text, Paragraph, View, Touch } from "./styles";
 
-function Escolha(){
+export default function EscolhaProfissao(){
     return (
         <Container>
             <View>
