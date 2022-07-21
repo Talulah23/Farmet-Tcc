@@ -43,26 +43,8 @@ I18n.translations = {
         register: '登録',
         login: 'ログインする',
     },
+    
 
-    GER: {
-        email: 'Email',
-        password: 'Passwort',
-        login: 'Anmeldung',
-    },
-
-    RUS: {
-        email: 'Эл. адрес',
-        password: 'Пароль',
-        login: 'Авторизоваться',
-        name: 'Имя',
-    },
-
-    UA: {
-        email: 'Email',
-        password: 'Пароль',
-        login: 'Логін',
-        name: 'Ім,я',
-    },
 
     'ko': {
         username: '사용자 이름',
@@ -71,10 +53,10 @@ I18n.translations = {
         next: '다음',
     },
     'it': {
-        username: 'nome utente',
-        number: 'numero',
-        address: 'indirizzo',
-        next: 'prossimo',
+        username: 'Nome utente',
+        number: 'Numero',
+        address: 'Indirizzo',
+        next: 'Prossimo',
     },
     'el': {
         username: 'όνομα χρήστη',
