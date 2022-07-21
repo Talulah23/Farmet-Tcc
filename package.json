@@ -38,6 +38,8 @@
     "react-router-dom": "^6.3.0",
     "styled-components": "5.3.5",
     "yup": "^0.32.11",
+    "yup-es": "^1.0.8",
+    "yup-locale-ko": "^0.0.4",
     "yup-locale-pt": "^0.0.9"
   },
   "devDependencies": {

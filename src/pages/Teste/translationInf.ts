@@ -5,6 +5,7 @@ import * as Localization from 'expo-localization';
 import i18n from 'i18n-js';
 import { setLocale } from 'yup';
 import { pt } from 'yup-locale-pt'
+import ko from 'yup-locale-ko';
 
 
 i18n.translations = {
@@ -26,11 +27,11 @@ i18n.translations = {
         address: 'indirizzo',
         next: 'prossimo',
     },
-    'el': {
-        username: 'όνομα χρήστη',
-        number: 'αριθμός',
-        address: 'διεύθυνση',
-        next: 'Επόμενο',
+    'es': {
+        username: 'nombre de usuario',
+        number: 'número',
+        address: 'Dirección',
+        next: 'Siguiente',
     },
 
 }

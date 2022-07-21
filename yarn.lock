@@ -7953,6 +7953,18 @@ join-component@^1.1.0:
   resolved "https://registry.yarnpkg.com/join-component/-/join-component-1.1.0.tgz#b8417b750661a392bee2c2537c68b2a9d4977cd5"
   integrity sha512-bF7vcQxbODoGK1imE2P9GS9aw4zD0Sd+Hni68IMZLj7zRnquH7dXUmMw9hDI5S/Jzt7q+IyTXN0rSg2GI0IKhQ==
 
+jongseong@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/jongseong/-/jongseong-0.4.2.tgz#5008c13332829257304c54641f550087d2f4caa9"
+  integrity sha512-wBNM0B48CgphzeIIGo4vFqrAg4wlxppj7fAMa7kZ2PGgwGzoheWxyiBhz4eIxUtlVPMk9gvUsSxG9pMsTyjfSw==
+
+josa@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/josa/-/josa-3.0.1.tgz#e1fa94fc7c78be1d81e965fec0ae43be0a1df352"
+  integrity sha512-naRZOzWy/02AbP5p4Tz4lj7wpIJ93+hPk/mne8yHCpT2UZglhh2BF0f/j7SIITqZpb834B0DZ0RjJCrKji3qOQ==
+  dependencies:
+    jongseong "^0.4.2"
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -13397,6 +13409,18 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+yup-es@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/yup-es/-/yup-es-1.0.8.tgz#a99c40e795d6f15c8c998538b61b4c7f59a0ec72"
+  integrity sha512-iBwaMAoCFkLQkTtyUA1guEnkHamiLknA0OpovsWFBtcglgu7ZIFfW0FUzW8GhzOL/K2f18872xFWZmAfuhcekg==
+
+yup-locale-ko@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/yup-locale-ko/-/yup-locale-ko-0.0.4.tgz#ba7df8c070d44a7a6201d2203dea32859e1b54d8"
+  integrity sha512-U0jY7PzpF81zct1i/klMs74VKtmePltbgI4VYSzNs5qdHlfN5iI+5/StNrUpbi1t+wDcklfFSUJJhCFLjrhl/Q==
+  dependencies:
+    josa "^3.0.1"
 
 yup-locale-pt@^0.0.9:
   version "0.0.9"
