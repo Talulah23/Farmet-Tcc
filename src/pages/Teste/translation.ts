@@ -10,8 +10,8 @@ import { pt } from 'yup-locale-pt'
 I18nManager.translations = {
     'pt-BR': {
         name: 'nome',
-        age: 'idade',
         email: 'email',
+        password: 'senha',
         submit: 'enviar',
     },
 }
