@@ -13434,16 +13434,22 @@ yup-es@^1.0.8:
   resolved "https://registry.yarnpkg.com/yup-es/-/yup-es-1.0.8.tgz#a99c40e795d6f15c8c998538b61b4c7f59a0ec72"
   integrity sha512-iBwaMAoCFkLQkTtyUA1guEnkHamiLknA0OpovsWFBtcglgu7ZIFfW0FUzW8GhzOL/K2f18872xFWZmAfuhcekg==
 
+yup-locale-ja@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/yup-locale-ja/-/yup-locale-ja-0.1.3.tgz#75b4ea930256e9f1d6796db2df77aba336db1043"
+  integrity sha512-jhh0F0onrMySKIsL+Dcjdi6K3enf/8z4N+lS+s0IXAr7bnlgUqGQrHmkihTSNtNuf/Bd2qjs02Y+VpMF5VeaIA==
+
 yup-locale-ko@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/yup-locale-ko/-/yup-locale-ko-0.0.4.tgz#ba7df8c070d44a7a6201d2203dea32859e1b54d8"
   integrity sha512-U0jY7PzpF81zct1i/klMs74VKtmePltbgI4VYSzNs5qdHlfN5iI+5/StNrUpbi1t+wDcklfFSUJJhCFLjrhl/Q==
   dependencies:
     josa "^3.0.1"
-yup-locale-ja@^0.1.3:
+
+yup-locale-pl@^0.1.3:
   version "0.1.3"
-  resolved "https://registry.yarnpkg.com/yup-locale-ja/-/yup-locale-ja-0.1.3.tgz#75b4ea930256e9f1d6796db2df77aba336db1043"
-  integrity sha512-jhh0F0onrMySKIsL+Dcjdi6K3enf/8z4N+lS+s0IXAr7bnlgUqGQrHmkihTSNtNuf/Bd2qjs02Y+VpMF5VeaIA==
+  resolved "https://registry.yarnpkg.com/yup-locale-pl/-/yup-locale-pl-0.1.3.tgz#cf676c2038684d8acc01c7889756c9cebcafc40c"
+  integrity sha512-NQtl5QvrZBMrTLkFyT9VR8apKjvI4EGoMlK4QGvtS9Gv3it5+WgoNgTtbRd6flcqL4lCWeYl5mXrbVCjUcyHLw==
 
 yup-locale-pt@^0.0.9:
   version "0.0.9"
