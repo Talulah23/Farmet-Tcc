@@ -1,6 +1,6 @@
 import { Container, Button, Text, Paragraph, View, TouchableOpacity } from "./styles";
 
-function Escolha(){
+export default function EscolhaConta(){
     return (
         <Container>
             <View>
