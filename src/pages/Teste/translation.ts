@@ -13,6 +13,7 @@ I18n.translations = {
         password: 'senha',
         email: 'email',
         register: 'cadastre-se',
+        login: 'fazer login',
     },
 
     'fr': {
@@ -20,6 +21,7 @@ I18n.translations = {
         password: 'le mot de passe',
         email: 'e-mail',
         register: 'nous faire parvenir',
+        login: 'connexion',
     },
 
     'en-us': {
@@ -27,6 +29,7 @@ I18n.translations = {
         password: 'password',
         email: 'email',
         register: 'register',
+        login: 'login',
     },
     
     'ja': {
@@ -34,35 +37,28 @@ I18n.translations = {
         password: 'パスワード',
         email: 'Eメール',
         register: '登録',
+        login: 'ログインする',
     },
-}
 
-I18n.translations = {
-    'pt-BR': {
-        email: 'Email',
-        password: 'Senha',
-        login: 'Login',
-},
     GER: {
         email: 'Email',
         password: 'Passwort',
         login: 'Anmeldung',
-},
+    },
 
     RUS: {
         email: 'Эл. адрес',
         password: 'Пароль',
         login: 'Авторизоваться',
         name: 'Имя',
-},
+    },
 
     UA: {
         email: 'Email',
         password: 'Пароль',
         login: 'Логін',
         name: 'Ім,я',
-},
-
+    },
 
 }
 I18n.locale = Localization.locale;
