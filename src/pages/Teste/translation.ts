@@ -13,6 +13,11 @@ I18n.translations = {
         password: 'senha',
         email: 'email',
         register: 'cadastre-se',
+        login: 'fazer login',
+        username: 'nome usuario',
+        number: 'Numero',
+        address: 'endereço',
+        next: 'Proximo',
     },
 
     'fr': {
@@ -20,6 +25,7 @@ I18n.translations = {
         password: 'le mot de passe',
         email: 'e-mail',
         register: 'nous faire parvenir',
+        login: 'connexion',
     },
 
     'en-us': {
@@ -27,6 +33,7 @@ I18n.translations = {
         password: 'password',
         email: 'email',
         register: 'register',
+        login: 'login',
     },
     
     'ja': {
@@ -34,9 +41,11 @@ I18n.translations = {
         password: 'パスワード',
         email: 'Eメール',
         register: '登録',
+        login: 'ログインする',
     },
     
-    GER: {
+
+    'ger': {
         email: 'Email',
         password: 'Passwort',
         login: 'Anmeldung',
@@ -44,7 +53,7 @@ I18n.translations = {
         register: 'Registrieren',
 },
 
-    RUS: {
+    'rus': {
         email: 'Эл. адрес',
         password: 'Пароль',
         login: 'Авторизоваться',
@@ -53,16 +62,39 @@ I18n.translations = {
         register: 'регистр',
 },
 
-    UA: {
+    'ua': {
         email: 'Email',
         password: 'Пароль',
         login: 'Логін',
         name: 'Ім,я',
-
         register: 'зареєструватися',
+        username: '사용자 이름',
+        number: '숫자',
+        address: '주소',
+        next: '다음',
 },
+
+    'ko': {
+        username: '사용자 이름',
+        number: '숫자',
+        address: '주소',
+        next: '다음',
+    },
+    'it': {
+        username: 'Nome utente',
+        number: 'Numero',
+        address: 'Indirizzo',
+        next: 'Prossimo',
+    },
+    'el': {
+        username: 'όνομα χρήστη',
+        number: 'αριθμός',
+        address: 'διεύθυνση',
+        next: 'Επόμενο',
+    },
 
 
 }
 I18n.locale = Localization.locale;
 // const setLocale
+
