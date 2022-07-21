@@ -6,10 +6,11 @@ import { string } from 'yup/lib/locale';
 
 Yup.setLocale(pt);
 
+const useSchame = Yup.object({
+    name: string().required(),
+    email: string(),
+});
 function Form(){
-    const useSchame = Yup.object({
-        name: string()
-    });
 
 
 
