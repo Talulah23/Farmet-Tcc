@@ -1,25 +1,26 @@
 import { useRef } from "react";
+// import { View } from "react-native";
 // import { useNavigate } from "react-router-dom";
 // import { useAuth } from "../../hooks/Auth";
 import { Container, Container2, Button, Paragraph, TextInput, View } from "./styles"
 
 function LoginPage() {
-    const emailRef = useRef<HTMLInputElement | null>(null);
-    const passwordRef = useRef<HTMLInputElement | null>(null);
-    // const navigate = useNavigate();
+    // const emailRef = useRef<HTMLInputElement | null>(null);
+    // const passwordRef = useRef<HTMLInputElement | null>(null);
+    // // const navigate = useNavigate();
 
-    // const { signIn, isUserDataPresent } = useAuth();
-    const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        if (emailRef.current?.value !== undefined && passwordRef.current?.value !== undefined) {
-            // signIn('email_and_password', {
-            //     email: emailRef.current?.value,
-            //     password: passwordRef.current?.value,
-            // }).then(() => {
-            //     // navigate('/');
-            // });
-        }
-    }
+    // // const { signIn, isUserDataPresent } = useAuth();
+    // const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     if (emailRef.current?.value !== undefined && passwordRef.current?.value !== undefined) {
+    //         // signIn('email_and_password', {
+    //         //     email: emailRef.current?.value,
+    //         //     password: passwordRef.current?.value,
+    //         // }).then(() => {
+    //         //     // navigate('/');
+    //         // });
+    //     }
+    // }
     
     return (
         <View></View>

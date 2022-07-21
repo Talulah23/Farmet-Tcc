@@ -57,7 +57,7 @@ export const TextInput = styled.TextInput`
     width: 100%;
 `;
 
-export const View = styled.View;
+export const View = styled.View``;
 
 export const Touch = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
