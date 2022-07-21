@@ -2,18 +2,39 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import { I18nManager } from 'react-native';
 import * as Localization from 'expo-localization';
-import i18n from 'i18n-js';
+import I18n from 'i18n-js';
 import { setLocale } from 'yup';
 import { pt } from 'yup-locale-pt'
 
 
-I18nManager.translations = {
+
+I18n.translations = {
     'pt-BR': {
-        name: 'nome',
-        email: 'email',
-        password: 'senha',
-        submit: 'enviar',
-    },
+        email: 'Email',
+        password: 'Senha',
+        login: 'Login',
+},
+    GER: {
+        email: 'Email',
+        password: 'Passwort',
+        login: 'Anmeldung',
+},
+
+    RUS: {
+        email: 'Эл. адрес',
+        password: 'Пароль',
+        login: 'Авторизоваться',
+        name: 'Имя',
+},
+
+    UA: {
+        email: 'Email',
+        password: 'Пароль',
+        login: 'Логін',
+        name: 'Ім,я',
+},
+
+
 }
-i18n.locale = Localization.locale;
+I18n.locale = Localization.locale;
 // const setLocale
