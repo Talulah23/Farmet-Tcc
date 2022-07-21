@@ -6,6 +6,8 @@ import I18n from 'i18n-js';
 import { setLocale } from 'yup';
 import { pt } from 'yup-locale-pt'
 
+import * as ja from "yup-locale-ja";
+
 
 I18n.translations = {
     'pt-BR': {

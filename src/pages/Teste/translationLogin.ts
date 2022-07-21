@@ -14,7 +14,7 @@ I18n.translations = {
         login: 'Anmeldung',
 },
 
-    'rus': {
+    'ru': {
         email: 'Эл. адрес',
         password: 'Пароль',
         login: 'Авторизоваться',
@@ -26,3 +26,6 @@ I18n.translations = {
         login: 'Логін',
 },
 }
+
+
+I18n.locale = Localization.locale;
