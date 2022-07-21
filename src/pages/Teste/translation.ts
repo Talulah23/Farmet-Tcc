@@ -15,5 +15,5 @@ I18nManager.translations = {
         submit: 'enviar',
     },
 }
-
+i18n.locale = Localization.locale;
 // const setLocale
