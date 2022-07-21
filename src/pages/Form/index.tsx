@@ -9,7 +9,7 @@ Yup.setLocale(pt);
 
 export default function Form(){
     const useSchame = Yup.object({
-        name: string()
+        // name: string()
     });
 
 
