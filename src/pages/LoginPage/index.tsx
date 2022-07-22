@@ -81,7 +81,7 @@ function LoginPage() {
                         }}
                         onBlur={handleBlur('email')}
                         value={values.email}
-                        isVa={
+                        isValid={
                             !(errors.email && touched.email)
                         }
                     />
