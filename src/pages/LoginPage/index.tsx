@@ -11,7 +11,7 @@ import { Container, Container2, Paragraph, TextInput, View } from "./styles"
 import I18n from "i18n-js";
 
 const useSchema = object({
-    passaword: string().required(),
+    password: string().required(),
     cnpj: string().test(
         'test-invalid-cnpj',
         'cnpj inválido',
