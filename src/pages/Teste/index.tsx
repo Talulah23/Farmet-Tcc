@@ -1,34 +1,68 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext, useMemo } from 'react';
+import useLogic from './logic';
 
-
-interface Props{
-    children: React.ReactNode
+interface ThemeContextData {
+    darkMode: boolean;
+    fontSize: {
+        header: number;
+        paragraph: number;
+    };
+    setDarkMode: (value: boolean) => void;
+    setFontSize: (value: {
+        header: number;
+        paragraph: number;
+    }) => void;
 }
 
+const ThemeContext = createContext<ThemeContextData>(
+    {} as ThemeContextData,
+);
 
-export default function ThemeProvider({children}: Props) {
-    const { font }
-    const darkmode = true;
-    const header = 26;
-    const paragraph = 16;
-    
-    };
+interface Props {
+    children: React.ReactNode;
+}
 
+export function ThemeProvider({ children }: Props) {
+    const {
+        fontSize: { header, paragraph },
+        darkMode,
+        setDarkMode,
+        setFontSize,
+    } = useLogic();
 
     const fontSize = useMemo(
         () => ({
             header,
             paragraph,
         }),
-        [header, paragraph]
-    )
-
+        [header, paragraph],
+    );
 
     const contextValue = useMemo(
         () => ({
-            darkmode,
+            darkMode,
             fontSize,
+            setDarkMode,
+            setFontSize,
         }),
-        [darkmode, fontSize]
-    )
+        [darkMode, fontSize, setDarkMode, setFontSize],
+    );
+
+    return (
+        <ThemeContext.Provider value={contextValue}>
+            {children}
+        </ThemeContext.Provider>
+    );
+}
+
+export function useTheme() {
+    const context = useContext(ThemeContext);
+
+    if (!context) {
+        throw new Error(
+            'useTheme must be used within an ThemeProvider',
+        );
+    }
+
+    return context;
 }

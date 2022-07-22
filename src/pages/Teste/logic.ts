@@ -1,47 +1,66 @@
-import { useEffect, useState } from "react";
-import { AsyncStorage } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
 
-export default function useLogic(){
-    const [darkMode, setDarkmode] = useState(false);
+export default function useLogic() {
+    const [darkMode, setDarkMode] = useState(false);
     const [fontSize, setFontSize] = useState({
         header: 27,
         paragraph: 16,
     });
 
-    useEffect{() =>{
+    useEffect(() => {
         AsyncStorage.getItem('darkMode').then(value => {
-        if (value !== null) {
-            setDarkmode(value === 'true');
+            if (value !== null) {
+                setDarkMode(value === 'true');
             }
-    });
+        });
+
+        AsyncStorage.getItem('fontSize').then(value => {
+            if (value !== null) {
+                setFontSize(JSON.parse(value));
+            }
+        });
+
+        AsyncStorage.multiGet([
+            'darkMode',
+            'fontSize',
+        ]).then(
+            ([[, darkModeValue], [, fontSizeValue]]) => {
+                if (darkModeValue !== null) {
+                    setDarkMode(darkModeValue === 'true');
+                }
+                if (fontSizeValue !== null) {
+                    setFontSize(JSON.parse(fontSizeValue));
+                }
+            },
+        );
+    }, []);
 
     const saveDarkModeInStorage = (value: boolean) => {
         AsyncStorage.setItem(
             'darkMode',
-            value.toString()
+            value.toString(),
         ).then(() => {
-            setDarkmode(value);
-        }
-        )
+            setDarkMode(value);
+        });
     };
 
     const saveFontSizeInStorage = (value: {
-        header: string, 
-        paragraph:string,
+        header: number;
+        paragraph: number;
     }) => {
         AsyncStorage.setItem(
-            'fontSize', 
-            value.toString()
+            'fontSize',
+            JSON.stringify(value),
         ).then(() => {
             setFontSize(value);
-        }
-        )
+        });
     };
 
-    return{
+    return {
         darkMode,
         fontSize,
-        setDarkmode: saveDarkModeInStorage,
+        setDarkMode: saveDarkModeInStorage,
         setFontSize: saveFontSizeInStorage,
     };
 }
