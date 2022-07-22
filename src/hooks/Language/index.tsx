@@ -3,7 +3,7 @@
 import { createContext } from "react";
 
 interface LanguageContextData {     
-    languageSelect: 
+    languageSelectPt:  
 }
 
 const LanguageContext = createContext<LanguageContextData>( {} as LanguageContextData,);
@@ -11,5 +11,3 @@ const LanguageContext = createContext<LanguageContextData>( {} as LanguageContex
 interface LProps {
     children: React.ReactNode;
 }
-
-const a:LanguageContextData = {};
