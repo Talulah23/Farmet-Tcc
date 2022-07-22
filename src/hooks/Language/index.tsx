@@ -3,7 +3,7 @@
 import { createContext } from "react";
 
 interface LanguageContextData {     
-    LanguageSelect: 
+    LanguageSelect: string
 }
 
 const LanguageContext = createContext<LanguageContextData>( {} as LanguageContextData,);
