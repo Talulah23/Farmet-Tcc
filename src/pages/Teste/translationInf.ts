@@ -8,7 +8,7 @@ import { pt } from 'yup-locale-pt'
 import ko from 'yup-locale-ko';
 
 
-i18n.translations = {
+export default i18n.translations = {
     'pt-BR': {
         username: 'nome usuario',
         number: 'Numero',
