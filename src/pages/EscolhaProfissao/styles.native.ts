@@ -31,8 +31,8 @@ export const Paragraph = styled.Text`
     border-radius: 20px;
 `;
 
-export const View = styled.View;
+export const View = styled.View``;
 
 export const Touch = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
-}));
+}))``;
