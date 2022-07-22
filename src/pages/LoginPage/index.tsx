@@ -75,7 +75,7 @@ function LoginPage() {
                             handleChange('email')(
                                 mask(
                                     value,
-                                    '999.999.999-99',
+                                    '99.9.999/9999-99',
                                 ),
                             );
                         }}
