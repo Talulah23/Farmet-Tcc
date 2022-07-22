@@ -4,7 +4,7 @@ import { object, string, number } from 'yup';
 import { cpf } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
 import { i18n, translateYup } from '../../translations';
-import { Container, TextInput } from './styles';
+import { Container, TextInput } from '../styles';
 
 translateYup();
 
