@@ -1,11 +1,11 @@
-import { Container, Text, Button } from './styles';
+import { Container, Text, TouchableOpacity} from './styles';
 
 
 export default function SelecaoIdioma() {   
     
     return(
         <Container>
-            <Button>Enviar</Button>
+            <TouchableOpacity>Enviar</TouchableOpacity>
         </Container>
     );
 }
