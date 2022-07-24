@@ -4,7 +4,7 @@ import { useRef } from "react";
 // import { useAuth } from "../../hooks/Auth";
 import { Container, Button, Paragraph, TextInput, View } from "./styles"
 
-function LoginPage() {
+export default function CadastroPage() {
     // const emailRef = useRef<HTMLInputElement | null>(null);
     // const passwordRef = useRef<HTMLInputElement | null>(null);
     // // const navigate = useNavigate();
@@ -23,7 +23,15 @@ function LoginPage() {
     // }
     
     return (
-        <View></View>
+
+        <Container>
+            
+        </Container>
+
+            );
+}
+
+
         // isUserDataPresent ? 
         //     <Container>
         //         <View >
@@ -45,7 +53,3 @@ function LoginPage() {
         //     :
         //         <Container>
         //         </Container>
-            );
-}
-
-export default LoginPage;

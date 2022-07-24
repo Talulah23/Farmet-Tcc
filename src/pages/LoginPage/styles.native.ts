@@ -1,64 +1,61 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    background-color: white;
+    background-color: rgb(242 242 242);
+    width: 100%;
 `;
 
-export const Container2 = styled.View`
-    background-color: rgba(102,36,143,1);
-    padding: 2px;
-    margin-left: 15px;
-    margin-right: 27px;
-`
 
-export const Button = styled.Button`
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
+// export const Button = styled.Button`
+//     border: none;
+//     border-radius: 5px;
+//     color: white;
+//     font-weight: bold;
+//     padding: 10px;
 
-    &.danger {
-        background-color: #dc3545;
-    }
+//     &.danger {
+//         background-color: #dc3545;
+//     }
 
-    &.primary {
-        background-color: #007bff;
-    }
-`;
+//     &.primary {
+//         background-color: #007bff;
+//     }
+// `;
 
-export const Button2 = styled.Button`
-    border: none;
-    border-radius: 5px;
-    color: #007bff;
-    font-weight: bold;
-    padding: 10px;
-
-    &.danger {
-        background-color: #dc3545;
-    }
-
-    &.primary {
-        background-color: #007bff;
-    }
-`;
 
 export const Paragraph = styled.Text`
-    padding: 0;
-    line-height: inherit;
-    color: rgba(112, 8, 143, 1);
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 19px;
+    color: white;
     border-radius: 20px;
+`;
+
+export const Text = styled.Text`
+    margin-left: 380px;
+    margin-top: 15px;
 `;
 
 export const TextInput = styled.TextInput`  
     border-radius: 30px;
-    background-color: rgba(239,239,239,1);
+    background-color: #fff;
     padding: 23px;
-    width: 100%;
+    width: 450px;
+    margin-left: 360px;
+    border: 2px;
+    border-color: #66248F;
 `;
 
 export const View = styled.View``;
 
-export const Touch = styled.TouchableOpacity.attrs(() => ({
+export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
-}))
+}))`
+    background-color: #66248F;
+    height: 50px;
+    width: 100px;
+    margin-left: 550px;
+    margin-top: 400px;
+    position: absolute;
+    border-radius: 10px;
+`;

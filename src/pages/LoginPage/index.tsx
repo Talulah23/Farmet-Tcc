@@ -2,12 +2,11 @@ import { useRef } from "react";
 // import { View } from "react-native";
 // import { useNavigate } from "react-router-dom";
 // import { useAuth } from "../../hooks/Auth";
-import { Button, Text } from 'react-native';
 import { Formik } from 'formik';
 import { object, string, number } from 'yup';
 import { cnpj } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
-import { Container, Container2, Paragraph, TextInput, View } from "./styles"
+import { Container, Paragraph, TextInput, View, TouchableOpacity, Text } from "./styles"
 import I18n from "i18n-js";
 
 const useSchema = object({
@@ -45,7 +44,7 @@ function LoginPage() {
                 touched,
             }) => (
                 <Container>
-                    <Text>{I18n.t('passaword')}</Text>
+                    <Text>{I18n.t('email')}</Text>
                     <TextInput
                         onChangeText={handleChange('passaword')}
                         onBlur={handleBlur('passaword')}
@@ -88,11 +87,16 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
-
+{/* 
                     <Button
                         onPress={() => handleSubmit()}
                         title={I18n.t('submit')}
-                    />
+                    /> */}
+                    <TouchableOpacity 
+                    onPress={() => handleSubmit()}
+                        title={I18n.t('submit')}>
+                            <Paragraph>Login</Paragraph>
+                        </TouchableOpacity>
                 </Container>
             )}
         </Formik>
