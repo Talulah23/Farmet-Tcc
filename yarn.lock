@@ -6489,14 +6489,7 @@ firebase-token-generator@^2.0.0:
   resolved "https://registry.yarnpkg.com/firebase-token-generator/-/firebase-token-generator-2.0.0.tgz#9767d759ec13abdc99ba115fd5ea99d8b93d1206"
   integrity sha512-EX/Rw6C0NLF6StuszW9Pn4zGUU8dw0UdHY6u8zP5t/CsbYRwWVh0CwN6INFE5U4IizZtgqbWQhcAQNkBtNkyfQ==
 
-firebase@^2.1.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-2.4.2.tgz#4e1119ec0396ca561d8a7acbff1630feac6c0a31"
-  integrity sha512-+OA3MChRNTgKmC4Kq+Mnp41jteGSTyRxc6P7YVqk/bHUZK1EyxT0uNqLZWfbncjYy5MAKYUq+at9b2+8MlXs4w==
-  dependencies:
-    faye-websocket ">=0.6.0"
-
-firebase@^9.9.1:
+firebase@9.9.1:
   version "9.9.1"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.9.1.tgz#3a4539ab64176196b981d296f7a0b819bb97530b"
   integrity sha512-1saLd91mmfNWOdP3DpkCAyXcrwB0iJXZoYY8S98ljp1erL+eUPHu+AHw8ImjynVIejSX07NHgla3mQP0bIniZA==
@@ -6528,6 +6521,13 @@ firebase@^9.9.1:
     "@firebase/storage" "0.9.9"
     "@firebase/storage-compat" "0.1.17"
     "@firebase/util" "1.6.3"
+
+firebase@^2.1.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/firebase/-/firebase-2.4.2.tgz#4e1119ec0396ca561d8a7acbff1630feac6c0a31"
+  integrity sha512-+OA3MChRNTgKmC4Kq+Mnp41jteGSTyRxc6P7YVqk/bHUZK1EyxT0uNqLZWfbncjYy5MAKYUq+at9b2+8MlXs4w==
+  dependencies:
+    faye-websocket ">=0.6.0"
 
 firestore@^1.1.6:
   version "1.1.6"
