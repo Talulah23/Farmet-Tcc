@@ -87,11 +87,11 @@ function LoginPage() {
 //                     {errors.cnpj && touched.cnpj ? (
 //                         <Text>{errors.cnpj}</Text>
 //                     // ) : null} */}
-{/* 
-                    <Button
-                    //     onPress={() => handleSubmit()}
-                    //     title={I18n.t('submit')}
-                    // /> */}
+
+                    {/* <Button
+                        onPress={() => handleSubmit()}
+                        title={I18n.t('submit')}
+                    /> */}
                     <TouchableOpacity 
                     onPress={() => handleSubmit()}
                         title={I18n.t('submit')}>
