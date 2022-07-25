@@ -1,7 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import initializeApp from '../../initialize-app.json';
+import initializeApp from '../../initializeApp.json';
 // import Constants from 'expo-constants';
 
 // firebase.initializeApp(initializeApp);
