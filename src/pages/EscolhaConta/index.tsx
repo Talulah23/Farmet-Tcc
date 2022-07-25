@@ -1,17 +1,18 @@
-import { Container, Button, Text, Paragraph, View, TouchableOpacity } from "./styles";
+import { Container, Text, Paragraph, View, TouchableOpacity } from "./styles";
+import { Styles } from "./styles.native";
 
 export default function EscolhaConta(){
     return (
         <Container>
-            <View>
+            <View style={Styles.cardText}>
             <Paragraph>Escolha o tipo de conta desejado:</Paragraph>
             </View>
-            <Container>
+            <Container  style={Styles.cardContainer}>
                 <Paragraph>Conta do Usuário</Paragraph>
                 <Text>.......</Text>
                     <TouchableOpacity></TouchableOpacity>
             </Container>
-            <Container>
+            <Container  style={Styles.cardContainer}>
                 <Paragraph>Conta Profissional</Paragraph>
                 <Text>.......</Text>
                     <TouchableOpacity></TouchableOpacity>

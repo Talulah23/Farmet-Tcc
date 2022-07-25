@@ -6,22 +6,6 @@ export const Container = styled.View`
 `;
 
 
-// export const Button = styled.Button`
-//     border: none;
-//     border-radius: 5px;
-//     color: white;
-//     font-weight: bold;
-//     padding: 10px;
-
-//     &.danger {
-//         background-color: #dc3545;
-//     }
-
-//     &.primary {
-//         background-color: #007bff;
-//     }
-// `;
-
 
 export const Paragraph = styled.Text`
     margin-left: 30px;
@@ -41,7 +25,7 @@ export const TextInput = styled.TextInput`
     background-color: #fff;
     padding: 23px;
     width: 450px;
-    margin-left: 360px;
+    margin-left: 400px;
     border: 2px;
     border-color: #66248F;
 `;

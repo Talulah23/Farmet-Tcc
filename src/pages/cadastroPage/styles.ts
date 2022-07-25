@@ -1,25 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
 import {
     Container as ContainerNative,
     Paragraph as ParagraphNative,
-    Button as ButtonNative,
+    Text as TextNative,
+    TouchableOpacity as TouchableOpacityNative,
     View as ViewNative,
+    TextInput as TextInputNative,
 } from './styles.native';
 
 export const Container = ContainerNative;
 
 export const Paragraph = ParagraphNative;
 
-export const Button = ButtonNative;
+export const Text = TextNative;
+
+export const TouchableOpacity = TouchableOpacityNative;
 
 export const View = ViewNative;
 
-export const TextInput = styled.input`
-    width: 90%;
-    font-size: 30px;
-    background-color: #333;
-    border-radius: 15px;
-    padding: 10px;
-    color: white;
-    margin-top: 10px;
-`;
+export const TextInput = TextInputNative;

@@ -2,7 +2,7 @@ import { useRef } from "react";
 // import { View } from "react-native";
 // import { useNavigate } from "react-router-dom";
 // import { useAuth } from "../../hooks/Auth";
-import { Container, Button, Paragraph, TextInput, View } from "./styles"
+import { Container, TouchableOpacity, Paragraph, TextInput, View, Text } from "./styles"
 
 export default function CadastroPage() {
     // const emailRef = useRef<HTMLInputElement | null>(null);
@@ -25,7 +25,15 @@ export default function CadastroPage() {
     return (
 
         <Container>
-            
+            <Text>Nome</Text>
+            <TextInput></TextInput>
+            <Text>Email</Text>
+            <TextInput></TextInput>
+            <Text>Senha</Text>
+            <TextInput></TextInput>
+            <TouchableOpacity>
+                <Paragraph>Cadastrar-se</Paragraph>
+            </TouchableOpacity>
         </Container>
 
             );

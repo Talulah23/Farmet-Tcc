@@ -3,7 +3,7 @@ import {
     Container as ContainerNative,
     Text as TextNative,
     Paragraph as ParagraphNative,
-    Button as ButtonNative,
+    Styles as StylesNative,
     View as ViewNative,
     TouchableOpacity as TouchableOpacityNative,
 } from './styles.native';
@@ -14,7 +14,7 @@ export const Text = TextNative;
 
 export const Paragraph = ParagraphNative;
 
-export const Button = ButtonNative;
+export const Styles = StylesNative;
 
 export const View = ViewNative;
 
