@@ -44,7 +44,7 @@ function LoginPage() {
                 touched,
             }) => (
                 <Container>
-                    <Text>{I18n.t('email')}</Text>
+                    <Text>{I18n.t('passaword')}</Text>
                     <TextInput
                         onChangeText={handleChange('passaword')}
                         onBlur={handleBlur('passaword')}
@@ -68,7 +68,7 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
-                    // {/* <Text>{I18n.t('cnpj')}</Text>
+                     {/* <Text>{I18n.t('cnpj')}</Text>
 //                     <TextInput
 //                         onChangeText={value => {
 //                             handleChange('cnpj')(
@@ -87,7 +87,7 @@ function LoginPage() {
 //                     {errors.cnpj && touched.cnpj ? (
 //                         <Text>{errors.cnpj}</Text>
 //                     // ) : null} */}
-// // {/* 
+{/* 
                     <Button
                     //     onPress={() => handleSubmit()}
                     //     title={I18n.t('submit')}
