@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
     background-color: rgb(242 242 242);
+    box-shadow: purple 12px 12px;
 `;
 
 export const Styles = StyleSheet.create({
@@ -11,7 +12,7 @@ export const Styles = StyleSheet.create({
         backgroundColor: '#e0e0e0',
         marginLeft: 75,
         marginTop: 100,
-        height: 100,
+        height: 115,
         borderRadius: 25,
         border: 2,
         borderColor: '#66248F',
@@ -30,7 +31,9 @@ export const Styles = StyleSheet.create({
 });
 
 export const Image = styled.Image`
-    margin-left: 0px;
+    height: 31px;
+    width: 35px;
+    margin-left: 11px;
 `;
 
 export const Text = styled.Text`
@@ -41,20 +44,21 @@ export const Text = styled.Text`
 `;
 
 export const Paragraph = styled.Text`
-    padding: 0;
     color: rgba(112, 8, 143, 1);
     border-radius: 20px;
     padding-left: 71px;
+    margin-right: 40px;
 `;
 
 export const View = styled.View``;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
-    activeOpacity: 0.2
+    activeOpacity: 0.6
 }))`
-    margin-left: 150px;
+    margin-left: 170px;
     background-color: #66248F;
     border-radius: 50px;
     width: 59px;
     height: 32px;
+    margin-top: -20px;
 `;

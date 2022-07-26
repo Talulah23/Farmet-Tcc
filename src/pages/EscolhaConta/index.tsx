@@ -11,15 +11,14 @@ export default function EscolhaConta(){
                 <Paragraph>Conta do Usuário</Paragraph>
                 <Text style={Styles.cardColor}>Conta usuario</Text>
                     <TouchableOpacity>
-                        <Text>Click</Text>
+                        <Image source={Seta}></Image>
                     </TouchableOpacity>
             </Container>
             <Container  style={Styles.cardContainer}>
                 <Paragraph>Conta Profissional</Paragraph>
                 <Text style={Styles.cardColor}>Conta profissonal</Text>
                     <TouchableOpacity>
-                        <Image source={Seta}>
-                        </Image>
+                        <Image source={Seta}></Image>
                     </TouchableOpacity>
             </Container>
         </Container>
