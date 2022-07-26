@@ -9,31 +9,39 @@ export const Styles = StyleSheet.create({
     cardContainer: {     
         width: 250,
         backgroundColor: '#e0e0e0',
-        marginLeft: 475,
+        marginLeft: 75,
         marginTop: 100,
         height: 100,
-        borderRadius: 20,
+        borderRadius: 25,
         border: 2,
         borderColor: '#66248F',
-        // position: "absolute",
     },
     cardText: {
-        marginLeft: 289,
+        marginLeft: 29,
         paddingTop: 29,
+        fontSize: 15,
+    },
+    cardColor: {
+        color: "black",
+    },
+    imageStyle: {
+        height: 20,
     },
 });
 
+export const Image = styled.Image`
+    margin-left: 0px;
+`;
 
 export const Text = styled.Text`
-    font-size: 20px;   
-    margin-left: 24px;
+    font-size: 16px;   
+    margin-left: 20px;
     margin-top: 10px;
-    color: black;
+    color: #ffffff;
 `;
 
 export const Paragraph = styled.Text`
     padding: 0;
-    line-height: inherit;
     color: rgba(112, 8, 143, 1);
     border-radius: 20px;
     padding-left: 71px;
@@ -43,4 +51,10 @@ export const View = styled.View``;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
-}))``;
+}))`
+    margin-left: 150px;
+    background-color: #66248F;
+    border-radius: 50px;
+    width: 59px;
+    height: 32px;
+`;

@@ -16,16 +16,17 @@ export const Paragraph = styled.Text`
 `;
 
 export const Text = styled.Text`
-    margin-left: 380px;
+    margin-left: 80px;
     margin-top: 15px;
 `;
 
 export const TextInput = styled.TextInput`  
-    border-radius: 30px;
+    border-radius: 25px;
     background-color: #fff;
     padding: 23px;
-    width: 450px;
-    margin-left: 400px;
+    width: 300px;
+    height: 70px;
+    margin-left: 65px;
     border: 2px;
     border-color: #66248F;
 `;
