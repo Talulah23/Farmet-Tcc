@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "840031593022",
+    "firebase_url": "https://cintus-e9109-default-rtdb.firebaseio.com",
+    "project_id": "cintus-e9109",
+    "storage_bucket": "cintus-e9109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840031593022:android:c7294735ea07c06231a76f",
+        "android_client_info": {
+          "package_name": "com.farmet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840031593022-5nd1mf2s652s8bgtn19tlq4795qiu21h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farmet",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "840031593022-ntau0963htlm5hi89i8kd08nhcl02bpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3FoFl3H4honlGw5SN7yqSDmcXejFdPjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840031593022-ntau0963htlm5hi89i8kd08nhcl02bpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
