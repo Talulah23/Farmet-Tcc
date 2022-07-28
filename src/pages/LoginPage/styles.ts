@@ -3,6 +3,7 @@ import {
     Container as ContainerNative,
     Paragraph as ParagraphNative,
     Text as TextNative,
+    Styles as StylesNative,
     TouchableOpacity as TouchableOpacityNative,
     View as ViewNative,
     TextInput as TextInputNative,
@@ -13,6 +14,8 @@ export const Container = ContainerNative;
 export const Paragraph = ParagraphNative;
 
 export const Text = TextNative;
+
+export const Styles = StylesNative;
 
 export const TouchableOpacity = TouchableOpacityNative;
 

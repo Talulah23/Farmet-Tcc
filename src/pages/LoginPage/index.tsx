@@ -70,36 +70,15 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
-                     {/* <Text>{I18n.t('cnpj')}</Text>
-//                     <TextInput
-//                         onChangeText={value => {
-//                             handleChange('cnpj')(
-//                                 mask(
-//                                     value,
-//                                     '99.9.999/9999-99',
-//                                 ),
-//                             );
-//                         }}
-//                         onBlur={handleBlur('cnpj')}
-//                         value={values.cnpj}
-//                         isValid={
-//                             !(errors.cnpj && touched.cnpj)
-//                         }
-//                     />
-//                     {errors.cnpj && touched.cnpj ? (
-//                         <Text>{errors.cnpj}</Text>
-//                     // ) : null} */}
-
-                    {/* <Button
-                        onPress={() => handleSubmit()}
-                        title={I18n.t('submit')}
-                    /> */}
                     <TouchableOpacity 
                     // onPress={() => handleSubmit()}
                     //     title={I18n.t('submit')}
                         >
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
+                        {/* <TextInput>
+                            <Text>Email</Text>
+                        </TextInput> */}
                 </Container>
             )}
         </Formik>
@@ -146,3 +125,29 @@ export default LoginPage;
 //     :
 //         <Container>
 //         </Container>
+
+
+                     {/* <Text>{I18n.t('cnpj')}</Text>
+//                     <TextInput
+//                         onChangeText={value => {
+//                             handleChange('cnpj')(
+//                                 mask(
+//                                     value,
+//                                     '99.9.999/9999-99',
+//                                 ),
+//                             );
+//                         }}
+//                         onBlur={handleBlur('cnpj')}
+//                         value={values.cnpj}
+//                         isValid={
+//                             !(errors.cnpj && touched.cnpj)
+//                         }
+//                     />
+//                     {errors.cnpj && touched.cnpj ? (
+//                         <Text>{errors.cnpj}</Text>
+//                     // ) : null} */}
+
+                    {/* <Button
+                        onPress={() => handleSubmit()}
+                        title={I18n.t('submit')}
+                    /> */}
