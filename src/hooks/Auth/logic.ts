@@ -29,12 +29,12 @@ const onAuthStateChanged = (callback: (user: firebase.User | null) => void) => {
   //   if (user !== null) {
   //     return callback(user);
   //   }
-  //   return callback(null);
+    return callback(null);
   // });
-  const unsubscribe = ()=>{}
-  return () => {
-    unsubscribe();
-  };
+  // const unsubscribe = ()=>{}
+//   return () => {
+//     unsubscribe();
+//   };
 };
 
 function useLogic(): IUseLogicReturn {
