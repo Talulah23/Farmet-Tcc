@@ -3,6 +3,7 @@ import { useRef } from "react";
 // import { useNavigate } from "react-router-dom";
 // import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
+import { Styles } from "./styles.native";
 import { object, string, number } from 'yup';
 import { cnpj } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
@@ -79,7 +80,8 @@ function LoginPage() {
                         >
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
-                    <Image source={Google}></Image>
+                        <Text>Entrar com Google</Text>
+                    <Image style={Styles.imageGoogle} source={Google}></Image>
                 </Container>
             )}
         </Formik>

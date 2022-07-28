@@ -44,6 +44,12 @@ export const Styles = StyleSheet.create({
     inputTextColor: {
 
     },
+    imageGoogle: {
+        height: 50,
+        width: 50,
+        marginLeft: 180,
+    },
+    
 });
 
 export const View = styled.View``;
