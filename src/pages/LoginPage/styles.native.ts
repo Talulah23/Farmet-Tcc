@@ -9,7 +9,7 @@ export const Container = styled.View`
 
 
 export const Paragraph = styled.Text`
-    margin-left: 120px;
+    margin-left: 42%;
     margin-top: 10px;
     font-size: 19px;
     color: white;
@@ -17,11 +17,11 @@ export const Paragraph = styled.Text`
 `;
 
 export const Text = styled.Text`
-    margin-left: 70px;
+    margin-left: 18%;
     margin-top: 15px;
     color: #66248F;
     font-size: 18px;
-    padding: 10px;
+    padding: 3%;
 `;
 
 export const TextInput = styled.TextInput`  
@@ -29,8 +29,8 @@ export const TextInput = styled.TextInput`
     background-color: #EFEFEF;
     padding: 23px;
     width: 300px;
-    height: 70px;
-    margin-left: 55px;
+    height: 60px;
+    margin-left: 12%;
     border: 1px;
     border-color: #943DCA;
 `;
@@ -49,7 +49,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     background-color: #66248F;
     height: 50px;
     width: 300px;
-    margin-left: 55px;
+    margin-left: 12%;
     margin-top: 100px;
     /* position: absolute; */
     border-radius: 30px;
