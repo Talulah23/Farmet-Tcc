@@ -1,14 +1,15 @@
 import styled from "styled-components/native";
+import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
-    background-color: rgb(242 242 242);
+    background-color: #f2f2f2;
     width: 100%;
 `;
 
 
 
 export const Paragraph = styled.Text`
-    margin-left: 21px;
+    margin-left: 32%;
     margin-top: 10px;
     font-size: 19px;
     color: white;
@@ -16,19 +17,29 @@ export const Paragraph = styled.Text`
 `;
 
 export const Text = styled.Text`
-    margin-left: 380px;
+    margin-left: 18%;
     margin-top: 15px;
+    color: #66248F;
+    font-size: 18px;
+    padding: 3%;
 `;
 
 export const TextInput = styled.TextInput`  
-    border-radius: 30px;
-    background-color: #fff;
+    border-radius: 40px;
+    background-color: #EFEFEF;
     padding: 23px;
-    width: 450px;
-    margin-left: 400px;
-    border: 2px;
-    border-color: #66248F;
+    width: 300px;
+    height: 60px;
+    margin-left: 12%;
+    border: 1px;
+    border-color: #943DCA;
 `;
+
+export const Styles = StyleSheet.create({
+    inputTextColor: {
+
+    },
+});
 
 export const View = styled.View``;
 
@@ -36,10 +47,10 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
 }))`
     background-color: #66248F;
-    height: 50px;  
-    width: 141px;
-    margin-left: 550px;
-    margin-top: 400px;
-    position: absolute;
-    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    margin-left: 12%;
+    margin-top: 100px;
+    /* position: absolute; */
+    border-radius: 30px;
 `;
