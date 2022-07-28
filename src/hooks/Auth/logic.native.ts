@@ -16,10 +16,10 @@ GoogleSignin.configure({
 
 export const googleSignIn = () => {
     return GoogleSignin.signIn().then(({ idToken }) => {
-        const googleCredential = 
-            authStatic.GoogleAuthProvider.credential(
-                idToken,
-            );
+        const googleCredential =
+        authStatic.GoogleAuthProvider.credential(
+            idToken,
+        );;
 
         return auth.signInWithCredential(googleCredential);
     });
