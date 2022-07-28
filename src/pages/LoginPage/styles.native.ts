@@ -6,7 +6,12 @@ export const Container = styled.View`
     width: 100%;
 `;
 
-
+export const Image = styled.Image`
+    height: 171px;
+    width: 175px;
+    margin-left: 28%;
+    margin-top: 10%;
+`;
 
 export const Paragraph = styled.Text`
     margin-left: 120px;

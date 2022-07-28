@@ -6,7 +6,9 @@ import { Formik } from 'formik';
 import { object, string, number } from 'yup';
 import { cnpj } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
-import { Container, Paragraph, TextInput, View, TouchableOpacity, Text } from "./styles"
+import Logo from "../../assets/logo.jpg";
+import Google from "../../assets/google.png";
+import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image, } from "./styles"
 import I18n from "i18n-js";
 
 const useSchema = object({
@@ -44,6 +46,7 @@ function LoginPage() {
                 touched,
             }) => (
                 <Container>
+                    <Image source={Logo}></Image>
                     {/* <Text>{I18n.t('passaword')}</Text> */}
                     <Text>Email</Text>
                     <TextInput
@@ -76,9 +79,7 @@ function LoginPage() {
                         >
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
-                        {/* <TextInput>
-                            <Text>Email</Text>
-                        </TextInput> */}
+                    <Image source={Google}></Image>
                 </Container>
             )}
         </Formik>
