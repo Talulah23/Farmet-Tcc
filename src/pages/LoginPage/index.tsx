@@ -44,7 +44,8 @@ function LoginPage() {
                 touched,
             }) => (
                 <Container>
-                    <Text>{I18n.t('passaword')}</Text>
+                    {/* <Text>{I18n.t('passaword')}</Text> */}
+                    <Text>Email</Text>
                     <TextInput
                         onChangeText={handleChange('passaword')}
                         onBlur={handleBlur('passaword')}
@@ -56,7 +57,8 @@ function LoginPage() {
                     {errors.passaword && touched.passaword ? (
                         <Text>{errors.passaword}</Text>
                     ) : null}
-                    <Text>{I18n.t('email')}</Text>
+                    {/* <Text>{I18n.t('email')}</Text> */}
+                    <Text>Senha</Text>
                     <TextInput
                         onChangeText={handleChange('email')}
                         onBlur={handleBlur('email')}
@@ -93,8 +95,9 @@ function LoginPage() {
                         title={I18n.t('submit')}
                     /> */}
                     <TouchableOpacity 
-                    onPress={() => handleSubmit()}
-                        title={I18n.t('submit')}>
+                    // onPress={() => handleSubmit()}
+                    //     title={I18n.t('submit')}
+                        >
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                 </Container>
