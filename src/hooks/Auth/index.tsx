@@ -1,14 +1,52 @@
-import { getAuth, createUserWithEmailAndPassword, Auth, signInWithEmailAndPassword } from "firebase/auth";
+import React, {
+    createContext,
+    useContext,
+    useMemo,
+} from 'react';
+import useLogic from './useLogic';
 
-const auth = getAuth();
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
+import {
+    AuthContextData,
+    AuthProviderProps,
+} from './types';
+
+const AuthContext = createContext<AuthContextData>(
+    {} as AuthContextData,
+);
+
+export function AuthProvider({ children }: AuthProviderProps){
+    const{
+        authState: { user, isUserDataPresent},
+        signOut,
+        signIn,
+        signUp,
+    } = useLogic();
+
+    const contextValue = useMemo(
+        () => ({
+            user,
+            isUserDataPresent,
+            signOut,
+            signIn,
+            signUp,
+        }),
+        [user, isUserDataPresent, signIn, signOut, signUp],
+    );
+
+    return (
+        <AuthContext.Provider value={contextValue}>
+            {children}
+        </AuthContext.Provider>
+    );
+}
+
+export function useAuth(): AuthContextData {
+    const context = useContext(AuthContext);
+
+    if (!context) {
+        throw new Error(
+            'useAuth must be used within an AuthProvider',
+        );
+    }
+    return context
+}
