@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     width: 100%;
 `;
 
@@ -36,8 +36,8 @@ export const TextInput = styled.TextInput`
     width: 300px;
     height: 60px;
     margin-left: 12%;
-    border: 1px;
-    border-color: #943DCA;
+    border: 0.5px;
+    border-color: #545454;
 `;
 
 export const Styles = StyleSheet.create({
@@ -48,8 +48,12 @@ export const Styles = StyleSheet.create({
         height: 50,
         width: 50,
         marginLeft: 180,
+        marginTop: 2,
     },
-    
+    textFontColor: {
+        color: "#898888",
+        marginLeft: 105,
+    },
 });
 
 export const View = styled.View``;

@@ -8,7 +8,7 @@ export const screenOptions = {
     headerStyle: {
         backgroundColor: '#66248F',
     },
-    headerTintColor: '#ffffff',
+    headerTintColor: '#FFFFFF',
 };
 
 function Routes() {
