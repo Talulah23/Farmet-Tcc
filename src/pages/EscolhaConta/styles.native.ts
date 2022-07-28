@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
     background-color: rgb(242 242 242);
-    box-shadow: purple 12px 12px;
+    box-shadow: #898888 7px 7px;
 `;
 
 export const Styles = StyleSheet.create({
