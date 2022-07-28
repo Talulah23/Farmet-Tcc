@@ -1,5 +1,5 @@
-import { IVehicle } from '../../models/vehicle';
-import VehicleRepository from '../../repositories/firestore/vehicle';
+import { IVehicle } from '../../../../models/example/models/vehicle';
+import VehicleRepository from '../../../../models/example/repositories/firestore/vehicle';
 
 class ListVehiclesController {
   public async execute(): Promise<Array<IVehicle>> {

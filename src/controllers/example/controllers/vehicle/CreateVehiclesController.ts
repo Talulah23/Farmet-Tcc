@@ -1,5 +1,5 @@
-import VehicleModel, { IVehicle } from '../../models/vehicle';
-import VehicleRepository from '../../repositories/firestore/vehicle';
+import VehicleModel, { IVehicle } from '../../../../models/example/models/vehicle';
+import VehicleRepository from '../../../../models/example/repositories/firestore/vehicle';
 
 export type CreateVehicleDTO = Omit<IVehicle, 'id'>;
 

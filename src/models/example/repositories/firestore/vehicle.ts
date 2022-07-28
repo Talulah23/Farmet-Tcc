@@ -1,5 +1,5 @@
 import VehicleModel from '../../models/vehicle';
-import { db } from '../../../utils/firebase';
+import { db } from '../../../../utils/firebase';
 import { BaseRepository } from '../base-repository';
 
 class VehicleRepository extends BaseRepository<VehicleModel> {

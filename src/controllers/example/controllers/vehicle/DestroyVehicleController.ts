@@ -1,4 +1,4 @@
-import VehicleRepository from '../../repositories/firestore/vehicle';
+import VehicleRepository from '../../../../models/example/repositories/firestore/vehicle';
 
 export interface DestroyVehicleDTO {
   id: string;
