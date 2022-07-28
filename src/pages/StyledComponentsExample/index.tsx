@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import Menu from "../../componentes/Menu"
-import { useCounter } from "../../hooks/Counter";
+import { useCounter } from "../../hooksi/hooks/Counter";
 import { COUNTER_ADD, COUNTER_SUB } from "../../store/contants";
 import { Store } from "../../store/types";
 import { Container, Info, Button } from "./styles";
