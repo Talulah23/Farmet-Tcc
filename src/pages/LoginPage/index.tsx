@@ -21,7 +21,7 @@ const useSchema = object({
     // ),
         
     email: string().email(),
-})S
+})
 
 function LoginPage() {
     const initialValues = { passaword: '', email: '' };
