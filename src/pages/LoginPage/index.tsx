@@ -81,7 +81,9 @@ function LoginPage() {
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
+                    <TouchableOpacity style={Styles.buttonColor}>
                     <Image style={Styles.imageGoogle} source={Google}></Image>
+                    </TouchableOpacity>
                 </Container>
             )}
         </Formik>
