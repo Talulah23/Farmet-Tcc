@@ -42,8 +42,12 @@ export const TextInput = styled.TextInput`
 `;
 
 export const Styles = StyleSheet.create({
-    inputTextColor: {
-
+    buttonColor: {
+        height: 50,
+        width: 50,
+        marginLeft: 180,
+        marginTop: 2,
+        backgroudColor: "#FFFFFF",
     },
     imageGoogle: {
         height: 80,
