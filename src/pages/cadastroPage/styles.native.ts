@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 export const Container = styled.View`
     background-color: #FFFFFF;
     width: 100%;
+    height: 100%;
 `;
 
 
@@ -42,20 +43,6 @@ export const TextInput = styled.TextInput`
 `;
 
 export const Styles = StyleSheet.create({
-    inputTextColor: {
-
-    },
-    imageGoogle: {
-        height: 40,
-        width: 40,
-        marginLeft: 175,
-        marginTop: 2,
-    },
-    textFontColor: {
-        color: "#898888",
-        marginLeft: 118,
-        fontSize: 16,
-    },
 });
 
 export const View = styled.View``;

@@ -5,7 +5,6 @@ import { useRef } from "react";
 import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import Logo from "../../assets/logo.jpg";
-import Google from "../../assets/google.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles"
 
 export default function CadastroPage() {
@@ -38,9 +37,7 @@ export default function CadastroPage() {
             <TextInput></TextInput>
             <TouchableOpacity>
                     <Paragraph>Cadastrar-se</Paragraph>
-                </TouchableOpacity>
-            <Text style={Styles.textFontColor}>Entrar com Google</Text>
-            <Image style={Styles.imageGoogle} source={Google}></Image>
+            </TouchableOpacity>
         </Container>
 
             );
