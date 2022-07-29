@@ -50,7 +50,16 @@ export const Paragraph = styled.Text`
     margin-right: 40px;
 `;
 
-export const View = styled.View``;
+export const View = styled.View`
+    width: 340px;
+    background-color: #e0e0e0;
+    margin-left: 40px;
+    margin-top: 100px;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px;
+    border-color: black;
+`;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
