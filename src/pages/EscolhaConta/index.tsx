@@ -7,14 +7,16 @@ export default function EscolhaConta(){
             <View>
             <Paragraph style={Styles.cardText}>Escolha o tipo de conta desejado:</Paragraph>
             </View>
-            <Container  style={Styles.cardContainer}>
+            <Container>
+                <View>
                 <Paragraph>Conta do Usuário</Paragraph>
                 <Text style={Styles.cardColor}>Conta usuario</Text>
                     <TouchableOpacity>
                         <Image source={Seta}></Image>
                     </TouchableOpacity>
+                </View>
             </Container>
-            <Container  style={Styles.cardContainer}>
+            <Container>
                 <Paragraph>Conta Profissional</Paragraph>
                 <Text style={Styles.cardColor}>Conta profissonal</Text>
                     <TouchableOpacity>

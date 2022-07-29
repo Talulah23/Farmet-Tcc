@@ -1,21 +1,14 @@
-import { Container, Button, Text, Paragraph, View, Touch } from "./styles";
-
-export default function EscolhaProfissao(){
+import { Container, Text, Paragraph, View, TouchableOpacity, Image } from "./styles";
+import { Styles } from "./styles.native";
+import Seta from "../../assets/seta.png";
+import { TextInput } from "react-native-gesture-handler";
+export default function EscolhaConta(){
     return (
         <Container>
-            <View>
-            <Paragraph>Escolha o tipo de conta desejado:</Paragraph>
-            </View>
-            <Container>
-                <Paragraph>Conta do Usuário</Paragraph>
-                <Text>.......</Text>
-                    <Touch></Touch>
-            </Container>
-            <Container>
-                <Paragraph>Conta Profissional</Paragraph>
-                <Text>.......</Text>
-                    <Touch></Touch>
-            </Container>
+                {/* <TextInput></TextInput> */}
+            {/* <Container  style={Styles.cardContainer}>
+            </Container> */}
+            <View></View>
         </Container>
 );
 }
