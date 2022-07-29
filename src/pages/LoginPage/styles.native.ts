@@ -46,11 +46,10 @@ export const Styles = StyleSheet.create({
 
     },
     imageGoogle: {
-        height: 40,
-        width: 40,
-        marginLeft: 175,
-        marginTop: 2,
-        backgroudColor: "#FFFFFF",
+        height: 80,
+        width: 80,
+        marginLeft: -15,
+        marginTop: -15,
     },
     textFontColor: {
         color: "#898888",
