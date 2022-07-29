@@ -2,11 +2,17 @@ import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     width: 100%;
 `;
 
 
+export const Image = styled.Image`
+    height: 171px;
+    width: 175px;
+    margin-left: 28%;
+    margin-top: 10%;
+`;
 
 export const Paragraph = styled.Text`
     margin-left: 32%;
@@ -32,12 +38,23 @@ export const TextInput = styled.TextInput`
     height: 60px;
     margin-left: 12%;
     border: 1px;
-    border-color: #943DCA;
+    border-color: #545454;
 `;
 
 export const Styles = StyleSheet.create({
     inputTextColor: {
 
+    },
+    imageGoogle: {
+        height: 40,
+        width: 40,
+        marginLeft: 175,
+        marginTop: 2,
+    },
+    textFontColor: {
+        color: "#898888",
+        marginLeft: 118,
+        fontSize: 16,
     },
 });
 
@@ -50,7 +67,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     height: 50px;
     width: 300px;
     margin-left: 12%;
-    margin-top: 100px;
+    margin-top: 35px;
     /* position: absolute; */
     border-radius: 30px;
 `;
