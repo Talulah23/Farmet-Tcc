@@ -2,20 +2,26 @@ import styled from 'styled-components';
 import {
     Container as ContainerNative,
     Text as TextNative,
+    Image as ImageNative,
     Paragraph as ParagraphNative,
-    Button as ButtonNative,
+    Styles as StylesNative,
     View as ViewNative,
-    Touch as TouchNative,
+    TouchableOpacity as TouchableOpacityNative,
+    TextInput as TextInputNative,
 } from './styles.native';
 
 export const Container = ContainerNative;
 
 export const Text = TextNative;
 
+export const Image = ImageNative;
+
 export const Paragraph = ParagraphNative;
 
-export const Button = ButtonNative;
+export const Styles = StylesNative;
 
 export const View = ViewNative;
 
-export const Touch = TouchNative;
+export const TouchableOpacity = TouchableOpacityNative;
+
+export const TextInput = TextInputNative;
