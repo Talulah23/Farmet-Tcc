@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 export const Container = styled.View`
     background-color: #FFFFFF;
     width: 100%;
+    height: 100%;
 `;
 
 export const Image = styled.Image`
