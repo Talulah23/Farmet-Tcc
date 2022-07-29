@@ -2,8 +2,8 @@ import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
-    background-color: rgb(242 242 242);
-    box-shadow: #898888 7px 7px;
+    background-color: #FFFFFF;
+    height: 100%;
 `;
 
 export const Styles = StyleSheet.create({
@@ -38,27 +38,38 @@ export const Image = styled.Image`
 
 export const Text = styled.Text`
     font-size: 16px;   
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 4%;
+    margin-top: 1%;
     color: #ffffff;
 `;
 
 export const Paragraph = styled.Text`
     color: rgba(112, 8, 143, 1);
-    border-radius: 20px;
-    padding-left: 71px;
+    border-radius: 16px;
+    padding-left: 8%;
     margin-right: 40px;
+    margin-top: 4%;
+    font-size: 18px;
 `;
 
-export const View = styled.View``;
+export const View = styled.View`
+    width: 80%;
+    background-color: #FFFFFF;
+    margin-left: 10%;
+    margin-top: 20%;
+    height: 27%;
+    border-radius: 25px;
+    border: 1px;
+    border-color: black;
+`;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    margin-left: 170px;
+    margin-left: 75%;
     background-color: #66248F;
     border-radius: 50px;
     width: 59px;
     height: 32px;
-    margin-top: -20px;
+    margin-top: 5%;
 `;
