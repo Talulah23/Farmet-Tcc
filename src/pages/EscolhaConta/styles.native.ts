@@ -18,7 +18,7 @@ export const Styles = StyleSheet.create({
         borderColor: '#66248F',
     },
     cardText: {
-        marginLeft: 29,
+        marginLeft: 6,
         paddingTop: 29,
         fontSize: 15,
     },
