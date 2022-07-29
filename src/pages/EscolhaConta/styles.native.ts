@@ -57,7 +57,7 @@ export const View = styled.View`
     background-color: #FFFFFF;
     margin-left: 10%;
     margin-top: 20%;
-    height: 27%;
+    height: 29%;
     border-radius: 25px;
     border: 1px;
     border-color: black;
