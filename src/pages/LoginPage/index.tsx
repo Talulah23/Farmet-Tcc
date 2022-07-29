@@ -88,7 +88,7 @@ function LoginPage() {
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                    <TouchableOpacity style={Styles.buttonColor}>
+                    <TouchableOpacity style={Styles.buttonColor} onClick={Login}>
                     <Image style={Styles.imageGoogle} source={Google}></Image>
                     </TouchableOpacity>
                 </Container>
