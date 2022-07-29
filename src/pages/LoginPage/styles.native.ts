@@ -45,14 +45,15 @@ export const Styles = StyleSheet.create({
 
     },
     imageGoogle: {
-        height: 50,
-        width: 50,
-        marginLeft: 180,
+        height: 40,
+        width: 40,
+        marginLeft: 175,
         marginTop: 2,
     },
     textFontColor: {
         color: "#898888",
-        marginLeft: 105,
+        marginLeft: 118,
+        fontSize: 16,
     },
 });
 
