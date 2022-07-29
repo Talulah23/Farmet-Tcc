@@ -21,14 +21,7 @@ const useSchema = object({
     // ),
         
     email: string().email(),
-})
-
-const Login = () => {
-    const Auth = useAuth();
-  
-    console.log(Auth);
-    };
-
+})S
 
 function LoginPage() {
     const initialValues = { passaword: '', email: '' };
@@ -88,7 +81,7 @@ function LoginPage() {
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                    <TouchableOpacity style={Styles.buttonColor} onClick={Login}>
+                    <TouchableOpacity style={Styles.buttonColor}>
                     <Image style={Styles.imageGoogle} source={Google}></Image>
                     </TouchableOpacity>
                 </Container>
