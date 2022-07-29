@@ -5,7 +5,7 @@ import { TextInput } from "react-native-gesture-handler";
 export default function EscolhaConta(){
     return (
         <Container>
-                {/* <TextInput></TextInput> */}
+                <TextInput></TextInput>
             {/* <Container  style={Styles.cardContainer}>
             </Container> */}
             <View></View>

@@ -41,14 +41,18 @@ export const TextInput = styled.TextInput`
 `;
 
 export const Styles = StyleSheet.create({
-    inputTextColor: {
-
-    },
-    imageGoogle: {
+    buttonColor: {
         height: 50,
         width: 50,
         marginLeft: 180,
         marginTop: 2,
+        backgroudColor: "#FFFFFF",
+    },
+    imageGoogle: {
+        height: 50,
+        width: 50,
+        marginLeft: 0,
+        marginTop: 0,
     },
     textFontColor: {
         color: "#898888",
