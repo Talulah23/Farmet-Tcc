@@ -62,14 +62,15 @@ export const Paragraph = styled.Text`
 `;
 
 export const View = styled.View`
-    width: 340px;
-    background-color: #e0e0e0;
-    margin-left: 40px;
+    width: 330px;
+    background-color: #FFFFFF;
+    margin-left: 32px;
     margin-top: 100px;
     height: 500px;
     border-radius: 25px;
     border: 2px;
     border-color: black;
+    /* box-shadow: black 7px 7px; */
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({

@@ -7,7 +7,7 @@ import { Styles } from "./styles.native";
 import { object, string, number } from 'yup';
 import { cnpj } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image, } from "./styles"
 import I18n from "i18n-js";
