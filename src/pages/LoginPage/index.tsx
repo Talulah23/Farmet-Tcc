@@ -1,7 +1,7 @@
 import { useRef } from "react";
 // import { View } from "react-native";
-// import { useNavigate } from "react-router-dom";
-// import { useAuth } from "../../hooks/Auth";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import { object, string, number } from 'yup';
@@ -9,8 +9,7 @@ import { cnpj } from 'cpf-cnpj-validator';
 import { mask } from 'react-native-mask-text';
 import Logo from "../../assets/logo.png";
 import Google from "../../assets/google.png";
-import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image, } from "./styles"
-import I18n from "i18n-js";
+import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image, } from "./styles";
 
 const useSchema = object({
     password: string().required(),
@@ -23,6 +22,14 @@ const useSchema = object({
         
     email: string().email(),
 })
+
+const Login = () => {
+    const Auth = useAuth();
+  
+    console.log(Auth);
+    };
+
+
 function LoginPage() {
     const initialValues = { passaword: '', email: '' };
 
@@ -81,7 +88,7 @@ function LoginPage() {
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                    <Image style={Styles.imageGoogle} source={Google}></Image>
+                    <Button onClick={Login}><Image style={Styles.imageGoogle} source={Google}></Image></Button>
                 </Container>
             )}
         </Formik>
