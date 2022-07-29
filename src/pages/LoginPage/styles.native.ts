@@ -49,10 +49,10 @@ export const Styles = StyleSheet.create({
         backgroudColor: "#FFFFFF",
     },
     imageGoogle: {
-        height: 50,
-        width: 50,
-        marginLeft: 0,
-        marginTop: 0,
+        height: 80,
+        width: 80,
+        marginLeft: -15,
+        marginTop: -15,
     },
     textFontColor: {
         color: "#898888",
