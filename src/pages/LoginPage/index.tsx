@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
 import { Styles } from "./styles.native";
+import { object, string } from 'yup';
 import Logo from "../../assets/logo.png";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
@@ -50,6 +51,7 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
+                    {/* <Text>{I18n.t('email')}</Text> */}
                     <Text>Senha</Text>
                     <TextInput
                         onChangeText={handleChange('passaword')}
