@@ -28,8 +28,14 @@ export const Styles = StyleSheet.create({
     imageStyle: {
         height: 20,
     },
+  checkboxContainer: {
+    flexDirection: "row",
+    marginBottom: 20,
+  },
 });
 
+export const CheckBox = styled.FlatList`
+`;
 export const Image = styled.Image`
     height: 31px;
     width: 35px;

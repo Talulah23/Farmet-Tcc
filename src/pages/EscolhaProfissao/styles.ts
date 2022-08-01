@@ -22,6 +22,7 @@ export const Styles = StylesNative;
 
 export const View = ViewNative;
 
+
 export const TouchableOpacity = TouchableOpacityNative;
 
 export const TextInput = TextInputNative;
