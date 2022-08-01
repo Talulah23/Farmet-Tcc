@@ -4,7 +4,7 @@ import { useRef } from "react";
 // import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
 import { Styles } from "./styles.native";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles"
 
 export default function CadastroPage() {
@@ -32,7 +32,9 @@ export default function CadastroPage() {
             <Text>Nome</Text>
             <TextInput></TextInput>
             <Text>Email</Text>
-            <TextInput></TextInput>
+            <TextInput>
+                <Paragraph style={Styles.inputColor}>Email</Paragraph>
+            </TextInput>
             <Text>Senha</Text>
             <TextInput></TextInput>
             <TouchableOpacity>

@@ -48,6 +48,7 @@ export const Styles = StyleSheet.create({
         marginLeft: 180,
         marginTop: 2,
         backgroudColor: "#FFFFFF",
+        activeOpacity: 0,
     },
     imageGoogle: {
         height: 80,
