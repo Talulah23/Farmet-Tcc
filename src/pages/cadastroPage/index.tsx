@@ -2,7 +2,10 @@ import { useRef } from "react";
 // import { View } from "react-native";
 // import { useNavigate } from "react-router-dom";
 // import { useAuth } from "../../hooks/Auth";
-import { Container, TouchableOpacity, Paragraph, TextInput, View, Text } from "./styles"
+import { Formik } from 'formik';
+import { Styles } from "./styles.native";
+import Logo from "../../assets/logo.png";
+import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles"
 
 export default function CadastroPage() {
     // const emailRef = useRef<HTMLInputElement | null>(null);
@@ -25,14 +28,17 @@ export default function CadastroPage() {
     return (
 
         <Container>
+            <Image source={Logo}></Image> 
             <Text>Nome</Text>
             <TextInput></TextInput>
             <Text>Email</Text>
-            <TextInput></TextInput>
+            <TextInput>
+                <Paragraph style={Styles.inputColor}>Email</Paragraph>
+            </TextInput>
             <Text>Senha</Text>
             <TextInput></TextInput>
             <TouchableOpacity>
-                <Paragraph>Cadastrar-se</Paragraph>
+                    <Paragraph>Cadastrar-se</Paragraph>
             </TouchableOpacity>
         </Container>
 

@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 export const Container = styled.View`
     background-color: #FFFFFF;
     width: 100%;
+    height: 100%;
 `;
 
 export const Image = styled.Image`
@@ -47,6 +48,7 @@ export const Styles = StyleSheet.create({
         marginLeft: 180,
         marginTop: 2,
         backgroudColor: "#FFFFFF",
+        activeOpacity: 0,
     },
     imageGoogle: {
         height: 80,
@@ -56,7 +58,8 @@ export const Styles = StyleSheet.create({
     },
     textFontColor: {
         color: "#898888",
-        marginLeft: 105,
+        marginLeft: 118,
+        fontSize: 16,
     },
 });
 
