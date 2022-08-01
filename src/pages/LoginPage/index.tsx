@@ -8,14 +8,26 @@ import { object, string } from 'yup';
 import Logo from "../../assets/logo.png";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
+import i18n from "i18n-js";
+import * as Localization from 'expo-localization';
+
+// i18n.translations = {
+//     en: { email: 'email',
+//         password: 'password'},
+
+//     pt: { email: 'email',
+//         password: 'senha'},
+// };
+
+// i18n.locale = Localization.locale;
 
 const useSchema = object({
-    passaword: string().required(),
+    password: string().required(),
     email: string().email(),
 })
 
 function LoginPage() {
-    const initialValues = { passaword: '', email: '' };
+    const initialValues = { password: '', email: '' };
 
     const handleOnSubmit = async (
         values: typeof initialValues,
@@ -51,18 +63,18 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
-                    {/* <Text>{I18n.t('email')}</Text> */}
+                    {/* <Text>{i18n.t('email')}</Text> */}
                     <Text>Senha</Text>
                     <TextInput
-                        onChangeText={handleChange('passaword')}
-                        onBlur={handleBlur('passaword')}
-                        value={values.passaword}
+                        onChangeText={handleChange('password')}
+                        onBlur={handleBlur('password')}
+                        value={values.password}
                         isValid={
-                            !(errors.passaword && touched.passaword)
+                            !(errors.password && touched.password)
                         }
                     />
-                    {errors.passaword && touched.passaword ? (
-                        <Text>{errors.passaword}</Text>
+                    {errors.password && touched.password ? (
+                        <Text>{errors.password}</Text>
                     ) : null}
                     <TouchableOpacity 
                     onChangeText={handleSubmit}>
