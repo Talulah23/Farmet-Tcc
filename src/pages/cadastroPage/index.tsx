@@ -36,7 +36,9 @@ export default function CadastroPage() {
                 <Paragraph style={Styles.inputColor}>Email</Paragraph>
             </TextInput>
             <Text>Senha</Text>
-            <TextInput></TextInput>
+            <TextInput>
+            <Paragraph style={Styles.inputColor}>Senha</Paragraph>
+            </TextInput>
             <TouchableOpacity>
                     <Paragraph>Cadastrar-se</Paragraph>
             </TouchableOpacity>
