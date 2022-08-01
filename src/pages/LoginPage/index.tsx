@@ -4,17 +4,12 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
 import { Styles } from "./styles.native";
-import { object, string, number } from 'yup';
-import { cnpj } from 'cpf-cnpj-validator';
-import { mask } from 'react-native-mask-text';
 import Logo from "../../assets/logo.png";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
-import I18n from "i18n-js";
 
 const useSchema = object({
-    password: string().required(),
-        
+    passaword: string().required(),
     email: string().email(),
 })
 
@@ -43,21 +38,7 @@ function LoginPage() {
             }) => (
                 <Container>
                     <Image source={Logo}></Image>
-                    {/* <Text>{I18n.t('passaword')}</Text> */}
                     <Text>Email</Text>
-                    <TextInput
-                        onChangeText={handleChange('passaword')}
-                        onBlur={handleBlur('passaword')}
-                        value={values.passaword}
-                        isValid={
-                            !(errors.passaword && touched.passaword)
-                        }
-                    />
-                    {errors.passaword && touched.passaword ? (
-                        <Text>{errors.passaword}</Text>
-                    ) : null}
-                    {/* <Text>{I18n.t('email')}</Text> */}
-                    <Text>Senha</Text>
                     <TextInput
                         onChangeText={handleChange('email')}
                         onBlur={handleBlur('email')}
@@ -69,10 +50,20 @@ function LoginPage() {
                     {errors.email && touched.email ? (
                         <Text>{errors.email}</Text>
                     ) : null}
+                    <Text>Senha</Text>
+                    <TextInput
+                        onChangeText={handleChange('passaword')}
+                        onBlur={handleBlur('passaword')}
+                        value={values.passaword}
+                        isValid={
+                            !(errors.passaword && touched.passaword)
+                        }
+                    />
+                    {errors.passaword && touched.passaword ? (
+                        <Text>{errors.passaword}</Text>
+                    ) : null}
                     <TouchableOpacity 
-                    // onPress={() => handleSubmit()}
-                    //     title={I18n.t('submit')}
-                        >
+                    onChangeText="handleSubmit">
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
