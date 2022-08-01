@@ -7,77 +7,23 @@ import { Styles } from "./styles.native";
 import Logo from "../../assets/logo.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles";
 import { object, string } from 'yup';
-
-const useSchema = object({
-    name: string(),
-    email: string().email(), 
-    passaword: string().required(),
-
-})
-export default function CadastroPage() {
-    const initialValues = { passaword: '', email: '' };
-
-    const handleOnSubmit = async (
-        values: typeof initialValues,
-    ) => {
-        console.log(values);
-    };
     return (
-    <Formik
-        initialValues={initialValues}
-        onSubmit={handleOnSubmit}
-        validationSchema={useSchema}
-        >
-            {({
-                handleChange,
-                handleBlur,
-                handleSubmit,
-                values,
-                errors,
-                touched,
-            }) => (
                 <Container>
                     <Image source={Logo}></Image> 
-                    <Text 
-                        onChangeText={handleChange('passaword')}
-                        onBlur={handleBlur('passaword')}
-                        value={values.passaword}
-                        isValid={
-                        !(errors.passaword && touched.passaword)}
-                    >Nome</Text>
+                    <Text>Nome</Text>
                     <TextInput></TextInput>
                     <Text>Email</Text>
-                    <TextInput
-                            onChangeText={handleChange('email')}
-                            onBlur={handleBlur('email')}
-                            value={values.email}
-                            isValid={
-                                !(errors.email && touched.email)
-                            }
-                        
-                        {errors.email && touched.email ? (
-                            <Text>{errors.email}</Text>
-                        ) : null}>
+                    <TextInput>
                         <Paragraph style={Styles.inputColor}>Email</Paragraph>
                     </TextInput>
                     <Text>Senha</Text>
-                    <TextInput
-                        onChangeText={handleChange('passaword')}
-                        onBlur={handleBlur('passaword')}
-                        value={values.passaword}
-                        isValid={
-                            !(errors.passaword && touched.passaword)
-                    }>
+                    <TextInput>
                     <Paragraph style={Styles.inputColor}>Senha</Paragraph>
                     </TextInput>
-                    <TouchableOpacity
-                    onPress={handleSubmit}>
+                    <TouchableOpacity>
                             <Paragraph>Cadastrar-se</Paragraph>
                     </TouchableOpacity>
                 </Container>
-            )}
-    </Formik>
-
     );
 }
 
