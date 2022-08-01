@@ -5,7 +5,7 @@ import {
     GoogleSignin,
     User,
 } from '@react-native-google-signin/google-signin';
-import { auth } from 'utils/firebase';
+import { auth, db } from 'utils/firebase';
 import googleServices from '../../../android/app/google-services.json';
 
 GoogleSignin.configure({
@@ -14,16 +14,16 @@ GoogleSignin.configure({
 
 });
 
-export const googleSignIn = () => {
-    return GoogleSignin.signIn().then(({ idToken }) => {
-        const googleCredential =
-        authStatic.GoogleAuthProvider.credential(
-            idToken,
-        );;
+// export const googleSignIn = () => {
+//     return GoogleSignin.signIn().then(({ idToken }) => {
+//         const googleCredential =
+//         authStatic.GoogleAuthProvider.credential(
+//             idToken,
+//         );;
 
-        return auth.signInWithCredential(googleCredential);
-    });
-};
+//         return auth.signInWithCredential(googleCredential);
+//     });
+// };
 
 export const emailAndPasswordSignIn = (
     email: string,
