@@ -61,6 +61,10 @@ export const Styles = StyleSheet.create({
         marginLeft: 118,
         fontSize: 16,
     },
+    inputColor: {
+        color: "#ACACAC",
+        fontSize: 12,
+    },
 });
 
 export const View = styled.View``;
