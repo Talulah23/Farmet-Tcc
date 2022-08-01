@@ -65,7 +65,7 @@ function LoginPage() {
                         <Text>{errors.passaword}</Text>
                     ) : null}
                     <TouchableOpacity 
-                    onChangeText="handleSubmit">
+                    onChangeText={handleSubmit}>
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
