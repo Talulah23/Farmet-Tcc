@@ -14,12 +14,6 @@ import I18n from "i18n-js";
 
 const useSchema = object({
     password: string().required(),
-    // cnpj: string().test(
-    //     'test-invalid-cnpj',
-    //     'cnpj inválido',
-    //     cnpjValue =>
-    //         cnpjValue !== undefined && cnpj.isValid(cnpjValue),
-    // ),
         
     email: string().email(),
 })
