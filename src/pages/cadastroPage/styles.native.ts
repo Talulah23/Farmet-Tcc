@@ -43,6 +43,10 @@ export const TextInput = styled.TextInput`
 `;
 
 export const Styles = StyleSheet.create({
+    inputColor: {
+        color: "#ACACAC",
+        fontSize: 12,
+    },
 });
 
 export const View = styled.View``;
