@@ -2,8 +2,9 @@ import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
-    background-color: rgb(242 242 242);
-    box-shadow: #898888 7px 7px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
 `;
 
 export const Styles = StyleSheet.create({
@@ -30,16 +31,28 @@ export const Styles = StyleSheet.create({
     },
   checkboxContainer: {
     flexDirection: "row",
-    marginBottom: 20,
-  },
+    marginLeft: 10,
+    marginTop: 40,
+    },
+  buttonColor: {
+    height: 40,
+    width: 40,
+    marginLeft: 272,
+    marginTop: 370,
+    borderRadius: 50,
+    },
+    imageSize: {
+        width: 20,
+        height: 20,
+    }
+
 });
 
-export const CheckBox = styled.FlatList`
-`;
 export const Image = styled.Image`
-    height: 31px;
-    width: 35px;
-    margin-left: 11px;
+    height: 67.9%;
+    width: 68.8%;
+    margin-left: 15%;
+    margin-top: 15%;
 `;
 
 export const Text = styled.Text`
@@ -50,14 +63,15 @@ export const Text = styled.Text`
 `;
 
 export const TextInput = styled.TextInput`  
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: #EFEFEF;
     padding: 23px;
-    width: 300px;
+    width: 320px;
     height: 60px;
-    margin-left: 12%;
+    margin-left: 10%;
     border: 0.5px;
     border-color: #545454;
+    margin-top: 50px;
 `;
 
 export const Paragraph = styled.Text`
@@ -75,17 +89,11 @@ export const View = styled.View`
     height: 500px;
     border-radius: 25px;
     border: 2px;
-    border-color: black;
-    /* box-shadow: black 7px 7px; */
+    border-color: #66248F;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    margin-left: 170px;
     background-color: #66248F;
-    border-radius: 50px;
-    width: 59px;
-    height: 32px;
-    margin-top: -20px;
 `;
