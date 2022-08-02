@@ -1,16 +1,15 @@
 import { Container, Text, Paragraph, View, TouchableOpacity, Image, TextInput } from "./styles";
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import CheckBox from '@react-native-community/checkbox';
 import { Styles } from "./styles.native";
 import Plus from "../../assets/plus.png";
-import Search from "../../assets/search.png";
+
+
 
 export default function EscolhaConta(){
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
     return (
         <Container>
-                <Image style={Styles.imageSize} source={Search}></Image>
-                <TextInput></TextInput>
             <View>
                 <CheckBox
                 style={Styles.checkboxContainer}

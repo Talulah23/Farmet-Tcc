@@ -44,8 +44,13 @@ export const Styles = StyleSheet.create({
     imageSize: {
         width: 20,
         height: 20,
-    }
-
+        marginTop: -45,
+        marginLeft: 12, 
+    },
+    boxSearch: {
+        height: 65,
+        width: 60,
+    },
 });
 
 export const Image = styled.Image`
@@ -67,11 +72,12 @@ export const TextInput = styled.TextInput`
     background-color: #EFEFEF;
     padding: 23px;
     width: 320px;
-    height: 60px;
+    height: 65px;
     margin-left: 10%;
     border: 0.5px;
     border-color: #545454;
     margin-top: 50px;
+    font-size: 16px;
 `;
 
 export const Paragraph = styled.Text`
@@ -93,7 +99,7 @@ export const View = styled.View`
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
-    activeOpacity: 0.6
+    activeOpacity: 0.2
 }))`
     background-color: #66248F;
 `;
