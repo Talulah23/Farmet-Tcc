@@ -39,6 +39,7 @@ export const TextInput = styled.TextInput`
     margin-left: 12%;
     border: 0.5px;
     border-color: #545454;
+    font-size: 16px;
 `;
 
 export const Styles = StyleSheet.create({
