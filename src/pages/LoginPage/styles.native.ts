@@ -35,11 +35,15 @@ export const TextInput = styled.TextInput`
     background-color: #EFEFEF;
     padding: 23px;
     width: 300px;
-    height: 60px;
+    height: 65px;
     margin-left: 12%;
     border: 0.5px;
     border-color: #545454;
     font-size: 16px;
+
+    ::placeholder {
+        color: "#66248F";
+    }
 `;
 
 export const Styles = StyleSheet.create({
