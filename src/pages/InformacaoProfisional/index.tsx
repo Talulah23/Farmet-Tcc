@@ -17,7 +17,7 @@ export default function InformacaoProfissional(){
                     <TextInput placeholder="Endereço:"></TextInput>
                     <View/>
                     <TouchableOpacity>
-                            <Paragraph>Próximo</Paragraph>
+                        <Image style={Styles.imageStyle} source={Seta}></Image>
                     </TouchableOpacity>
                 </View>
         </Container>

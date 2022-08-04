@@ -20,9 +20,7 @@ export default function EscolhaConta(){
                     <Paragraph>Conta Profissional</Paragraph>
                     <Text style={Styles.cardColor}>Conta voltada à realização de serviços, 
                     nela é possível escolher sua especialização e adicionar informações sobre seu trabalho,
-                    além de fornecer um chat direto com seu cliente.
-
-</Text>
+                    além de fornecer um chat direto com seu cliente.</Text>
                         <TouchableOpacity>
                             <Image source={Seta}></Image>
                         </TouchableOpacity>

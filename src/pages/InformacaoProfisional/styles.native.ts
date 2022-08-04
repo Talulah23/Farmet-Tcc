@@ -26,7 +26,9 @@ export const Styles = StyleSheet.create({
         color: "black",
     },
     imageStyle: {
-        height: 20,
+        height: 31,
+        width: 35,
+        marginLeft: 50, 
     },
 });
 
@@ -75,11 +77,11 @@ export const View = styled.View`
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    background-color: #66248F;
-    height: 50px;
-    width: 300px;
     margin-left: 12%;
-    margin-top: 100px;
-    /* position: absolute; */
-    border-radius: 30px;
+    background-color: #66248F;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
+    margin-top: 5%;
 `;
+
