@@ -6,6 +6,8 @@ import EscolhaProfissao from 'pages/EscolhaProfissao';
 import Form from 'pages/Form';
 import SelecaoIdioma from 'pages/Teste/SelecaoIdioma';
 import { PropsGroup } from './types';
+import InformacaoProfissional from 'pages/InformacaoProfisional';
+import InformacaoUsuario from 'pages/InformacaoUsuario';
 
 const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
     return (
@@ -16,6 +18,8 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen name="Escolha Profissão" component={EscolhaProfissao} />
             <Drawer.Screen name="Form" component={Form} />
             <Drawer.Screen name="Seleção Idioma" component={SelecaoIdioma} />
+            <Drawer.Screen name="Informação Profissional" component={InformacaoProfissional} />
+            <Drawer.Screen name="Informação Usuário" component={InformacaoUsuario} />
         </Drawer.Group>
     );
 };
