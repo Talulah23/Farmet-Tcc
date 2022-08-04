@@ -18,9 +18,7 @@ export const Styles = StyleSheet.create({
         borderColor: '#66248F',
     },
     cardText: {
-        marginLeft: 6,
-        paddingTop: 29,
-        fontSize: 15,
+        marginTop: 10,
     },
     cardColor: {
         color: "black",
@@ -49,9 +47,9 @@ export const Paragraph = styled.Text`
 export const TextInput = styled.TextInput`  
     border-radius: 15px;
     background-color: #EFEFEF;
-    padding: 23px;
-    width: 76%;
-    height: 30%;
+    padding: 20px;
+    width: 300px;
+    height: 60px;
     margin-left: 12%;
     border-color: #545454;
     font-size: 16px;
