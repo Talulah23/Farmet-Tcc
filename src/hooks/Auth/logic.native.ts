@@ -5,7 +5,7 @@ import {
     GoogleSignin,
     User,
 } from '@react-native-google-signin/google-signin';
-import { auth, db } from 'utils/firebase';
+import { auth, db } from 'utils/firebase.native';
 import googleServices from '../../../android/app/google-services.json';
 
 GoogleSignin.configure({
