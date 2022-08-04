@@ -30,12 +30,6 @@ export const Styles = StyleSheet.create({
     },
 });
 
-export const Image = styled.Image`
-    height: 31px;
-    width: 35px;
-    margin-left: 11px;
-`;
-
 export const Text = styled.Text`
     font-size: 16px;   
     margin-left: 4%;
@@ -53,28 +47,39 @@ export const Paragraph = styled.Text`
 `;
 
 export const TextInput = styled.TextInput`  
-    border-radius: 40px;
+    border-radius: 15px;
     background-color: #EFEFEF;
     padding: 23px;
-    width: 300px;
-    height: 60px;
+    width: 76%;
+    height: 30%;
     margin-left: 12%;
-    border: 1px;
     border-color: #545454;
     font-size: 16px;
+
+    ::placeholder {
+        color: black;
+    }
+`;
+
+export const Image = styled.Image`
+    height: 171px;
+    width: 175px;
+    margin-left: 28%;
+    margin-top: 10%;
 `;
 
 export const View = styled.View`
-    height: 100px;
+    height: 20%;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    margin-left: 75%;
     background-color: #66248F;
-    border-radius: 50px;
-    width: 59px;
-    height: 32px;
-    margin-top: 5%;
+    height: 50px;
+    width: 300px;
+    margin-left: 12%;
+    margin-top: 100px;
+    /* position: absolute; */
+    border-radius: 30px;
 `;
