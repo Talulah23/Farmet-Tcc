@@ -3,7 +3,7 @@ import { Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Avatar from "../../assets/perfil.jpg";
 import { Alert } from "react-native";
-import {ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
+import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { useState } from "react";
 
 export default function InformacaoProfissional(){
@@ -48,6 +48,16 @@ export default function InformacaoProfissional(){
         } 
 
         const pickImageFromCam = () => {
+                // const options: CameraOptions = {
+                //         mediaType: 'photo'
+                // }
+
+                // const result = await pickImageFromCam(options);
+                
+                // if(result?.assets){
+                //         setImageUser(result.assets[0].uri!)
+                //         return
+                // }
                 
         } 
 
@@ -55,7 +65,7 @@ export default function InformacaoProfissional(){
         <Container>
                 <View>
                 <TouchableOpacity style={Styles.buttonColor} onPress={() => handleImgUser}>
-                    <Image source={Logo}></Image>
+                    <Image source={Avatar}></Image>
                 </TouchableOpacity>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
