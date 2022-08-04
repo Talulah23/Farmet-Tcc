@@ -7,6 +7,7 @@ import {
     Styles as StylesNative,
     View as ViewNative,
     TouchableOpacity as TouchableOpacityNative,
+    TextInput as TextInputNative
 } from './styles.native';
 
 export const Container = ContainerNative;
