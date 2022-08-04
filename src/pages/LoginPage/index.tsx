@@ -54,6 +54,7 @@ function LoginPage() {
                     <Image source={Logo}></Image>
                     <Text>Email</Text>
                     <TextInput
+                        placeholder="email"
                         onChangeText={handleChange('email')}
                         onBlur={handleBlur('email')}
                         value={values.email}
@@ -67,6 +68,7 @@ function LoginPage() {
                     {/* <Text>{i18n.t('email')}</Text> */}
                     <Text>Senha</Text>
                     <TextInput
+                        placeholder="senha"
                         onChangeText={handleChange('password')}
                         onBlur={handleBlur('password')}
                         value={values.password}

@@ -41,6 +41,10 @@ export const TextInput = styled.TextInput`
     border: 1px;
     border-color: #545454;
     font-size: 16px;
+
+    ::placeholder {
+        color: "#66248F";
+    }
 `;
 
 export const Styles = StyleSheet.create({

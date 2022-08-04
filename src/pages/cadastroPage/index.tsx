@@ -14,8 +14,7 @@ export default function CadastroPage() {
                     <Text>Nome</Text>
                     <TextInput></TextInput>
                     <Text>Email</Text>
-                    <TextInput>
-                        <Paragraph style={Styles.inputColor}>Email</Paragraph>
+                    <TextInput placeholder="email">
                     </TextInput>
                     <Text>Senha</Text>
                     <TextInput>
