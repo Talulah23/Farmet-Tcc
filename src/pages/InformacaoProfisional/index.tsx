@@ -7,9 +7,15 @@ export default function InformacaoProfissional(){
     return (
         <Container>
                 <View>
+                    <View>
                     <TextInput></TextInput>
+                    </View>
+                    <View>
                     <TextInput></TextInput>
+                    </View>
+                    <View>
                     <TextInput></TextInput>
+                    </View>
                 </View>
         </Container>
 );

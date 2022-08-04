@@ -6,6 +6,7 @@ import {
     Paragraph as ParagraphNative,
     Styles as StylesNative,
     View as ViewNative,
+    TextInput as TextInputNative,
     TouchableOpacity as TouchableOpacityNative,
     TextInput as TextInputNative
 } from './styles.native';
