@@ -55,7 +55,7 @@ export default function InformacaoProfissional(){
         <Container>
                 <View>
                 <TouchableOpacity style={Styles.buttonColor} onPress={() => handleImgUser}>
-                    <Image source={Logo}></Image>
+                    <Image source={Avatar}></Image>
                 </TouchableOpacity>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
