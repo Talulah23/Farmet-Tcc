@@ -35,6 +35,7 @@ function LoginPage() {
     ) => {
         console.log(values);
     };
+
     return (
         <Formik
         initialValues={initialValues}
@@ -54,7 +55,7 @@ function LoginPage() {
                     <Image source={Logo}></Image>
                     <Text>Email</Text>
                     <TextInput
-                        placeholder="email"
+                        placeholder="Email"
                         onChangeText={handleChange('email')}
                         onBlur={handleBlur('email')}
                         value={values.email}
@@ -68,7 +69,7 @@ function LoginPage() {
                     {/* <Text>{i18n.t('email')}</Text> */}
                     <Text>Senha</Text>
                     <TextInput
-                        placeholder="senha"
+                        placeholder="Senha"
                         onChangeText={handleChange('password')}
                         onBlur={handleBlur('password')}
                         value={values.password}
@@ -80,11 +81,11 @@ function LoginPage() {
                         <Text>{errors.password}</Text>
                     ) : null}
                     <TouchableOpacity 
-                    onChangeText={handleSubmit}>
+                    onPress={handleSubmit}>
                             <Paragraph>Login</Paragraph>
                         </TouchableOpacity>
                     <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                    <TouchableOpacity style={Styles.buttonColor}>
+                    <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
                     <Image style={Styles.imageGoogle} source={Google}></Image>
                     </TouchableOpacity>
                 </Container>
