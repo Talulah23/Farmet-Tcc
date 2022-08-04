@@ -14,16 +14,16 @@ GoogleSignin.configure({
 
 });
 
-// export const googleSignIn = () => {
-//     return GoogleSignin.signIn().then(({ idToken }) => {
-//         const googleCredential =
-//         authStatic.GoogleAuthProvider.credential(
-//             idToken,
-//         );;
+export const googleSignIn = () => {
+    return GoogleSignin.signIn().then(({ idToken }) => {
+        const googleCredential =
+        authStatic.GoogleAuthProvider.credential(
+            idToken,
+        );;
 
-//         return auth.signInWithCredential(googleCredential);
-//     });
-// };
+        return auth.signInWithCredential(googleCredential);
+    });
+};
 
 export const emailAndPasswordSignIn = (
     email: string,
