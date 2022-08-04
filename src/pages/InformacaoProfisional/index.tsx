@@ -11,10 +11,15 @@ export default function InformacaoProfissional(){
                     <Image source={Logo}></Image>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
+                    <View/>
                     <TextInput placeholder="Número:"></TextInput>
+                    <View/>
                     <TextInput placeholder="Endereço:"></TextInput>
+                    <View/>
                     <TouchableOpacity>
-                        <Image style={Styles.imageStyle} source={Seta}></Image>
+                        <View style={Styles.viewStyle}>
+                            <Image style={Styles.imageStyle} source={Seta}></Image>
+                        </View>
                     </TouchableOpacity>
                 </View>
         </Container>

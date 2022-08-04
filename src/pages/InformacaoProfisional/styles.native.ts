@@ -24,10 +24,14 @@ export const Styles = StyleSheet.create({
         color: "black",
     },
     imageStyle: {
-        height: 31,
-        width: 35,
-        marginLeft: 50, 
+        height: 50,
+        width: 80,
     },
+    viewStyle: {
+        width: 300,
+        height: 60,
+        marginBottom: -50,
+    }
 });
 
 export const Text = styled.Text`
@@ -77,7 +81,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
 }))`
     margin-left: 12%;
     background-color: #66248F;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 300px;
     height: 60px;
     margin-top: 5%;
