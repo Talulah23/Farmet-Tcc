@@ -20,7 +20,7 @@ export default function CadastroPage() {
                     <TextInput>
                     <Paragraph style={Styles.inputColor}>Senha</Paragraph>
                     </TextInput>
-                    <TouchableOpacity>
+                    <TouchableOpacity >
                             <Paragraph>Cadastrar-se</Paragraph>
                     </TouchableOpacity>
                 </Container>

@@ -9,8 +9,8 @@ import Logo from "../../assets/logo.png";
 import I18n from "i18n-js";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
-import i18n from "i18n-js";
 import * as Localization from 'expo-localization';
+import { AuthProvider } from "../../hooks/Auth";
 
 // i18n.translations = {
 //     en: { email: 'email',
