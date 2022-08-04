@@ -24,18 +24,14 @@ export const Styles = StyleSheet.create({
         color: "black",
     },
     imageStyle: {
-        height: 28.2,
-        width: 28,
-        marginLeft: 6,
-        marginTop: 6,
+        height: 50,
+        width: 80,
     },
-    buttonColor: {
-        marginTop: 370,
-        borderRadius: 50,
-        height: 31,
-        width: 35,
-        marginLeft: 50, 
-    },
+    viewStyle: {
+        width: 300,
+        height: 60,
+        marginBottom: -50,
+    }
 });
 
 export const Text = styled.Text`
@@ -46,7 +42,7 @@ export const Text = styled.Text`
 `;
 
 export const Paragraph = styled.Text`
-    color: white;
+    color: rgba(112, 8, 143, 1);
     border-radius: 16px;
     padding-left: 8%;
     margin-right: 40px;
@@ -74,11 +70,10 @@ export const Image = styled.Image`
     width: 175px;
     margin-left: 28%;
     margin-top: 10%;
-    border-radius: 100px;
 `;
 
 export const View = styled.View`
-    margin-top: 12px;
+    height: 20%;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
@@ -86,7 +81,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
 }))`
     margin-left: 12%;
     background-color: #66248F;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 300px;
     height: 60px;
     margin-top: 5%;
