@@ -6,6 +6,7 @@ export default {
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": ["expo-image-picker"],
     "extra": {
       "debug": process.env.DEBUG === 'false',
       "emulator_host": process.env.EMULATOR_HOST,

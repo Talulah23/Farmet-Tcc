@@ -3,75 +3,51 @@ import { Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Logo from "../../assets/logo.png";
 import { Alert } from "react-native";
-import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { useState } from "react";
+import * as ImagePicker from 'expo-image-picker';
 
 export default function InformacaoProfissional(){
 
         const [imageUser, setImageUser] = useState<string>(Logo);
-        const handleImgUser = () =>{
-                Alert.alert(
-                        "Selecione",
-                        "Informe onde você vai pegar sua foto!",
-                        [
-                                {
-                                        text: "Galeria",
-                                        onPress: () => pickImageFromGalery(),
-                                        style: "default"
-                                },
-                                {
-                                        text: "Camera",
-                                        onPress: () => pickImageFromCam(),
-                                        style: "default"
-                                }
-                        ],
-                        
-                        {
-                                cancelable: true,
-                                onDismiss: () =>console.log('Deixa pra próxima')
-                        }
-                
-                )
-        };
 
         const pickImageFromGalery = async () => {
 
-                const options: ImageLibraryOptions = {
-                        mediaType: 'photo'
-                }
-
-                const result = await launchImageLibrary(options);
+                const result = await ImagePicker.launchImageLibraryAsync({
+                        mediaTypes: ImagePicker.MediaTypeOptions.All,
+                        allowsEditing: true,
+                        aspect: [4, 3],
+                        quality: 1,
+                      });
                 
-                if(result?.assets){
-                        setImageUser(result.assets[0].uri!)
-                        return
+                if(!result.cancelled){
+                        setImageUser(result.uri)
                 }
         };
 
-        const pickImageFromCam = async () => {
+        // const pickImageFromCam = async () => {
 
-                const options: CameraOptions = {
-                        mediaType: 'photo',
-                        saveToPhotos: false,
-                        cameraType: 'front',
-                        quality: 1
-                }
+        //         const options: CameraOptions = {
+        //                 mediaType: 'photo',
+        //                 saveToPhotos: false,
+        //                 cameraType: 'front',
+        //                 quality: 1
+        //         }
 
-                const result = await launchCamera(options);
+        //         const result = await launchCamera(options);
 
-                console.log(result)
+        //         console.log(result)
 
                 
-                if(result?.assets){
-                        setImageUser(result.assets[0].uri!)
-                        return
-                }
-        };
+        //         if(result?.assets){
+        //                 setImageUser(result.assets[0].uri!)
+        //                 return
+        //         }
+        // };
 
     return (
         <Container>
                 <View>
-                <TouchableOpacity onPress={() => handleImgUser}>
+                <TouchableOpacity onPress={() => pickImageFromGalery}>
                     <Image source={{uri: imageUser}}></Image>
                 </TouchableOpacity>
                     <View/>
