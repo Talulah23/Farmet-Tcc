@@ -1,7 +1,7 @@
 import { Container, Text, Paragraph, View, TouchableOpacity, Image, TextInput } from "./styles";
 import { Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
-import Logo from "../../assets/perfil.jpg";
+import Logo from "../../assets/logo.png";
 import { Alert } from "react-native";
 import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { useState } from "react";
