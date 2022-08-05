@@ -49,7 +49,7 @@ export default function InformacaoProfissional(){
         <Container>
                 <View>
                 <ImageUser onPress={pickImageFromGalery}>
-                    <Image source={imageUser === undefined ? Avatar : {uri: imageUser}}></Image>
+                    <Image style={Styles.imageAvatar} source={imageUser === undefined ? Avatar : {uri: imageUser}}></Image>
                     <Image style={Styles.buttonColor} source={Plus}></Image>
                 </ImageUser>
                     <View/>

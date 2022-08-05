@@ -41,6 +41,9 @@ export const Styles = StyleSheet.create({
         marginLeft: 78,
         marginTop: -28,
     },
+    imageAvatar: {
+        borderWidth: 1.5,
+    },
 });
 
 export const Text = styled.Text`
@@ -91,7 +94,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
 }))`
     margin-left: 12%;
     background-color: #66248F;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 300px;
     height: 60px;
     margin-top: 5%;

@@ -7,16 +7,6 @@ export const Container = styled.View`
 `;
 
 export const Styles = StyleSheet.create({
-    cardContainer: {     
-        width: 250,
-        backgroundColor: '#e0e0e0',
-        marginLeft: 75,
-        marginTop: 100,
-        height: 115,
-        borderRadius: 25,
-        border: 2,
-        borderColor: '#66248F',
-    },
     cardText: {
         marginTop: 10,
     },
@@ -41,6 +31,9 @@ export const Styles = StyleSheet.create({
         borderRadius: 67,
         marginLeft: 78,
         marginTop: -28,
+    },
+    imageAvatar: {
+        borderWidth: 1.5,
     },
 });
 
