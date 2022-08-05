@@ -31,7 +31,10 @@ export const Styles = StyleSheet.create({
         width: 300,
         height: 60,
         marginBottom: -50,
-    }
+    },
+    buttonColor: {
+
+    },
 });
 
 export const Text = styled.Text`
