@@ -91,14 +91,14 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     margin-top: 5%;
 `;
 
-// export const ImageUser = styled.TouchableOpacity.attrs(() => ({
-//     activeOpacity: 0.6
-// }))`
-//     background-color: black;
-//     height: 112px;
-//     width: 112px;
-//     margin-left: 32%;
-//     margin-top: 44px;
-//     /* position: absolute; */
-//     border-radius: 67px;
-// `;
+export const ImageUser = styled.TouchableOpacity.attrs(() => ({
+    activeOpacity: 0.6
+}))`
+    background-color: black;
+    height: 112px;
+    width: 112px;
+    margin-left: 32%;
+    margin-top: 44px;
+    /* position: absolute; */
+    border-radius: 67px;
+`;
