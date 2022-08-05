@@ -12,6 +12,12 @@ export default function InformacaoProfissional(){
         const [imageUser, setImageUser] = useState<string>();
 
         const pickImageFromGalery = async () => {
+                const permissionResult = await ImagePicker.getMediaLibraryPermissionsAsync()
+
+                if (permissionResult.granted === false){
+                        alert('Você não concedeu acesso a sua galeria!');
+                        return;
+                }
 
                 const result = await ImagePicker.launchImageLibraryAsync({
                         mediaTypes: ImagePicker.MediaTypeOptions.All,
