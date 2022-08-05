@@ -12,6 +12,11 @@ export default function InformacaoProfissional(){
         const [imageUser, setImageUser] = useState<string>();
 
         const pickImageFromGalery = async () => {
+                const permissionResult = await ImagePicker.getMediaLibraryPermissionsAsync()
+
+                if (permissionResult.granted === false){
+                    await ImagePicker.requestMediaLibraryPermissionsAsync()
+                }
 
                 const result = await ImagePicker.launchImageLibraryAsync({
                         mediaTypes: ImagePicker.MediaTypeOptions.All,
@@ -20,6 +25,8 @@ export default function InformacaoProfissional(){
                         quality: 1,
                       });
                 
+                console.log(result);
+
                 if(!result.cancelled){
                         setImageUser(result.uri)
                 }

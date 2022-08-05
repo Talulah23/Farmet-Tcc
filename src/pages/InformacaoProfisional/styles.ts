@@ -8,7 +8,7 @@ import {
     View as ViewNative,
     ImageUser as TouchableOpacityNative,
     TextInput as TextInputNative,
-    // TouchableOpacity as TouchableOpacityNative
+    // TouchableOpacity as TouchableOpacityNative,
 } from './styles.native';
 
 export const Container = ContainerNative;
