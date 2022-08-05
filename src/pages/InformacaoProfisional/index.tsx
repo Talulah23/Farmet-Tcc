@@ -1,14 +1,14 @@
 import { Container, Text, Paragraph, View, TouchableOpacity, Image, TextInput } from "./styles";
 import { Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
-import Avatar from "../../assets/perfil.jpg";
+import Logo from "../../assets/perfil.jpg";
 import { Alert } from "react-native";
 import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { useState } from "react";
 
 export default function InformacaoProfissional(){
 
-        const setImageUser = useState
+        const [imageUser, setImageUser] = useState<string>(Logo);
         const handleImgUser = () =>{
                 Alert.alert(
                         "Selecione",
@@ -32,9 +32,10 @@ export default function InformacaoProfissional(){
                         }
                 
                 )
-        }
+        };
 
         const pickImageFromGalery = async () => {
+
                 const options: ImageLibraryOptions = {
                         mediaType: 'photo'
                 }
@@ -45,27 +46,33 @@ export default function InformacaoProfissional(){
                         setImageUser(result.assets[0].uri!)
                         return
                 }
-        } 
+        };
 
-        const pickImageFromCam = () => {
-                // const options: CameraOptions = {
-                //         mediaType: 'photo'
-                // }
+        const pickImageFromCam = async () => {
 
-                // const result = await pickImageFromCam(options);
+                const options: CameraOptions = {
+                        mediaType: 'photo',
+                        saveToPhotos: false,
+                        cameraType: 'front',
+                        quality: 1
+                }
+
+                const result = await launchCamera(options);
+
+                console.log(result)
+
                 
-                // if(result?.assets){
-                //         setImageUser(result.assets[0].uri!)
-                //         return
-                // }
-                
-        } 
+                if(result?.assets){
+                        setImageUser(result.assets[0].uri!)
+                        return
+                }
+        };
 
     return (
         <Container>
                 <View>
-                <TouchableOpacity style={Styles.buttonColor} onPress={() => handleImgUser}>
-                    <Image source={Avatar}></Image>
+                <TouchableOpacity onPress={() => handleImgUser}>
+                    <Image source={{uri: imageUser}}></Image>
                 </TouchableOpacity>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
