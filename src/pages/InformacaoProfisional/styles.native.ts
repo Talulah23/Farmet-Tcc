@@ -33,7 +33,12 @@ export const Styles = StyleSheet.create({
         marginBottom: -50,
     },
     buttonColor: {
-
+        width: 40,
+        height: 40,
+        backgroundColor: "#66248F",
+        borderRadius: 67,
+        marginLeft: 0,
+        marginTop: 10,
     },
 });
 
@@ -70,10 +75,11 @@ export const TextInput = styled.TextInput`
 
 export const Image = styled.Image`
     border-radius: 67px;
-    height: 110px;
-    margin-left: 1px;
-    margin-top: 1px;
-    width: 110px;
+    height: 120px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 120px;
+    border: 1.5px;
 `;
 
 export const View = styled.View`
@@ -95,10 +101,17 @@ export const ImageUser = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
     background-color: black;
-    height: 112px;
-    width: 112px;
-    margin-left: 32%;
+    height: 120px;
+    width: 120px;
+    margin-left: 34%;
     margin-top: 44px;
-    /* position: absolute; */
-    border-radius: 67px;
+    border-radius: 67px; 
+`;
+
+export const AddImageUser = styled.Image`
+    height: 30px;
+    width: 30px;
+    margin-left: 50%;
+    margin-top: 44px;
+    border-radius: 67px; 
 `;

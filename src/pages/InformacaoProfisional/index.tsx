@@ -1,7 +1,7 @@
 import { Container, Text, Paragraph, View,  Image, TextInput } from "./styles";
-import { ImageUser, Styles } from "./styles.native";
+import { ImageUser, AddImageUser, Styles } from "./styles.native";
+import Plus from "../../assets/plus.png";
 import Seta from "../../assets/seta.png";
-import Logo from "../../assets/logo.png";
 import Avatar from "../../assets/perfil.jpg";
 import { Alert } from "react-native";
 import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
@@ -74,6 +74,7 @@ export default function InformacaoProfissional(){
                 <View>
                     <ImageUser>
                         <Image source={Avatar}></Image>
+                        <AddImageUser style={Styles.buttonColor} source={Plus}></AddImageUser>
                     </ImageUser>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
