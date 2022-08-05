@@ -1,4 +1,4 @@
-import { Container, Text, Paragraph, View,  Image, TextInput } from "./styles";
+import { Container, Text, Paragraph, View,  Image, TextInput, TouchableOpacity} from "./styles";
 import { ImageUser, Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Logo from "../../assets/logo.png";
@@ -81,12 +81,12 @@ export default function InformacaoProfissional(){
                     <TextInput placeholder="Número:"></TextInput>
                     <View/>
                     <TextInput placeholder="Endereço:"></TextInput>
-                    {/* <View/> */}
-                    {/* <TouchableOpacity>
+                    <View/> 
+                     <TouchableOpacity>
                         <View style={Styles.viewStyle}>
                             <Image style={Styles.imageStyle} source={Seta}></Image>
                         </View>
-                    </TouchableOpacity> */}
+                    </TouchableOpacity>
                 </View>
         </Container>
 );
