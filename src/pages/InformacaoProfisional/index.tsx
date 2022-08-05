@@ -1,5 +1,5 @@
-import { Container, Text, Paragraph, View,  Image, TextInput, TouchableOpacity} from "./styles";
-import { ImageUser, Styles } from "./styles.native";
+import { Container, Text, Paragraph, View,  Image, TextInput, } from "./styles";
+import { ImageUser, Styles, TouchableOpacity } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Logo from "../../assets/logo.png";
 import Avatar from "../../assets/perfil.jpg";
@@ -9,7 +9,7 @@ import * as ImagePicker from 'expo-image-picker';
 
 export default function InformacaoProfissional(){
 
-        const [imageUser, setImageUser] = useState<string>(Logo);
+        const [imageUser, setImageUser] = useState<string>(Avatar);
 
         const pickImageFromGalery = async () => {
 
@@ -20,6 +20,8 @@ export default function InformacaoProfissional(){
                         quality: 1,
                       });
                 
+                console.log(result);
+
                 if(!result.cancelled){
                         setImageUser(result.uri)
                 }
@@ -48,8 +50,8 @@ export default function InformacaoProfissional(){
     return (
         <Container>
                 <View>
-                    <ImageUser>
-                        <Image source={Avatar}></Image>
+                    <ImageUser onPress={pickImageFromGalery}>
+                        <Image source={{uri: imageUser}}></Image>
                     </ImageUser>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
