@@ -1,7 +1,8 @@
-import { Container, Text, Paragraph, View, TouchableOpacity, Image, TextInput } from "./styles";
-import { Styles } from "./styles.native";
+import { Container, Text, Paragraph, View,  Image, TextInput, TouchableOpacity} from "./styles";
+import { ImageUser, Styles } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Logo from "../../assets/logo.png";
+import Avatar from "../../assets/perfil.jpg";
 import { Alert } from "react-native";
 import { useState } from "react";
 import * as ImagePicker from 'expo-image-picker';
@@ -47,17 +48,17 @@ export default function InformacaoProfissional(){
     return (
         <Container>
                 <View>
-                <TouchableOpacity onPress={() => {pickImageFromGalery}}>
-                    <Image source={{uri: imageUser}}></Image>
-                </TouchableOpacity>
+                    <ImageUser>
+                        <Image source={Avatar}></Image>
+                    </ImageUser>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
                     <View/>
                     <TextInput placeholder="Número:"></TextInput>
                     <View/>
                     <TextInput placeholder="Endereço:"></TextInput>
-                    <View/>
-                    <TouchableOpacity>
+                    <View/> 
+                     <TouchableOpacity>
                         <View style={Styles.viewStyle}>
                             <Image style={Styles.imageStyle} source={Seta}></Image>
                         </View>
