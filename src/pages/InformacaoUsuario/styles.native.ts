@@ -18,23 +18,31 @@ export const Styles = StyleSheet.create({
         borderColor: '#66248F',
     },
     cardText: {
-        marginLeft: 6,
-        paddingTop: 29,
-        fontSize: 15,
+        marginTop: 10,
     },
     cardColor: {
         color: "black",
     },
     imageStyle: {
-        height: 20,
+        height: 70,
+        width: 100,
+        marginTop: 0,
+        fontSize: 22,
+    },
+    viewStyle: {
+        width: 300,
+        height: 60,
+        marginTop: 14,
+        marginLeft: 97,
+    },
+    buttonColor: {
+        width: 35,
+        height: 35,
+        borderRadius: 67,
+        marginLeft: 78,
+        marginTop: -28,
     },
 });
-
-export const Image = styled.Image`
-    height: 31px;
-    width: 35px;
-    margin-left: 11px;
-`;
 
 export const Text = styled.Text`
     font-size: 16px;   
@@ -52,24 +60,59 @@ export const Paragraph = styled.Text`
     font-size: 18px;
 `;
 
+export const TextInput = styled.TextInput`  
+    border-radius: 15px;
+    background-color: #EFEFEF;
+    padding: 20px;
+    width: 300px;
+    height: 60px;
+    margin-left: 12%;
+    border-color: #545454;
+    font-size: 16px;
+
+    ::placeholder {
+        color: black;
+    }
+`;
+
+export const Image = styled.Image`
+    border-radius: 67px;
+    height: 120px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 120px;
+`;
+
 export const View = styled.View`
-    width: 80%;
-    background-color: #FFFFFF;
-    margin-left: 10%;
-    margin-top: 20%;
-    height: 29%;
-    border-radius: 25px;
-    border: 1px;
-    border-color: black;
+    height: 20%;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    margin-left: 75%;
+    margin-left: 12%;
     background-color: #66248F;
-    border-radius: 50px;
-    width: 59px;
-    height: 32px;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
     margin-top: 5%;
+`;
+
+export const ImageUser = styled.TouchableOpacity.attrs(() => ({
+    activeOpacity: 0.6
+}))`
+    background-color: black;
+    height: 120px;
+    width: 120px;
+    margin-left: 34%;
+    margin-top: 44px;
+    border-radius: 67px; 
+`;
+
+export const AddImageUser = styled.Image`
+    height: 30px;
+    width: 30px;
+    margin-left: 50%;
+    margin-top: 44px;
+    border-radius: 67px; 
 `;

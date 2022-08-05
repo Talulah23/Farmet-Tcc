@@ -1,31 +1,69 @@
-import { Container, Text, Paragraph, View, TouchableOpacity, Image } from "./styles";
-import { Styles } from "./styles.native";
-import Seta from "../../assets/seta.png";
+import { Container, Text, Paragraph, View, Image, TextInput,  } from "./styles";
+import { ImageUser, Styles, TouchableOpacity } from "./styles.native";
+import Seta from "../../assets/arrow.png";
+import Avatar from "../../assets/perfil.jpg";
+import Plus from "../../assets/mais.png";
+import { Alert } from "react-native";
+import { useState } from "react";
+import * as ImagePicker from 'expo-image-picker';
 
+export default function InformacaoProfissional(){
 
-export default function InformacaoUsuario(){
+        const [imageUser, setImageUser] = useState<string>();
+
+        const pickImageFromGalery = async () => {
+
+                const result = await ImagePicker.launchImageLibraryAsync({
+                        mediaTypes: ImagePicker.MediaTypeOptions.All,
+                        allowsEditing: true,
+                        aspect: [4, 3],
+                        quality: 1,
+                      });
+                
+                if(!result.cancelled){
+                        setImageUser(result.uri)
+                }
+        };
+
+        // const pickImageFromCam = async () => {
+
+        //         const options: CameraOptions = {
+        //                 mediaType: 'photo',
+        //                 saveToPhotos: false,
+        //                 cameraType: 'front',
+        //                 quality: 1
+        //         }
+
+        //         const result = await launchCamera(options);
+
+        //         console.log(result)
+
+                
+        //         if(result?.assets){
+        //                 setImageUser(result.assets[0].uri!)
+        //                 return
+        //         }
+        // };
+
     return (
         <Container>
                 <View>
-                <Paragraph>Conta do Usuário</Paragraph>
-                <Text style={Styles.cardColor}>Conta voltada à contratação de serviços, 
-                nela é possível escolher o tipo de serviço desejado e o profissional que 
-                mais se encaixa nos seus requisitos, além de fornecer um chat direto com 
-                o mesmo.</Text>
-                    <TouchableOpacity>
-                        <Image source={Seta}></Image>
+                <ImageUser onPress={pickImageFromGalery}>
+                    <Image source={imageUser === undefined ? Avatar : {uri: imageUser}}></Image>
+                    <Image style={Styles.buttonColor} source={Plus}></Image>
+                </ImageUser>
+                    <View/>
+                    <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
+                    <View/>
+                    <TextInput placeholder="Número:"></TextInput>
+                    <View/>
+                    <TextInput placeholder="Endereço:"></TextInput>
+                    <View/> 
+                     <TouchableOpacity>
+                        <View style={Styles.viewStyle}>
+                            <Text style={Styles.imageStyle}>Próximo</Text>
+                        </View>
                     </TouchableOpacity>
-                </View>
-                <View>
-                    <Paragraph>Conta Profissional</Paragraph>
-                    <Text style={Styles.cardColor}>Conta voltada à realização de serviços, 
-                    nela é possível escolher sua especialização e adicionar informações sobre seu trabalho,
-                    além de fornecer um chat direto com seu cliente.
-
-</Text>
-                        <TouchableOpacity>
-                            <Image source={Seta}></Image>
-                        </TouchableOpacity>
                 </View>
         </Container>
 );

@@ -6,7 +6,9 @@ import {
     Paragraph as ParagraphNative,
     Styles as StylesNative,
     View as ViewNative,
-    TouchableOpacity as TouchableOpacityNative,
+    ImageUser as TouchableOpacityNative,
+    TextInput as TextInputNative,
+    // TouchableOpacity as TouchableOpacityNative
 } from './styles.native';
 
 export const Container = ContainerNative;
@@ -21,4 +23,8 @@ export const Styles = StylesNative;
 
 export const View = ViewNative;
 
-export const TouchableOpacity = TouchableOpacityNative;
+export const TextInput = TextInputNative;
+
+// export const TouchableOpacity = TouchableOpacityNative;
+
+export const ImageUser = TouchableOpacityNative;

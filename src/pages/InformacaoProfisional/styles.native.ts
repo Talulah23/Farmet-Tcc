@@ -24,21 +24,22 @@ export const Styles = StyleSheet.create({
         color: "black",
     },
     imageStyle: {
-        height: 50,
-        width: 80,
+        height: 70,
+        width: 100,
+        marginTop: 0,
     },
     viewStyle: {
         width: 300,
         height: 60,
-        marginBottom: -50,
+        marginTop: -4,
+        marginLeft: 100,
     },
     buttonColor: {
-        width: 40,
-        height: 40,
-        backgroundColor: "#66248F",
+        width: 35,
+        height: 35,
         borderRadius: 67,
-        marginLeft: 0,
-        marginTop: 10,
+        marginLeft: 78,
+        marginTop: -28,
     },
 });
 
@@ -79,7 +80,6 @@ export const Image = styled.Image`
     margin-left: 0px;
     margin-top: 0px;
     width: 120px;
-    border: 1.5px;
 `;
 
 export const View = styled.View`

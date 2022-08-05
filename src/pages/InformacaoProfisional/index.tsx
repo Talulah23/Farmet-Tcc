@@ -1,7 +1,8 @@
 import { Container, Text, Paragraph, View, Image, TextInput,  } from "./styles";
 import { ImageUser, Styles, TouchableOpacity } from "./styles.native";
-import Seta from "../../assets/seta.png";
+import Seta from "../../assets/arrow.png";
 import Avatar from "../../assets/perfil.jpg";
+import Plus from "../../assets/mais.png";
 import { Alert } from "react-native";
 import { useState } from "react";
 import * as ImagePicker from 'expo-image-picker';
@@ -49,6 +50,7 @@ export default function InformacaoProfissional(){
                 <View>
                 <ImageUser onPress={pickImageFromGalery}>
                     <Image source={imageUser === undefined ? Avatar : {uri: imageUser}}></Image>
+                    <Image style={Styles.buttonColor} source={Plus}></Image>
                 </ImageUser>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>

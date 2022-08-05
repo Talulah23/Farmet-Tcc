@@ -82,6 +82,5 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     width: 300px;
     margin-left: 12%;
     margin-top: 100px;
-    /* position: absolute; */
     border-radius: 30px;
 `;
