@@ -15,8 +15,7 @@ export default function InformacaoProfissional(){
                 const permissionResult = await ImagePicker.getMediaLibraryPermissionsAsync()
 
                 if (permissionResult.granted === false){
-                        alert('Você não concedeu acesso a sua galeria!');
-                        return;
+                    await ImagePicker.requestMediaLibraryPermissionsAsync()
                 }
 
                 const result = await ImagePicker.launchImageLibraryAsync({
