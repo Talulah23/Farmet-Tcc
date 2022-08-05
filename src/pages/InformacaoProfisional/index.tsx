@@ -47,7 +47,7 @@ export default function InformacaoProfissional(){
     return (
         <Container>
                 <View>
-                <TouchableOpacity onPress={() => pickImageFromGalery}>
+                <TouchableOpacity onPress={() => {pickImageFromGalery}}>
                     <Image source={{uri: imageUser}}></Image>
                 </TouchableOpacity>
                     <View/>
