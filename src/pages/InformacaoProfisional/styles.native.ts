@@ -99,5 +99,6 @@ export const ImageUser = styled.TouchableOpacity.attrs(() => ({
     width: 112px;
     margin-left: 32%;
     margin-top: 44px;
+    /* position: absolute; */
     border-radius: 67px;
 `;

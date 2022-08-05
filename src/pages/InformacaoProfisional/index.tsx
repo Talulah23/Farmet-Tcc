@@ -1,53 +1,29 @@
-import { Container, Text, Paragraph, View,  Image, TextInput, TouchableOpacity} from "./styles";
-import { ImageUser, Styles } from "./styles.native";
+import { Container, Text, Paragraph, View, Image, TextInput,  } from "./styles";
+import { ImageUser, Styles, TouchableOpacity } from "./styles.native";
 import Seta from "../../assets/seta.png";
 import Logo from "../../assets/logo.png";
 import Avatar from "../../assets/perfil.jpg";
 import { Alert } from "react-native";
-import {CameraOptions, ImageLibraryOptions, launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { useState } from "react";
+import * as ImagePicker from 'expo-image-picker';
 
 export default function InformacaoProfissional(){
 
-        // const [imageUser, setImageUser] = useState<string>(Logo);
-        // const handleImgUser = () =>{
-        //         Alert.alert(
-        //                 "Selecione",
-        //                 "Informe onde você vai pegar sua foto!",
-        //                 [
-        //                         {
-        //                                 text: "Galeria",
-        //                                 onPress: () => pickImageFromGalery(),
-        //                                 style: "default"
-        //                         },
-        //                         {
-        //                                 text: "Camera",
-        //                                 onPress: () => pickImageFromCam(),
-        //                                 style: "default"
-        //                         }
-        //                 ],
-                        
-        //                 {
-        //                         cancelable: true,
-        //                         onDismiss: () =>console.log('Deixa pra próxima')
-        //                 }
+        const [imageUser, setImageUser] = useState<string>();
+
+        const pickImageFromGalery = async () => {
+
+                const result = await ImagePicker.launchImageLibraryAsync({
+                        mediaTypes: ImagePicker.MediaTypeOptions.All,
+                        allowsEditing: true,
+                        aspect: [4, 3],
+                        quality: 1,
+                      });
                 
-        //         )
-        // };
-
-        // const pickImageFromGalery = async () => {
-
-        //         const options: ImageLibraryOptions = {
-        //                 mediaType: 'photo'
-        //         }
-
-        //         const result = await launchImageLibrary(options);
-                
-        //         if(result?.assets){
-        //                 setImageUser(result.assets[0].uri!)
-        //                 return
-        //         }
-        // };
+                if(!result.cancelled){
+                        setImageUser(result.uri)
+                }
+        };
 
         // const pickImageFromCam = async () => {
 
@@ -72,9 +48,9 @@ export default function InformacaoProfissional(){
     return (
         <Container>
                 <View>
-                    <ImageUser>
-                        <Image source={Avatar}></Image>
-                    </ImageUser>
+                <ImageUser onPress={pickImageFromGalery}>
+                    <Image source={imageUser === undefined ? Avatar : {uri: imageUser}}></Image>
+                </ImageUser>
                     <View/>
                     <TextInput style={Styles.cardText} placeholder="Nome Usuário:"></TextInput>
                     <View/>
