@@ -80,16 +80,16 @@ export const View = styled.View`
     height: 20%;
 `;
 
-// export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
-//     activeOpacity: 0.6
-// }))`
-//     margin-left: 12%;
-//     background-color: #66248F;
-//     border-radius: 30px;
-//     width: 300px;
-//     height: 60px;
-//     margin-top: 5%;
-// `;
+export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
+    activeOpacity: 0.6
+}))`
+    margin-left: 12%;
+    background-color: #66248F;
+    border-radius: 30px;
+    width: 300px;
+    height: 60px;
+    margin-top: 5%;
+`;
 
 export const ImageUser = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
@@ -99,6 +99,5 @@ export const ImageUser = styled.TouchableOpacity.attrs(() => ({
     width: 112px;
     margin-left: 32%;
     margin-top: 44px;
-    /* position: absolute; */
     border-radius: 67px;
 `;
