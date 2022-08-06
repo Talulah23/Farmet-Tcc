@@ -61,7 +61,7 @@ export default function InformacaoProfissional(){
                     <View/> 
                      <TouchableOpacity>
                         <View style={Styles.viewStyle}>
-                            <Text style={Styles.imageStyle}>Próximo</Text>
+                            <Text style={Styles.imageStyle}>Próximo</Text> 
                         </View>
                     </TouchableOpacity>
                 </View>
