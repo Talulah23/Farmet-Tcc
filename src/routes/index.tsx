@@ -9,7 +9,6 @@ export const screenOptions = {
         backgroundColor: '#66248F',
     },
     headerTintColor: '#FFFFFF',
-    
 };
 
 function Routes() {
