@@ -19,7 +19,7 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen name="Form" component={Form} />
             <Drawer.Screen name="Seleção Idioma" component={SelecaoIdioma} />
             <Drawer.Screen name="Informação Profissional" component={InformacaoProfissional} />
-            <Drawer.Screen name="Informação Usuário" component={InformacaoUsuario} /> 
+            <Drawer.Screen name="Informação Usuário" component={InformacaoUsuario} />
         </Drawer.Group>
     );
 };

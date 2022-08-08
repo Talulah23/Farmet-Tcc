@@ -6,7 +6,6 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import { object, string } from 'yup';
 import Logo from "../../assets/logo.png";
-import I18n from "i18n-js";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
 import * as Localization from 'expo-localization';
