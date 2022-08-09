@@ -6,12 +6,14 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import { object, string } from 'yup';
 import Logo from "../../assets/logo.png";
-import I18n from "i18n-js";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
 import { ScrollView } from 'react-native';
 import * as Localization from 'expo-localization';
 import { AuthProvider } from "../../hooks/Auth";
+import { useNavigation } from "@react-navigation/core";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "routes/types";
 
 // i18n.translations = {
 //     en: { email: 'email',
@@ -25,77 +27,76 @@ import { AuthProvider } from "../../hooks/Auth";
 
 const useSchema = object({
     password: string().required(),
-    email: string().email(),
+    email: string().email().required(),
 })
 
 function LoginPage() {
     const initialValues = { password: '', email: '' };
 
-    const handleOnSubmit = async (
-        values: typeof initialValues,
-    ) => {
-        console.log(values);
-    };
+    const { signIn } = useAuth()
+
+    const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
+        <Formik
+        initialValues={initialValues}
+        onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
+        validationSchema={useSchema}
+        >
 
-        <ScrollView>
-            <Formik
-            initialValues={initialValues}
-            onSubmit={handleOnSubmit}
-            validationSchema={useSchema}
-            >
+            {({
+                handleChange,
+                handleBlur,
+                handleSubmit,
+                values,
+                errors,
+                touched,
+            }) => (
+                <Container>
+                    <Image source={Logo}></Image>
+                    <Text>Email</Text>
+                    <TextInput
+                        placeholder="Email"
+                        onChangeText={handleChange('email')}
+                        onBlur={handleBlur('email')}
+                        value={values.email}
+                        isValid={
+                            !(errors.email && touched.email)
+                        }
+                    />
+                    {errors.email && touched.email ? (
+                        <Text>{errors.email}</Text>
+                    ) : null}
+                    {/* <Text>{i18n.t('email')}</Text> */}
+                    <Text>Senha</Text>
+                    <TextInput
+                        placeholder="Senha"
+                        onChangeText={handleChange('password')}
+                        onBlur={handleBlur('password')}
+                        value={values.password}
+                        isValid={
+                            !(errors.password && touched.password)
+                        }
+                    />
+                    {errors.password && touched.password ? (
+                        <Text>{errors.password}</Text>
+                    ) : null}
 
-                {({
-                    handleChange,
-                    handleBlur,
-                    handleSubmit,
-                    values,
-                    errors,
-                    touched,
-                }) => (
-                    <Container>
-                        <Image source={Logo}></Image>
-                        <Text>Email</Text>
-                        <TextInput
-                            placeholder="Email"
-                            onChangeText={handleChange('email')}
-                            onBlur={handleBlur('email')}
-                            value={values.email}
-                            isValid={
-                                !(errors.email && touched.email)
-                            }
-                        />
-                        {errors.email && touched.email ? (
-                            <Text>{errors.email}</Text>
-                        ) : null}
-                        {/* <Text>{i18n.t('email')}</Text> */}
-                        <Text>Senha</Text>
-                        <TextInput
-                            placeholder="Senha"
-                            onChangeText={handleChange('password')}
-                            onBlur={handleBlur('password')}
-                            value={values.password}
-                            isValid={
-                                !(errors.password && touched.password)
-                            }
-                        />
-                        {errors.password && touched.password ? (
-                            <Text>{errors.password}</Text>
-                        ) : null}
-                        <TouchableOpacity 
-                        onPress={handleSubmit}>
-                                <Paragraph>Login</Paragraph>
-                            </TouchableOpacity>
-                        <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                        <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
-                        <Image style={Styles.imageGoogle} source={Google}></Image>
-                        </TouchableOpacity>
-                    </Container>
-                )}
-            </Formik>
-            
-        </ScrollView>
+                    <TouchableOpacity 
+                        onPress={() => handleSubmit()}>
+                            <Paragraph>Login</Paragraph>
+                    </TouchableOpacity>
+
+                    <Text style={Styles.textFontColor}>Entrar com Google</Text>
+
+                    <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
+
+                    <Image style={Styles.imageGoogle} source={Google}></Image>
+
+                    </TouchableOpacity>
+                </Container>
+            )}
+        </Formik>
     );
 }
 
