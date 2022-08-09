@@ -29,8 +29,11 @@ export interface PropsGroupAuth extends PropsGroup {
 }
 
 export type AppStackParamList = {
-    Home: undefined; 'TROCAR NOMES'
-    Calculator: undefined;
+    Home: undefined;
+    Cadastro: undefined;
+    EscolhaConta: undefined;
+    // EscolhaConta: undefined;
+    // EscolhaConta: undefined;
 };
 
 export type RootStackParamList = AppStackParamList;

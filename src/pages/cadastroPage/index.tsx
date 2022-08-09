@@ -6,24 +6,48 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import Logo from "../../assets/logo.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles";
+import { object, string } from "yup";
+import { useNavigation } from "@react-navigation/core";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "routes/types"
 
+const useSchema = object({
+    password: string().required(),
+    email: string().email().required(),
+    name: string().required(),
+})
 export default function CadastroPage() {
+    const initialValues = { password: '', email: '', name: '' };
+
+    const { signUp } = useAuth()
+
+    const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+
     return (
-                <Container>
+        <Formik
+            initialValues={initialValues}
+            onSubmit={values => signUp('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
+            validationSchema={useSchema}
+        >
+             {({ handleSubmit }) => (
+            <Container>
                     <Image source={Logo}></Image> 
                     <Text>Nome</Text>
                     <TextInput></TextInput>
                     <Text>Email</Text>
                     <TextInput placeholder="email">
                     </TextInput>
-                    <Text>Senha</Text>
+                    <Text style={Styles.inputColor}>Senha</Text>
                     <TextInput>
-                    <Paragraph style={Styles.inputColor}>Senha</Paragraph>
+                    <Paragraph >Senha</Paragraph>
                     </TextInput>
-                    <TouchableOpacity >
+                    <TouchableOpacity 
+                        onPress={() => handleSubmit()}>
                             <Paragraph>Cadastrar-se</Paragraph>
                     </TouchableOpacity>
                 </Container>
+            )}
+        </Formik>
     );
 }
 

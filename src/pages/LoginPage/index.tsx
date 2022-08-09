@@ -6,12 +6,14 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import { object, string } from 'yup';
 import Logo from "../../assets/logo.png";
-import I18n from "i18n-js";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
 import { ScrollView } from 'react-native';
 import * as Localization from 'expo-localization';
 import { AuthProvider } from "../../hooks/Auth";
+import { useNavigation } from "@react-navigation/core";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "routes/types";
 
 // i18n.translations = {
 //     en: { email: 'email',
@@ -25,17 +27,15 @@ import { AuthProvider } from "../../hooks/Auth";
 
 const useSchema = object({
     password: string().required(),
-    email: string().email(),
+    email: string().email().required(),
 })
 
 function LoginPage() {
     const initialValues = { password: '', email: '' };
 
-    const handleOnSubmit = async (
-        values: typeof initialValues,
-    ) => {
-        console.log(values);
-    };
+    const { signIn } = useAuth()
+
+    const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
 

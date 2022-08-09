@@ -14,12 +14,12 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
         <Drawer.Group>
             <Drawer.Screen name="Login" component={Login} />
             <Drawer.Screen name="Cadastro" component={Cadastro} />
-            <Drawer.Screen name="Escolha Conta" component={EscolhaConta} />
-            <Drawer.Screen name="Escolha Profissão" component={EscolhaProfissao} />
+            <Drawer.Screen name="EscolhaConta" component={EscolhaConta} />
+            <Drawer.Screen name="EscolhaProfissão" component={EscolhaProfissao} />
             <Drawer.Screen name="Form" component={Form} />
-            <Drawer.Screen name="Seleção Idioma" component={SelecaoIdioma} />
-            <Drawer.Screen name="Informação Profissional" component={InformacaoProfissional} />
-            <Drawer.Screen name="Informação Usuário" component={InformacaoUsuario} /> 
+            <Drawer.Screen name="SeleçãoIdioma" component={SelecaoIdioma} />
+            <Drawer.Screen name="InformaçãoProfissional" component={InformacaoProfissional} />
+            <Drawer.Screen name="InformaçãoUsuário" component={InformacaoUsuario} />
         </Drawer.Group>
     );
 };
