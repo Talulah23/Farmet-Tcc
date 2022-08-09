@@ -34,6 +34,7 @@ export type AppStackParamList = {
     EscolhaConta: undefined;
     InformaçãoUsuário: undefined;
     InformaçãoProfissional: undefined;
+    EscolhaProfissão: undefined;
 };
 
 export type RootStackParamList = AppStackParamList;

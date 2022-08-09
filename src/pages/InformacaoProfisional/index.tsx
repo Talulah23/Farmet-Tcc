@@ -6,6 +6,9 @@ import Plus from "../../assets/mais.png";
 import { Alert } from "react-native";
 import { useState } from "react";
 import * as ImagePicker from 'expo-image-picker';
+import { useNavigation } from "@react-navigation/core";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "routes/types";
 
 export default function InformacaoProfissional(){
 
@@ -52,6 +55,9 @@ export default function InformacaoProfissional(){
         //         }
         // };
 
+        
+        const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+
     return (
         <Container>
                 <View>
@@ -66,7 +72,7 @@ export default function InformacaoProfissional(){
                     <View/>
                     <TextInput placeholder="Endereço:"></TextInput>
                     <View/> 
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={() => navigate.navigate('EscolhaProfissão')}>
                         <View style={Styles.viewStyle}>
                             <Image style={Styles.imageStyle} source={Seta}></Image>
                         </View>
