@@ -20,6 +20,8 @@ export default function CadastroPage() {
     const initialValues = { password: '', email: '', name: '' };
 
     const { signUp } = useAuth()
+    console.log(signUp);
+    
 
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
@@ -39,7 +41,7 @@ export default function CadastroPage() {
                     </TextInput>
                     <Text style={Styles.inputColor}>Senha</Text>
                     <TextInput>
-                    <Paragraph >Senha</Paragraph>
+                    <Text>Senha</Text>
                     </TextInput>
                     <TouchableOpacity 
                         onPress={() => handleSubmit()}>

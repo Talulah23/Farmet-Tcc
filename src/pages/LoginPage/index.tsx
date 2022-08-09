@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import { View } from "react-native";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
@@ -38,8 +37,6 @@ function LoginPage() {
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
-
-        <ScrollView>
             <Formik
             initialValues={initialValues}
             onSubmit={handleOnSubmit}
@@ -54,6 +51,7 @@ function LoginPage() {
                     errors,
                     touched,
                 }) => (
+                <ScrollView>
                     <Container>
                         <Image source={Logo}></Image>
                         <Text>Email</Text>
@@ -92,10 +90,10 @@ function LoginPage() {
                         <Image style={Styles.imageGoogle} source={Google}></Image>
                         </TouchableOpacity>
                     </Container>
+                        
+                </ScrollView>
                 )}
             </Formik>
-            
-        </ScrollView>
     );
 }
 
