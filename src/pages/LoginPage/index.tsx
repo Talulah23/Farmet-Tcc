@@ -9,6 +9,7 @@ import Logo from "../../assets/logo.png";
 import I18n from "i18n-js";
 import Google from "../../assets/google.png";
 import { Container, Paragraph, TextInput, View, TouchableOpacity, Text, Image } from "./styles"
+import { ScrollView } from 'react-native';
 import * as Localization from 'expo-localization';
 import { AuthProvider } from "../../hooks/Auth";
 
@@ -37,60 +38,64 @@ function LoginPage() {
     };
 
     return (
-        <Formik
-        initialValues={initialValues}
-        onSubmit={handleOnSubmit}
-        validationSchema={useSchema}
-        >
 
-            {({
-                handleChange,
-                handleBlur,
-                handleSubmit,
-                values,
-                errors,
-                touched,
-            }) => (
-                <Container>
-                    <Image source={Logo}></Image>
-                    <Text>Email</Text>
-                    <TextInput
-                        placeholder="Email"
-                        onChangeText={handleChange('email')}
-                        onBlur={handleBlur('email')}
-                        value={values.email}
-                        isValid={
-                            !(errors.email && touched.email)
-                        }
-                    />
-                    {errors.email && touched.email ? (
-                        <Text>{errors.email}</Text>
-                    ) : null}
-                    {/* <Text>{i18n.t('email')}</Text> */}
-                    <Text>Senha</Text>
-                    <TextInput
-                        placeholder="Senha"
-                        onChangeText={handleChange('password')}
-                        onBlur={handleBlur('password')}
-                        value={values.password}
-                        isValid={
-                            !(errors.password && touched.password)
-                        }
-                    />
-                    {errors.password && touched.password ? (
-                        <Text>{errors.password}</Text>
-                    ) : null}
-                    <TouchableOpacity 
-                    onPress={handleSubmit}>
-                            <Paragraph>Login</Paragraph>
+        <ScrollView>
+            <Formik
+            initialValues={initialValues}
+            onSubmit={handleOnSubmit}
+            validationSchema={useSchema}
+            >
+
+                {({
+                    handleChange,
+                    handleBlur,
+                    handleSubmit,
+                    values,
+                    errors,
+                    touched,
+                }) => (
+                    <Container>
+                        <Image source={Logo}></Image>
+                        <Text>Email</Text>
+                        <TextInput
+                            placeholder="Email"
+                            onChangeText={handleChange('email')}
+                            onBlur={handleBlur('email')}
+                            value={values.email}
+                            isValid={
+                                !(errors.email && touched.email)
+                            }
+                        />
+                        {errors.email && touched.email ? (
+                            <Text>{errors.email}</Text>
+                        ) : null}
+                        {/* <Text>{i18n.t('email')}</Text> */}
+                        <Text>Senha</Text>
+                        <TextInput
+                            placeholder="Senha"
+                            onChangeText={handleChange('password')}
+                            onBlur={handleBlur('password')}
+                            value={values.password}
+                            isValid={
+                                !(errors.password && touched.password)
+                            }
+                        />
+                        {errors.password && touched.password ? (
+                            <Text>{errors.password}</Text>
+                        ) : null}
+                        <TouchableOpacity 
+                        onPress={handleSubmit}>
+                                <Paragraph>Login</Paragraph>
+                            </TouchableOpacity>
+                        <Text style={Styles.textFontColor}>Entrar com Google</Text>
+                        <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
+                        <Image style={Styles.imageGoogle} source={Google}></Image>
                         </TouchableOpacity>
-                    <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                    <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
-                    <Image style={Styles.imageGoogle} source={Google}></Image>
-                    </TouchableOpacity>
-                </Container>
-            )}
-        </Formik>
+                    </Container>
+                )}
+            </Formik>
+            
+        </ScrollView>
     );
 }
 
