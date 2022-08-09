@@ -6,7 +6,7 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import Logo from "../../assets/logo.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles";
-import { string } from "yup";
+import { object, string } from "yup";
 import { useNavigation } from "@react-navigation/core";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "routes/types"
