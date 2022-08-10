@@ -6,7 +6,7 @@ import Plus from "../../assets/plus.png";
 
 
 
-export default function EscolhaProfession(){
+export default function EscolhaProfessao(){
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
     return (
         <Container>

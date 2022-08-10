@@ -8,6 +8,7 @@ import SelecaoIdioma from 'pages/Teste/SelecaoIdioma';
 import { PropsGroup } from './types';
 import InformacaoProfissional from 'pages/InformacaoProfisional';
 import InformacaoUsuario from 'pages/InformacaoUsuario';
+import Feed from 'pages/LayoutFeed';
 
 const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
     return (
@@ -20,6 +21,7 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen name="SeleçãoIdioma" component={SelecaoIdioma} />
             <Drawer.Screen name="InformaçãoProfissional" component={InformacaoProfissional} />
             <Drawer.Screen name="InformaçãoUsuário" component={InformacaoUsuario} />
+            <Drawer.Screen name="Feed" component={Feed} />
         </Drawer.Group>
     );
 };

@@ -23,6 +23,7 @@
     "@react-navigation/native": "6.0.6",
     "@react-navigation/native-stack": "6.2.5",
     "@react-navigation/stack": "^6.2.2",
+    "@rneui/themed": "^4.0.0-rc.6",
     "auth": "^0.0.9",
     "expo": "^45.0.6",
     "expo-constants": "^13.1.1",

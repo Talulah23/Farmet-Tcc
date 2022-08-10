@@ -7,7 +7,7 @@ import { Alert } from "react-native";
 import { useState } from "react";
 import * as ImagePicker from 'expo-image-picker';
 
-export default function InformacaoProfissional(){
+export default function InformacaoUsuario(){
 
         const [imageUser, setImageUser] = useState<string>();
 
