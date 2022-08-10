@@ -37,11 +37,11 @@ function LoginPage() {
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
-            <Formik
-            initialValues={initialValues}
-            onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
-            validationSchema={useSchema}
-            >
+        <Formik
+        initialValues={initialValues}
+        onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta')) }
+        validationSchema={useSchema}
+        >
 
                 {({
                     handleChange,
