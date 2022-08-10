@@ -11,6 +11,7 @@ import { RootStackParamList } from "routes/types";
 
 export default function EscolhaProfessao(){
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
+    const [ checkBox, setCheckBox] = useState(false)
     
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
@@ -22,6 +23,13 @@ export default function EscolhaProfessao(){
                 disabled={false}
                 value={toggleCheckBox}
                 onValueChange={(newValue) => setToggleCheckBox(newValue)}
+               />
+               
+               <CheckBox
+                style={Styles.checkboxContainer}
+                disabled={false}
+                value={checkBox}
+                onValueChange={(newValue) => setCheckBox(newValue)}
                />
                <TouchableOpacity style={Styles.buttonColor} >
                    <Image source={Plus}></Image>
