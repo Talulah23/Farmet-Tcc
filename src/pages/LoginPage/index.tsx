@@ -39,7 +39,7 @@ function LoginPage() {
     return (
             <Formik
             initialValues={initialValues}
-            onSubmit={handleOnSubmit}
+            onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
             validationSchema={useSchema}
             >
 
