@@ -18,6 +18,7 @@ export default function EscolhaProfessao(){
     const [gleCheckBox, setGleCheckBox] = useState(false);
     
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+    // https://reactnative.dev/docs/checkbox
 
     return (
         <Container>
@@ -62,6 +63,7 @@ export default function EscolhaProfessao(){
                 disabled={false}
                 value={gleCheckBox}
                 onValueChange={(newValue) => setGleCheckBox(newValue)}
+
                />
                <TouchableOpacity style={Styles.buttonColor} >
                    <Image source={Plus}></Image>
