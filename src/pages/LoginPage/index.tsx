@@ -37,7 +37,6 @@ function LoginPage() {
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
-<<<<<<< HEAD
             <Formik
             initialValues={initialValues}
             onSubmit={handleOnSubmit}
@@ -95,67 +94,6 @@ function LoginPage() {
                 </ScrollView>
                 )}
             </Formik>
-=======
-        <Formik
-        initialValues={initialValues}
-        onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
-        validationSchema={useSchema}
-        >
-
-            {({
-                handleChange,
-                handleBlur,
-                handleSubmit,
-                values,
-                errors,
-                touched,
-            }) => (
-                <Container>
-                    <Image source={Logo}></Image>
-                    <Text>Email</Text>
-                    <TextInput
-                        placeholder="Email"
-                        onChangeText={handleChange('email')}
-                        onBlur={handleBlur('email')}
-                        value={values.email}
-                        isValid={
-                            !(errors.email && touched.email)
-                        }
-                    />
-                    {errors.email && touched.email ? (
-                        <Text>{errors.email}</Text>
-                    ) : null}
-                    {/* <Text>{i18n.t('email')}</Text> */}
-                    <Text>Senha</Text>
-                    <TextInput
-                        placeholder="Senha"
-                        onChangeText={handleChange('password')}
-                        onBlur={handleBlur('password')}
-                        value={values.password}
-                        isValid={
-                            !(errors.password && touched.password)
-                        }
-                    />
-                    {errors.password && touched.password ? (
-                        <Text>{errors.password}</Text>
-                    ) : null}
-
-                    <TouchableOpacity 
-                        onPress={() => handleSubmit()}>
-                            <Paragraph>Login</Paragraph>
-                    </TouchableOpacity>
-
-                    <Text style={Styles.textFontColor}>Entrar com Google</Text>
-
-                    <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
-
-                    <Image style={Styles.imageGoogle} source={Google}></Image>
-
-                    </TouchableOpacity>
-                </Container>
-            )}
-        </Formik>
->>>>>>> main
     );
 }
 
