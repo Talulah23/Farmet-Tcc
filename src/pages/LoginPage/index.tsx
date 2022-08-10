@@ -82,7 +82,7 @@ function LoginPage() {
                             <Text>{errors.password}</Text>
                         ) : null}
                         <TouchableOpacity 
-                        onPress={handleSubmit}>
+                        onPress={() => handleSubmit()}>
                                 <Paragraph>Login</Paragraph>
                             </TouchableOpacity>
                         <Text style={Styles.textFontColor}>Entrar com Google</Text>
