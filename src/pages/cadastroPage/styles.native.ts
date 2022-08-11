@@ -9,10 +9,6 @@ export const Container = styled.View`
 
 
 export const Image = styled.Image`
-    height: 171px;
-    width: 175px;
-    margin-left: 28%;
-    margin-top: 10%;
 `;
 
 export const Paragraph = styled.Text`
@@ -36,7 +32,7 @@ export const TextInput = styled.TextInput`
     background-color: #EFEFEF;
     padding: 23px;
     width: 300px;
-    height: 60px;
+    height: 65px;
     margin-left: 12%;
     border: 1px;
     border-color: #545454;
@@ -52,6 +48,11 @@ export const Styles = StyleSheet.create({
         color: "#ACACAC",
         fontSize: 12,
     },
+    logo: {
+        height: 200,
+        width: 204,
+        marginLeft: 100,
+    },
 });
 
 export const View = styled.View``;
@@ -64,6 +65,5 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     width: 300px;
     margin-left: 12%;
     margin-top: 35px;
-    /* position: absolute; */
     border-radius: 30px;
 `;

@@ -51,9 +51,9 @@ function LoginPage() {
                     errors,
                     touched,
                 }) => (
-                <ScrollView>
+                <ScrollView style={Styles.scrollStyle}>
                     <Container>
-                        <Image source={Logo}></Image>
+                        <Image style={Styles.logo} source={Logo}></Image>
                         <Text>Email</Text>
                         <TextInput
                             placeholder="Email"

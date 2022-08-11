@@ -8,10 +8,6 @@ export const Container = styled.View`
 `;
 
 export const Image = styled.Image`
-    height: 171px;
-    width: 175px;
-    margin-left: 28%;
-    margin-top: 10%;
 `;
 
 export const Paragraph = styled.Text`
@@ -35,7 +31,7 @@ export const TextInput = styled.TextInput`
     background-color: #EFEFEF;
     padding: 23px;
     width: 300px;
-    height: 60px;
+    height: 65px;
     margin-left: 12%;
     border: 0.5px;
     border-color: #545454;
@@ -69,6 +65,14 @@ export const Styles = StyleSheet.create({
     inputColor: {
         color: "#ACACAC",
         fontSize: 12,
+    },
+    scrollStyle: {
+        backgroundColor: '#FFFFFF',
+    },
+    logo: {
+        height: 200,
+        width: 204,
+        marginLeft: 100,
     },
 });
 

@@ -23,7 +23,7 @@ export const Styles = StyleSheet.create({
         width: 300,
         height: 60,
         marginTop: 14,
-        marginLeft: 97,
+        marginLeft: 92,
     },
     buttonColor: {
         width: 35,

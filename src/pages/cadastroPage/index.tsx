@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import { View } from "react-native";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/Auth";
 import { Formik } from 'formik';
@@ -33,16 +32,16 @@ export default function CadastroPage() {
         >
              {({ handleSubmit }) => (
             <Container>
-                    <Image source={Logo}></Image> 
+                    <Image style={Styles.logo} source={Logo}></Image> 
                     <Text>Nome</Text>
-                    <TextInput></TextInput>
+                <TextInput placeholder="nome">
+                </TextInput>
                     <Text>Email</Text>
-                    <TextInput placeholder="email">
-                    </TextInput>
-                    <Text style={Styles.inputColor}>Senha</Text>
-                    <TextInput>
+                <TextInput placeholder="email">
+                </TextInput>
                     <Text>Senha</Text>
-                    </TextInput>
+                <TextInput placeholder="senha">
+                </TextInput>
                     <TouchableOpacity 
                         onPress={() => handleSubmit()}>
                             <Paragraph>Cadastrar-se</Paragraph>
@@ -52,42 +51,3 @@ export default function CadastroPage() {
         </Formik>
     );
 }
-
-    // const emailRef = useRef<HTMLInputElement | null>(null);
-    // const passwordRef = useRef<HTMLInputElement | null>(null);
-    // // const navigate = useNavigate();
-
-    // // const { signIn, isUserDataPresent } = useAuth();
-    // const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    //     e.preventDefault();
-    //     if (emailRef.current?.value !== undefined && passwordRef.current?.value !== undefined) {
-    //         // signIn('email_and_password', {
-    //         //     email: emailRef.current?.value,
-    //         //     password: passwordRef.current?.value,
-    //         // }).then(() => {
-    //         //     // navigate('/');
-    //         // });
-    //     }
-    // }
-
-    // isUserDataPresent ? 
-    //     <Container>
-    //         <View >
-    //             <Paragraph nativeID="email">Username</Paragraph>
-    //             <br />
-    //             <TextInput ref={emailRef} type="email" placeholder="Enter email" name="email" required/>
-    //             <br/>
-    //             <br />
-    //             <Paragraph nativeID="Password">Password</Paragraph>
-    //             <br />
-    //             <TextInput ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
-    //             <br />
-    //             <br />
-    //             <Container2>
-    //                 <Button>Login</Button>
-    //             </Container2>
-    //         </View>
-    //     </Container> 
-    //     :
-    //         <Container>
-    //         </Container>
