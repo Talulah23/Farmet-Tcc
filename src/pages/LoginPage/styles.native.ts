@@ -46,7 +46,7 @@ export const Styles = StyleSheet.create({
     buttonColor: {
         height: 50,
         width: 50,
-        marginLeft: 105,
+        marginLeft: 110,
         marginTop: 2,
         backgroudColor: "#FFFFFF",
         activeOpacity: 0,
@@ -59,7 +59,7 @@ export const Styles = StyleSheet.create({
     },
     textFontColor: {
         color: "#898888",
-        marginLeft: 50,
+        marginLeft: 55,
         fontSize: 16,
     },
     inputColor: {
