@@ -10,7 +10,7 @@ import { RootStackParamList } from "routes/types";
 // const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
 
-export default function Feed(){
+export default function FeedUser(){
     return (
         <Container>
         </Container>
