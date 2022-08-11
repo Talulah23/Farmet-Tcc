@@ -81,6 +81,7 @@ function LoginPage() {
                         {errors.password && touched.password ? (
                             <Text>{errors.password}</Text>
                         ) : null}
+                        
                         <TouchableOpacity 
                         onPress={() => handleSubmit()}>
                                 <Paragraph>Login</Paragraph>

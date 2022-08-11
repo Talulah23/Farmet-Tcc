@@ -20,7 +20,7 @@ export const Paragraph = styled.Text`
 
 export const Text = styled.Text`
     margin-left: 18%;
-    margin-top: 15px;
+    margin-top: 10px;
     color: #66248F;
     font-size: 18px;
     padding: 3%;
@@ -70,6 +70,7 @@ export const Styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     logo: {
+        marginTop: -20,
         height: 200,
         width: 204,
         marginLeft: 100,

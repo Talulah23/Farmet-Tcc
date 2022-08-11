@@ -13,7 +13,7 @@ export const Image = styled.Image`
 
 export const Paragraph = styled.Text`
     margin-left: 32%;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 19px;
     color: white;
     border-radius: 20px;
@@ -61,7 +61,7 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
 }))`
     background-color: #66248F;
-    height: 50px;
+    height: 60px;
     width: 300px;
     margin-left: 12%;
     margin-top: 35px;
