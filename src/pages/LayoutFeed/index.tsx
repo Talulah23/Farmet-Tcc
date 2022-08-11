@@ -13,6 +13,7 @@ import { RootStackParamList } from "routes/types";
 export default function Feed(){
     return (
         <Container>
+            
         </Container>
         
     //  <TouchableOpacity onPress={() => navigate.navigate('PerfilProfisional')}>
