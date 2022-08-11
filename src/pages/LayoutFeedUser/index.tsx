@@ -26,7 +26,7 @@ export default function FeedUser(this: any){
                 <SearchBar
                     placeholder="Type Here..."
                     onChangeText={SwitchComponent}
-                    value={search} />
+                     />
             </Container>
         
     //  <TouchableOpacity onPress={() => navigate.navigate('PerfilProfisional')}>
