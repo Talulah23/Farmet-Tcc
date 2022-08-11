@@ -70,16 +70,22 @@ export const Styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     logo: {
-        marginTop: -20,
+        marginTop: 15,
         height: 200,
         width: 204,
         marginLeft: 100,
     },
     textSignUp: {
         color: "#66248F",
-        marginLeft: 220,
-        fontSize: 16,
-        marginTop: -45,
+        marginLeft: 150,
+        fontSize: 17,
+        marginTop: 20,
+    },
+    textAboveSignUp: {
+        color: "#66248F",
+        marginLeft: 150,
+        fontSize: 17,
+        marginTop: 20,
     }
 });
 
