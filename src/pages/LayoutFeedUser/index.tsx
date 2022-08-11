@@ -16,6 +16,15 @@ import { RootStackParamList } from "routes/types";
 
 
 export default function FeedUser(){
+    // type SearchBarComponentProps = {};this: any
+    // const SwitchComponent: React.FunctionComponent<SearchBarComponentProps> = () => {
+    //     const [search, setSearch] = useState("");
+        
+    //     const updateSearch = (search: React.SetStateAction<string>) => {
+    //       setSearch(search);
+    //     };
+    // }
+
     return (
             <ScrollView style={Styles.scrollStyle}>
                 <Container>
