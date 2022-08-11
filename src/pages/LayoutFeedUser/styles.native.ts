@@ -8,6 +8,41 @@ export const Container = styled.View`
 `;
 
 export const Styles = StyleSheet.create({
+    ImageFeed: {
+        height: 133,
+        width: 182,
+        borderRadius: 10,
+    },
+    scrollStyle: {
+        backgroundColor: '#FFFFFF',
+    },
+    viewStyle: {
+        marginLeft: 20,
+        marginTop: 50,
+    },    
+    ImageFeed2: {
+        height: 133,
+        width: 182,
+        borderRadius: 10,
+        marginLeft: 15,
+    },
+    infoProf: {
+        height: 50,
+        width: 182,
+        backgroundColor: '#EBEBEB',
+        marginLeft: 20,
+        marginTop: 0,
+        borderRadius: 10,
+    },
+    styleAvatar: {
+        height: 40,
+        width: 40,
+        margin: 5,
+        borderRadius: 10,
+    },
+    viewScroll: {
+        marginLeft: 0,
+    },
 });
 
 export const Image = styled.Image`
@@ -31,6 +66,8 @@ export const Paragraph = styled.Text`
 `;
 
 export const View = styled.View`
+    display: flex;
+    flex-direction:row;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
