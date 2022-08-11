@@ -12,6 +12,11 @@ import { RootStackParamList } from "routes/types";
 
 export default function FeedUser(){
     return (
+        // <SearchBar    
+        //     placeholder="Type Here..."
+        //     onChangeText={this.updateSearch}
+        //     value={search}
+        // />
         <Container>
             
         </Container>
