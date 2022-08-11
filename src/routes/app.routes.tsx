@@ -24,19 +24,19 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen 
                 name="Login" 
                 component={Login}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }}
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }}
                 />
             <Drawer.Screen 
                 name="Cadastro" 
                 component={Cadastro}
-                // options={{
-                //     drawerItemStyle: { heigth: 0},
-                // }}
+                options={{
+                    drawerItemStyle: { heigth: 0},
+                }}
             />
             <Drawer.Screen name="EscolhaConta" component={EscolhaConta} />
             <Drawer.Screen name="EscolhaProfissão" component={EscolhaProfissao} />
