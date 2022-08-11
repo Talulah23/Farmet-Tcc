@@ -10,16 +10,24 @@ import { RootStackParamList } from "routes/types";
 // const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
 
-export default function FeedUser(){
+export default function FeedUser(this: any){
+    type SearchBarComponentProps = {};
+    const SwitchComponent: React.FunctionComponent<SearchBarComponentProps> = () => {
+        const [search, setSearch] = useState("");
+        
+        const updateSearch = (search: React.SetStateAction<string>) => {
+          setSearch(search);
+        };
+    }
+
     return (
-        // <SearchBar    
-        //     placeholder="Type Here..."
-        //     onChangeText={this.updateSearch}
-        //     value={search}
-        // />
-        <Container>
-            
-        </Container>
+        
+            <Container>
+                <SearchBar
+                    placeholder="Type Here..."
+                    onChangeText={SwitchComponent}
+                    value={search} />
+            </Container>
         
     //  <TouchableOpacity onPress={() => navigate.navigate('PerfilProfisional')}>
     //  <Image source={Seta}></Image>
