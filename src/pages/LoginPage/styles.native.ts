@@ -12,7 +12,7 @@ export const Image = styled.Image`
 
 export const Paragraph = styled.Text`
     margin-left: 42%;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 19px;
     color: white;
     border-radius: 20px;
@@ -46,7 +46,7 @@ export const Styles = StyleSheet.create({
     buttonColor: {
         height: 50,
         width: 50,
-        marginLeft: 180,
+        marginLeft: 105,
         marginTop: 2,
         backgroudColor: "#FFFFFF",
         activeOpacity: 0,
@@ -59,7 +59,7 @@ export const Styles = StyleSheet.create({
     },
     textFontColor: {
         color: "#898888",
-        marginLeft: 118,
+        marginLeft: 50,
         fontSize: 16,
     },
     inputColor: {
@@ -74,15 +74,24 @@ export const Styles = StyleSheet.create({
         width: 204,
         marginLeft: 100,
     },
+    textSignUp: {
+        color: "#66248F",
+        marginLeft: 220,
+        fontSize: 16,
+        marginTop: -45,
+    }
 });
 
-export const View = styled.View``;
+export const View = styled.View`
+    width: 100%;
+    height: 70px;
+`;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
 }))`
     background-color: #66248F;
-    height: 50px;
+    height: 60px;
     width: 300px;
     margin-left: 12%;
     margin-top: 100px;

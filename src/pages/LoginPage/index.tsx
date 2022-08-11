@@ -85,7 +85,10 @@ function LoginPage() {
                         onPress={() => handleSubmit()}>
                                 <Paragraph>Login</Paragraph>
                             </TouchableOpacity>
-                        <Text style={Styles.textFontColor}>Entrar com Google</Text>
+                        <View>
+                            <Text style={Styles.textFontColor}>Entrar com Google</Text>
+                            <Text style={Styles.textSignUp}>Cadastre-se</Text>
+                        </View>
                         <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
                         <Image style={Styles.imageGoogle} source={Google}></Image>
                         </TouchableOpacity>
