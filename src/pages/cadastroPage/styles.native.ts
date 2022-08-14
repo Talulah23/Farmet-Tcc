@@ -12,7 +12,7 @@ export const Image = styled.Image`
 `;
 
 export const Paragraph = styled.Text`
-    margin-left: 32%;
+    margin-left: 30%;
     margin-top: 15px;
     font-size: 19px;
     color: white;
@@ -20,7 +20,7 @@ export const Paragraph = styled.Text`
 `;
 
 export const Text = styled.Text`
-    margin-left: 18%;
+    margin-left: 15%;
     margin-top: 15px;
     color: #66248F;
     font-size: 18px;
@@ -34,7 +34,7 @@ export const TextInput = styled.TextInput`
     width: 300px;
     height: 65px;
     margin-left: 12%;
-    border: 1px;
+    border: 0.1px;
     border-color: #545454;
     font-size: 16px;
 
@@ -52,6 +52,18 @@ export const Styles = StyleSheet.create({
         height: 200,
         width: 204,
         marginLeft: 100,
+    },
+    buttonSize: {
+        marginTop: 60,
+    },
+    textFont: {
+        fontSize: 30,
+        marginLeft: 120,
+        marginTop: -10,
+        fontWeight: "500",
+    },
+    scrollStyle: {
+        backgroundColor: '#FFFFFF',
     },
 });
 

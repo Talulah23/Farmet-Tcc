@@ -37,132 +37,71 @@ function LoginPage() {
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
-        <Formik
-        initialValues={initialValues}
-        onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta')) }
-        validationSchema={useSchema}
-        >
+        <ScrollView style={Styles.scrollStyle}>
+            <Formik
+            initialValues={initialValues}
+            onSubmit={values => signIn('email_and_password', values).then(() => navigate.navigate('EscolhaConta')) }
+            validationSchema={useSchema}
+            >
 
-                {({
-                    handleChange,
-                    handleBlur,
-                    handleSubmit,
-                    values,
-                    errors,
-                    touched,
-                }) => (
-                <ScrollView style={Styles.scrollStyle}>
-                    <Container>
-                        <Image style={Styles.logo} source={Logo}></Image>
-                        <Text>Email</Text>
-                        <TextInput
-                            placeholder="Email"
-                            onChangeText={handleChange('email')}
-                            onBlur={handleBlur('email')}
-                            value={values.email}
-                            isValid={
-                                !(errors.email && touched.email)
-                            }
-                        />
-                        {errors.email && touched.email ? (
-                            <Text>{errors.email}</Text>
-                        ) : null}
-                        {/* <Text>{i18n.t('email')}</Text> */}
-                        <Text>Senha</Text>
-                        <TextInput
-                            placeholder="Senha"
-                            onChangeText={handleChange('password')}
-                            onBlur={handleBlur('password')}
-                            value={values.password}
-                            isValid={
-                                !(errors.password && touched.password)
-                            }
-                        />
-                        {errors.password && touched.password ? (
-                            <Text>{errors.password}</Text>
-                        ) : null}
-                        
-                        <TouchableOpacity 
-                        onPress={() => handleSubmit()}>
-                                <Paragraph>Login</Paragraph>
-                        </TouchableOpacity>
-                        <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                        <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
-                                <Image style={Styles.imageGoogle} source={Google}></Image>
-                        </TouchableOpacity>
-                        <Paragraph style={Styles.textAboveSignUp}>Não possui uma conta?</Paragraph>
-                        <Text style={Styles.textSignUp}>Cadastre-se</Text>
-                    </Container>
-                        
-                </ScrollView>
-                )}
-            </Formik>
+                    {({
+                        handleChange,
+                        handleBlur,
+                        handleSubmit,
+                        values,
+                        errors,
+                        touched,
+                    }) => (
+                        <Container>
+                            <Image style={Styles.logo} source={Logo}></Image>
+                            <Text style={Styles.textFont}>Fazer Login</Text>
+                            <Text>Email</Text>
+                            <TextInput
+                                placeholder="Email"
+                                onChangeText={handleChange('email')}
+                                onBlur={handleBlur('email')}
+                                value={values.email}
+                                isValid={
+                                    !(errors.email && touched.email)
+                                }
+                            />
+                            {errors.email && touched.email ? (
+                                <Text>{errors.email}</Text>
+                            ) : null}
+                            {/* <Text>{i18n.t('email')}</Text> */}
+                            <Text>Senha</Text>
+                            <TextInput
+                                placeholder="Senha"
+                                onChangeText={handleChange('password')}
+                                onBlur={handleBlur('password')}
+                                value={values.password}
+                                isValid={
+                                    !(errors.password && touched.password)
+                                }
+                            />
+                            {errors.password && touched.password ? (
+                                <Text>{errors.password}</Text>
+                            ) : null}
+                            
+                            <TouchableOpacity
+                            style={Styles.buttonSize} 
+                            onPress={() => handleSubmit()}>
+                                    <Paragraph>Login</Paragraph>
+                            </TouchableOpacity>
+                            <Text style={Styles.textFontColor}>Entrar com Google</Text>
+                            <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
+                                    <Image style={Styles.imageGoogle} source={Google}></Image>
+                            </TouchableOpacity>
+                            <View>
+                                <Paragraph style={Styles.textAboveSignUp}>Não possui uma conta?</Paragraph>
+                                <Text style={Styles.textSignUp}>Cadastre-se</Text>
+                            </View>
+                        </Container>
+                            
+                    )}
+                </Formik>
+            </ScrollView>
     );
 }
 
 export default LoginPage;
-
-
-// const emailRef = useRef<HTMLInputElement | null>(null);
-// const passwordRef = useRef<HTMLInputElement | null>(null);
-// // const navigate = useNavigate();
-
-// // const { signIn, isUserDataPresent } = useAuth();
-// const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-//     e.preventDefault();
-//     if (emailRef.current?.value !== undefined && passwordRef.current?.value !== undefined) {
-//         // signIn('email_and_password', {
-//         //     email: emailRef.current?.value,
-//         //     password: passwordRef.current?.value,
-//         // }).then(() => {
-//         //     // navigate('/');
-//         // });
-//     }
-// }
-// isUserDataPresent ? 
-//     <Container>
-//         <View >
-//             <Paragraph nativeID="email">Username</Paragraph>
-//             <br />
-//             <TextInput ref={emailRef} type="email" placeholder="Enter email" name="email" required/>
-//             <br/>
-//             <br />
-//             <Paragraph nativeID="Password">Password</Paragraph>
-//             <br />
-//             <TextInput ref={passwordRef} type="password" placeholder="Enter Password" name="psw" required/>
-//             <br />
-//             <br />
-//             <Container2>
-//                 <Button>Login</Button>
-//             </Container2>
-//         </View>
-//     </Container> 
-//     :
-//         <Container>
-//         </Container>
-
-
-                     {/* <Text>{I18n.t('cnpj')}</Text>
-//                     <TextInput
-//                         onChangeText={value => {
-//                             handleChange('cnpj')(
-//                                 mask(
-//                                     value,
-//                                     '99.9.999/9999-99',
-//                                 ),
-//                             );
-//                         }}
-//                         onBlur={handleBlur('cnpj')}
-//                         value={values.cnpj}
-//                         isValid={
-//                             !(errors.cnpj && touched.cnpj)
-//                         }
-//                     />
-//                     {errors.cnpj && touched.cnpj ? (
-//                         <Text>{errors.cnpj}</Text>
-//                     // ) : null} */}
-
-                    {/* <Button
-                        onPress={() => handleSubmit()}
-                        title={I18n.t('submit')}
-                    /> */}

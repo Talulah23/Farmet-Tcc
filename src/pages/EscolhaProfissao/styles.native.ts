@@ -34,12 +34,12 @@ export const Styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 40,
     },
-  buttonColor: {
-    height: 40,
-    width: 40,
-    marginLeft: 272,
-    marginTop: 370,
-    borderRadius: 50,
+    buttonColor: {
+        width: 35,
+        height: 35,
+        borderRadius: 67,
+        marginLeft: 262,
+        marginTop: -16,
     },
     imageSize: {
         width: 20,
@@ -50,6 +50,12 @@ export const Styles = StyleSheet.create({
     boxSearch: {
         height: 65,
         width: 60,
+    },
+    textButton: {
+        marginTop: 15,
+        marginLeft: 110,
+        fontSize: 22,
+        color: "#ffffff",
     },
 });
 
@@ -62,9 +68,9 @@ export const Image = styled.Image`
 
 export const Text = styled.Text`
     font-size: 16px;   
-    margin-left: 20px;
-    margin-top: 10px;
-    color: #ffffff;
+    margin-left: 15%;
+    margin-top: -29px;
+    color: #898888;
 `;
 
 export const TextInput = styled.TextInput`  
@@ -88,9 +94,9 @@ export const Paragraph = styled.Text`
 `;
 
 export const View = styled.View`
-    width: 330px;
+    width: 310px;
     background-color: #FFFFFF;
-    margin-left: 32px;
+    margin-left: 48px;
     margin-top: 100px;
     height: 500px;
     border-radius: 25px;
@@ -99,7 +105,13 @@ export const View = styled.View`
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
-    activeOpacity: 0.2
+    activeOpacity: 0.4
 }))`
+    margin-left: 12%;
     background-color: #66248F;
+    border-radius: 20px;
+    width: 310px;
+    height: 70px;
+    margin-top: 10%;
 `;
+

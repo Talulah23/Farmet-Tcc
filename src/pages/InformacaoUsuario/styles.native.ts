@@ -35,6 +35,9 @@ export const Styles = StyleSheet.create({
     imageAvatar: {
         borderWidth: 1.5,
     },
+    scrollStyle: {
+        backgroundColor: '#FFFFFF',
+    },
 });
 
 export const Text = styled.Text`

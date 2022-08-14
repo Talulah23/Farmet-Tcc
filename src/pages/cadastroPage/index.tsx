@@ -5,6 +5,7 @@ import { Formik } from 'formik';
 import { Styles } from "./styles.native";
 import Logo from "../../assets/logo.png";
 import { Container, TouchableOpacity, Paragraph, TextInput, View, Text, Image } from "./styles";
+import { ScrollView } from 'react-native';
 import { object, string } from "yup";
 import { useNavigation } from "@react-navigation/core";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -25,29 +26,33 @@ export default function CadastroPage() {
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
     return (
-        <Formik
-            initialValues={initialValues}
-            onSubmit={values => signUp('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
-            validationSchema={useSchema}
-        >
-             {({ handleSubmit }) => (
-            <Container>
-                    <Image style={Styles.logo} source={Logo}></Image> 
-                    <Text>Nome</Text>
-                <TextInput placeholder="nome">
-                </TextInput>
-                    <Text>Email</Text>
-                <TextInput placeholder="email">
-                </TextInput>
-                    <Text>Senha</Text>
-                <TextInput placeholder="senha">
-                </TextInput>
-                    <TouchableOpacity 
-                        onPress={() => handleSubmit()}>
-                            <Paragraph>Cadastrar-se</Paragraph>
-                    </TouchableOpacity>
-                </Container>
-            )}
-        </Formik>
+        <ScrollView style={Styles.scrollStyle}>
+            <Formik
+                initialValues={initialValues}
+                onSubmit={values => signUp('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
+                validationSchema={useSchema}
+            >
+                {({ handleSubmit }) => (
+                <Container>
+                        <Image style={Styles.logo} source={Logo}></Image>
+                        <Text style={Styles.textFont}>Cadastro</Text>
+                        <Text>Nome</Text>
+                    <TextInput placeholder="Nome">
+                    </TextInput>
+                        <Text>Email</Text>
+                    <TextInput placeholder="Email">
+                    </TextInput>
+                        <Text>Senha</Text>
+                    <TextInput placeholder="Senha">
+                    </TextInput>
+                        <TouchableOpacity 
+                            style={Styles.buttonSize}
+                            onPress={() => handleSubmit()}>
+                                <Paragraph>Cadastrar-se</Paragraph>
+                        </TouchableOpacity>
+                    </Container>
+                )}
+            </Formik>
+        </ScrollView>
     );
 }
