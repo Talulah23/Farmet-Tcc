@@ -18,6 +18,8 @@ export const Paragraph = ParagraphNative;
 
 export const Text = TextNative;
 
+// export const Text2 = Textnative
+
 export const Styles = StylesNative;
 
 export const TouchableOpacity = TouchableOpacityNative;

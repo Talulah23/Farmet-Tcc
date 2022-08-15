@@ -18,7 +18,7 @@ export default function EscolhaConta(){
                     nela é possível escolher o tipo de serviço desejado e o profissional que 
                     mais se encaixa nos seus requisitos, além de fornecer um chat direto com 
                     o mesmo.</Text>
-                        <TouchableOpacity onPress={() => navigate.navigate('InformaçãoUsuário')}>
+                        <TouchableOpacity onPress = {() => navigate.navigate('InformaçãoUsuário')}>
                             <Image source={Seta}></Image>
                         </TouchableOpacity>
                     </View>

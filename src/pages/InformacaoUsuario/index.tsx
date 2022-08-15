@@ -6,10 +6,15 @@ import Plus from "../../assets/mais.png";
 import { Alert } from "react-native";
 import { useState } from "react";
 import * as ImagePicker from 'expo-image-picker';
+import { useNavigation } from "@react-navigation/core";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "routes/types";
 
 export default function InformacaoUsuario(){
 
         const [imageUser, setImageUser] = useState<string>();
+
+        const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
         const pickImageFromGalery = async () => {
 
@@ -60,7 +65,9 @@ export default function InformacaoUsuario(){
                         <TextInput placeholder="Endereço:"></TextInput>
                         <View/> 
                         <TouchableOpacity>
-                            <View style={Styles.viewStyle}>
+                            <View 
+                                style={Styles.viewStyle}
+                                onPress={() => navigate.navigate('FeedUser')}>
                                 <Text style={Styles.imageStyle}>Próximo</Text> 
                             </View>
                         </TouchableOpacity>

@@ -26,6 +26,14 @@ export const Text = styled.Text`
     padding: 3%;
 `;
 
+// export const Text2 = styled.Text`
+//     margin-left: 15%;
+//     margin-top: 12px;
+//     color: #66248F;
+//     font-size: 18px;
+//     padding: 3%;
+// `;
+
 export const TextInput = styled.TextInput`  
     border-radius: 40px;
     background-color: #EFEFEF;
@@ -91,7 +99,7 @@ export const Styles = StyleSheet.create({
         fontSize: 30,
         marginLeft: 100,
         fontWeight: "500",
-        marginTop: -30,
+        marginTop: -19,
     },
     buttonSize: {
         marginTop: 80,

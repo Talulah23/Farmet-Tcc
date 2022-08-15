@@ -15,79 +15,79 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen 
                 name="Login" 
                 component={Login}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }}
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }}
             />
             <Drawer.Screen 
                 name="Cadastro" 
                 component={Cadastro}
-                // options={{
-                //     drawerItemStyle: { heigth: 0},
-                // }}
+                options={{
+                    drawerItemStyle: { heigth: 0},
+                }}
             />
             <Drawer.Screen 
                 name="EscolhaConta" 
                 component={EscolhaConta}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
             <Drawer.Screen 
                 name="EscolhaProfissão" 
                 component={EscolhaProfissao}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
             <Drawer.Screen 
                 name="InformaçãoProfissional" 
                 component={InformacaoProfissional}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
             <Drawer.Screen 
                 name="InformaçãoUsuário" 
                 component={InformacaoUsuario}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
             <Drawer.Screen 
                 name="FeedUser" 
                 component={FeedUser}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
             <Drawer.Screen 
                 name="PerfilProfissional" 
                 component={PerfilProfissional}
-                // options={{
-                //     headerShown: false,
-                //     gestureHandleProps:{
-                //         enable: false,
-                //     },
-                // }} 
+                options={{
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
+                }} 
             />
         </Drawer.Group>
     );
