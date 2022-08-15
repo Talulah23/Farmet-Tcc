@@ -26,7 +26,10 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
                 name="Cadastro" 
                 component={Cadastro}
                 options={{
-                    drawerItemStyle: { heigth: 0},
+                    headerShown: false,
+                    gestureHandleProps:{
+                        enable: false,
+                    },
                 }}
             />
             <Drawer.Screen 

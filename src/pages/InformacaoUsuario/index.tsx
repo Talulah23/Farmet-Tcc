@@ -64,10 +64,8 @@ export default function InformacaoUsuario(){
                         <View/>
                         <TextInput placeholder="Endereço:"></TextInput>
                         <View/> 
-                        <TouchableOpacity>
-                            <View 
-                                style={Styles.viewStyle}
-                                onPress={() => navigate.navigate('FeedUser')}>
+                        <TouchableOpacity  onPress={() => navigate.navigate('FeedUser')}>
+                            <View style={Styles.viewStyle}>
                                 <Text style={Styles.imageStyle}>Próximo</Text> 
                             </View>
                         </TouchableOpacity>

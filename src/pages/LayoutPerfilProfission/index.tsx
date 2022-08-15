@@ -61,6 +61,7 @@ export default function PerfilProfissional(){
                                     <Text style={Styles.number}>4.5</Text>
                                     <Image style={Styles.imageStar} source={Star}></Image>
                                 </View>
+                                <Text>Trabalhos</Text>
             </Container>
 );
 }
