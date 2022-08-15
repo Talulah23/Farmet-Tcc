@@ -7,6 +7,7 @@ import { PropsGroup } from './types';
 import InformacaoProfissional from 'pages/InformacaoProfisional';
 import InformacaoUsuario from 'pages/InformacaoUsuario';
 import FeedUser from 'pages/LayoutFeedUser';
+import PerfilProfissional from 'pages/LayoutPerfil';
 
 const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
     return (
@@ -71,6 +72,16 @@ const AppRoutes: FC<PropsGroup> = function ({ Drawer }: PropsGroup) {
             <Drawer.Screen 
                 name="FeedUser" 
                 component={FeedUser}
+                // options={{
+                //     headerShown: false,
+                //     gestureHandleProps:{
+                //         enable: false,
+                //     },
+                // }} 
+            />
+            <Drawer.Screen 
+                name="Perfil Profissional" 
+                component={PerfilProfissional}
                 // options={{
                 //     headerShown: false,
                 //     gestureHandleProps:{
