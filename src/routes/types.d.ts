@@ -35,9 +35,9 @@ export type AppStackParamList = {
     InformaçãoUsuário: undefined;
     InformaçãoProfissional: undefined;
     EscolhaProfissão: undefined;
-    // FeedUser: undefined;
+    FeedUser: undefined;
     // FeedProfission: undefined; 
-    // PerfilProfisional: undefined
+    PerfilProfisional: undefined
 
 };
 

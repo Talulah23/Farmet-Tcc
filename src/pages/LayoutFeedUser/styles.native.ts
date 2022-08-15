@@ -152,5 +152,5 @@ export const ViewAvatar = styled.View`
 export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.2
 }))`
-    background-color: #66248F;
+    background-color: #FFFFFF;
 `;
