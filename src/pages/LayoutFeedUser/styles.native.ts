@@ -10,14 +10,14 @@ export const Container = styled.View`
 export const Styles = StyleSheet.create({
     ImageFeed: {
         height: 133,
-        width: 182,
+        width: 200,
         borderRadius: 10,
         marginLeft: 0,
         marginRight: 16,
     },    
     ImageFeed2: {
         height: 133,
-        width: 182,
+        width: 200,
         borderRadius: 10,
         marginLeft: 1,
         marginRight: 18,
@@ -45,19 +45,19 @@ export const Styles = StyleSheet.create({
     },
     viewAvatar: {
         height: 60,
-        width: 182,
+        width: 200,
         backgroundColor: '#FFFFFF',
         borderRadius: 10,
     },
     imageStar: {
-        marginTop: 30,
-        marginLeft: 3,
-        height: 18,
-        width: 18,
+        marginTop: -16,
+        marginLeft: 30,
+        height: 15,
+        width: 15,
 
     },
     infoProf: {
-        marginLeft: -35,
+        marginLeft: -40,
         marginTop: 25,
         fontSize: 10,
         color: '#000000',
@@ -70,9 +70,17 @@ export const Styles = StyleSheet.create({
         color: '#000000',
         fontStyle: "normal",
     },
+    infoProf3: {
+        marginLeft: -33,
+        marginTop: 25,
+        fontSize: 10,
+        color: '#000000',
+        fontStyle: "normal",
+    },
     number: {
-        marginTop: 28,
-        marginLeft: 10,
+        // marginTop: 28,
+        // marginLeft: 10,
+        fontSize: 12,
     },
     number2: {
         marginTop: 28,
@@ -83,6 +91,18 @@ export const Styles = StyleSheet.create({
         width: 35,
         margin: 8,
         marginLeft: 15,
+    },
+    viewAv: {
+        marginLeft: -67,
+        marginTop: 39,
+    },
+    viewAv2: {
+        marginLeft: -60,
+        marginTop: 39,
+    },
+    viewAv3: {
+        marginLeft: -50,
+        marginTop: 39,
     },
 });
 
@@ -124,7 +144,7 @@ export const ViewIcon = styled.View`
 `;
 
 export const ViewAvatar = styled.View`
-    border: 0.3px;
+    /* border: 0.3px; */
     display: flex;
     flex-direction: row;
 `;

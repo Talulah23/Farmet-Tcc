@@ -71,9 +71,11 @@ export default function FeedUser(){
                                     <ViewAvatar style={Styles.viewAvatar}>
                                         <Image style={Styles.styleAvatar} source={Perfil2}></Image>
                                         <Text>Livia</Text>
-                                        <Text style={Styles.infoProf}>Gastronomia</Text>
-                                        <Text style={Styles.number}>4.5</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                            <Text style={Styles.infoProf3}>Gastronomia</Text>
+                                        <View style={Styles.viewAv}>
+                                            <Text style={Styles.number}>4.5</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -82,8 +84,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil}></Image>
                                         <Text>Melinda</Text>
                                         <Text style={Styles.infoProf2}>Confeitaria</Text>
-                                        <Text style={Styles.number}>4.2</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>4.2</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -92,8 +96,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil7}></Image>
                                         <Text>####</Text>
                                         <Text style={Styles.infoProf}>########</Text>
-                                        <Text style={Styles.number}>##</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>##</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                         </View>
@@ -106,10 +112,12 @@ export default function FeedUser(){
                                 <Image style={Styles.ImageFeed} source={ImagemProf3}></Image>
                                     <ViewAvatar style={Styles.viewAvatar}>
                                         <Image style={Styles.styleAvatar} source={Perfil3}></Image>
-                                        <Text>angel</Text>
+                                        <Text>Angel</Text>
                                         <Text style={Styles.infoProf}>Manicure</Text>
-                                        <Text style={Styles.number}>4.9</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv3}>
+                                            <Text style={Styles.number}>4.9</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -118,8 +126,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil4}></Image>
                                         <Text>Carmem</Text>
                                         <Text style={Styles.infoProf2}>Manicure</Text>
-                                        <Text style={Styles.number}>5.0</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv3}>
+                                            <Text style={Styles.number}>5.0</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -128,8 +138,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil7}></Image>
                                         <Text>####</Text>
                                         <Text style={Styles.infoProf}>########</Text>
-                                        <Text style={Styles.number}>##</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>##</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                         </View>
@@ -144,8 +156,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil5}></Image>
                                         <Text>Roger</Text>
                                         <Text style={Styles.infoProf}>Marcenaria</Text>
-                                        <Text style={Styles.number}>3.9</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>3.9</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -154,8 +168,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil6}></Image>
                                         <Text>Roberto</Text>
                                         <Text style={Styles.infoProf2}>Marcenaria</Text>
-                                        <Text style={Styles.number}>4.0</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>4.0</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                             <View style={Styles.viewScroll}>
@@ -164,8 +180,10 @@ export default function FeedUser(){
                                         <Image style={Styles.styleAvatar} source={Perfil7}></Image>
                                         <Text>####</Text>
                                         <Text style={Styles.infoProf}>########</Text>
-                                        <Text style={Styles.number}>##</Text>
-                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <View style={Styles.viewAv2}>
+                                            <Text style={Styles.number}>##</Text>
+                                            <Image style={Styles.imageStar} source={Star}></Image>
+                                        </View>
                                     </ViewAvatar>
                             </View>
                         </View>
