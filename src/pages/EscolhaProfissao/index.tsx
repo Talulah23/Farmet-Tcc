@@ -24,56 +24,72 @@ export default function EscolhaProfessao(){
     return (
         <Container>
             <View>
-                <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={toggleCheckBox}
-                onValueChange={(newValue) => setToggleCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={checkBox}
-                onValueChange={(newValue) => setCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={togCheckBox}
-                onValueChange={(newValue) => setTogCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={toleCheckBox}
-                onValueChange={(newValue) => setToleCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={oggleCheckBox}
-                onValueChange={(newValue) => setOggleCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={gleCheckBox}
-                onValueChange={(newValue) => setGleCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <CheckBox
-                style={Styles.checkboxContainer}
-                disabled={false}
-                value={gleeCheckBox}
-                onValueChange={(newValue) => setGleeCheckBox(newValue)}
-               />
-               <Text>Confeitaria</Text>
-               <Image style={Styles.buttonColor} source={Plus}></Image>
+                <ScrollView>
+                        <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={toggleCheckBox}
+                        onValueChange={(newValue) => setToggleCheckBox(newValue)}
+                    />
+                    <Text>Confeitaria</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={checkBox}
+                        onValueChange={(newValue) => setCheckBox(newValue)}
+                    />
+                    <Text>Marceneiro</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={togCheckBox}
+                        onValueChange={(newValue) => setTogCheckBox(newValue)}
+                    />
+                    <Text>Baba</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={toleCheckBox}
+                        onValueChange={(newValue) => setToleCheckBox(newValue)}
+                    />
+                    <Text>Chaveiro</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={oggleCheckBox}
+                        onValueChange={(newValue) => setOggleCheckBox(newValue)}
+                    />
+                    <Text>Manicure</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={gleCheckBox}
+                        onValueChange={(newValue) => setGleCheckBox(newValue)}
+                    />
+                    <Text>Empregada doméstica</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={gleeCheckBox}
+                        onValueChange={(newValue) => setGleeCheckBox(newValue)}
+                    />
+                    <Text>Pintor</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={gleeCheckBox}
+                        onValueChange={(newValue) => setGleeCheckBox(newValue)}
+                    />
+                    <Text>Pintor</Text>
+                    <CheckBox
+                        style={Styles.checkboxContainer}
+                        disabled={false}
+                        value={gleeCheckBox}
+                        onValueChange={(newValue) => setGleeCheckBox(newValue)}
+                    />
+                    <Text>Pintor</Text>
+                        <Image style={Styles.buttonColor} source={Plus}></Image>
+                </ScrollView>
             </View>
                <TouchableOpacity>
                     <Text style={Styles.textButton}>Próximo</Text>
