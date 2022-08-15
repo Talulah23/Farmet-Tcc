@@ -84,8 +84,8 @@ function LoginPage() {
                             ) : null}
                             
                             <TouchableOpacity
-                            style={Styles.buttonSize} 
-                            onPress={() => handleSubmit()}
+                                style={Styles.buttonSize}
+                                onPress={() => handleSubmit()}
                             >
                                     <Paragraph>Login</Paragraph>
                             </TouchableOpacity>
@@ -93,11 +93,11 @@ function LoginPage() {
                                 Entrar com Google
                             </Text>
                             <TouchableOpacity 
-                                style={Styles.buttonColor} 
+                                style={Styles.buttonColor}
                                 onClick={ AuthProvider }
                             >
                                     <Image 
-                                        style={Styles.imageGoogle} 
+                                        style={Styles.imageGoogle}
                                         source={Google}>
                                     </Image>
                             </TouchableOpacity>
@@ -106,7 +106,7 @@ function LoginPage() {
                                     Não possui uma conta?
                                 </Paragraph>
                                 <Text 
-                                    style={Styles.textSignUp} 
+                                    style={Styles.textSignUp}
                                     onPress={() => navigate.navigate('Cadastro')}
                                 >
                                     Cadastre-se
