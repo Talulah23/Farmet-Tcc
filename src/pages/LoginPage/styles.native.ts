@@ -70,7 +70,7 @@ export const Styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     logo: {
-        marginTop: 0,
+        marginTop: -10,
         height: 200,
         width: 204,
         marginLeft: 100,
@@ -91,6 +91,7 @@ export const Styles = StyleSheet.create({
         fontSize: 30,
         marginLeft: 100,
         fontWeight: "500",
+        marginTop: -30,
     },
     buttonSize: {
         marginTop: 80,

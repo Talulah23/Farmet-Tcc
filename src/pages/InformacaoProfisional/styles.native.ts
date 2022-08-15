@@ -44,6 +44,10 @@ export const Styles = StyleSheet.create({
     imageAvatar: {
         borderWidth: 1.5,
     },
+    containerSize: {
+        marginTop: 60,
+        color: '#FFFFFF',
+    },
 });
 
 export const Text = styled.Text`
@@ -80,9 +84,9 @@ export const TextInput = styled.TextInput`
 export const Image = styled.Image`
     border-radius: 67px;
     height: 120px;
+    width: 120px;
     margin-left: 0px;
     margin-top: 0px;
-    width: 120px;
 `;
 
 export const View = styled.View`
@@ -103,7 +107,6 @@ export const TouchableOpacity = styled.TouchableOpacity.attrs(() => ({
 export const ImageUser = styled.TouchableOpacity.attrs(() => ({
     activeOpacity: 0.6
 }))`
-    background-color: black;
     height: 120px;
     width: 120px;
     margin-left: 34%;
