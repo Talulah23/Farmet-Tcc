@@ -19,9 +19,7 @@ const useSchema = object({
 export default function CadastroPage() {
     const initialValues = { password: '', email: '', name: '' };
 
-    const { signUp } = useAuth()
-    console.log(signUp);
-    
+    const { signUp } = useAuth();
 
     const navigate = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
@@ -29,29 +27,54 @@ export default function CadastroPage() {
         <ScrollView style={Styles.scrollStyle}>
             <Formik
                 initialValues={initialValues}
-                onSubmit={values => signUp('email_and_password', values).then(() => navigate.navigate('EscolhaConta'))}
+                onSubmit={values => signUp('email_and_password_and_name', values).then(() => navigate.navigate('EscolhaConta'))}
                 validationSchema={useSchema}
             >
-                {({ handleSubmit }) => (
+                {({ 
+                    handleSubmit,
+                    // values,
+                    // errors,
+                    // touched,
+                 }) => (
                 <Container>
-                        <Image style={Styles.logo} source={Logo}></Image>
-                        <Text style={Styles.textFont}>Cadastro</Text>
+                        <Image 
+                            style={Styles.logo} 
+                            source={Logo}>
+                        </Image>
+                        <Text style={Styles.textFont}>
+                            Cadastro
+                        </Text>
                         <Text>Nome</Text>
-                    <TextInput placeholder="Nome">
+                    <TextInput 
+                        placeholder="Nome">
                     </TextInput>
                         <Text>Email</Text>
-                    <TextInput placeholder="Email">
+                    <TextInput 
+                        placeholder="Email"
+                        // value={values.email}
+                        // isValid={
+                        //     !(errors.email && touched.email)
+                        // }
+                    >
                     </TextInput>
                         <Text>Senha</Text>
-                    <TextInput placeholder="Senha">
+                    <TextInput 
+                        placeholder="Senha"
+                        // value={values.password}
+                        // isValid={
+                        //     !(errors.password && touched.password)
+                        // }
+                    >
                     </TextInput>
                         <TouchableOpacity 
                             style={Styles.buttonSize}
-                            onPress={() => handleSubmit()}>
+                            onPress={() => handleSubmit()}
+                        >
                                 <Paragraph>Cadastrar-se</Paragraph>
                         </TouchableOpacity>
                     </Container>
-                )}
+                )
+            }
             </Formik>
         </ScrollView>
     );

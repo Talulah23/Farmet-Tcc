@@ -24,7 +24,7 @@ export interface AuthContextData {
         UserCredential | FirebaseAuthTypes.UserCredential
     >;
     signUp: (        
-        provider?: 'google' | 'email_and_password', 
+        provider?: 'google' | 'email_and_password_and_name', 
         payload?: ILoginPayload,
     ) => Promise<
         UserCredential | FirebaseAuthTypes.UserCredential

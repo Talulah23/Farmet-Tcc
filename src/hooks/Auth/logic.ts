@@ -18,11 +18,13 @@ export const googleSignIn = () => {
 export const emailAndPasswordSignUp = (
     email: string,
     password: string,
+    name: string,
 ) => {
     return createUserWithEmailAndPassword(
         auth,
         email,
         password,
+        name,
     );
 };
 

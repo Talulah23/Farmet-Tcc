@@ -85,16 +85,32 @@ function LoginPage() {
                             
                             <TouchableOpacity
                             style={Styles.buttonSize} 
-                            onPress={() => handleSubmit()}>
+                            onPress={() => handleSubmit()}
+                            >
                                     <Paragraph>Login</Paragraph>
                             </TouchableOpacity>
-                            <Text style={Styles.textFontColor}>Entrar com Google</Text>
-                            <TouchableOpacity style={Styles.buttonColor} onClick={ AuthProvider }>
-                                    <Image style={Styles.imageGoogle} source={Google}></Image>
+                            <Text style={Styles.textFontColor}>  
+                                Entrar com Google
+                            </Text>
+                            <TouchableOpacity 
+                                style={Styles.buttonColor} 
+                                onClick={ AuthProvider }
+                            >
+                                    <Image 
+                                        style={Styles.imageGoogle} 
+                                        source={Google}>
+                                    </Image>
                             </TouchableOpacity>
                             <View>
-                                <Paragraph style={Styles.textAboveSignUp}>Não possui uma conta?</Paragraph>
-                                <Text style={Styles.textSignUp}>Cadastre-se</Text>
+                                <Paragraph style={Styles.textAboveSignUp}>
+                                    Não possui uma conta?
+                                </Paragraph>
+                                <Text 
+                                    style={Styles.textSignUp} 
+                                    onPress={() => navigate.navigate('Cadastro')}
+                                >
+                                    Cadastre-se
+                                </Text>
                             </View>
                         </Container>
                             
