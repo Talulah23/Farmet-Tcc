@@ -74,6 +74,7 @@ function LoginPage() {
                                 placeholder="Senha"
                                 onChangeText={handleChange('password')}
                                 onBlur={handleBlur('password')}
+                                secureTextEntry = {true}
                                 value={values.password}
                                 isValid={
                                     !(errors.password && touched.password)

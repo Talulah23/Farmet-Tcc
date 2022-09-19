@@ -58,8 +58,9 @@ export default function PerfilProfissional(){
                         <Text style={Styles.infoProf3}>Contato:</Text>
                         <Text style={Styles.infoProf3}>Endereço:</Text>
                                 <View style={Styles.viewAv}>
-                                    <Text style={Styles.number}>4.5</Text>
-                                    <Image style={Styles.imageStar} source={Star}></Image>
+                                        <Text style={Styles.number}>4.5</Text>
+                                        <Image style={Styles.imageStar} source={Star}></Image>
+                                        <Text style={Styles.infoHorario}>Horário de serviço:</Text>
                                 </View>
                                 <Text>Trabalhos</Text>
             </Container>

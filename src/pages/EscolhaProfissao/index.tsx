@@ -91,7 +91,9 @@ export default function EscolhaProfessao(){
                         <Image style={Styles.buttonColor} source={Plus}></Image>
                 </ScrollView>
             </View>
-               <TouchableOpacity>
+               <TouchableOpacity
+                    // onPress={() => navigate.navigate('FeedProfissão')}
+                    >
                     <Text style={Styles.textButton}>Próximo</Text>
                </TouchableOpacity>
         </Container>

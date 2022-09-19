@@ -63,6 +63,13 @@ export const Styles = StyleSheet.create({
         color: '#000000',
         fontStyle: "italic",
     },
+    infoHorario: {
+        marginLeft: -90,
+        marginTop: 60,
+        fontSize: 15,
+        color: '#000000',
+        fontStyle: "normal",
+    },
 });
 
 export const Text = styled.Text`
